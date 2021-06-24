@@ -7,9 +7,13 @@ tags: [Python]
 
 ## Pre-Requisites
 Agar pyenv berjalan dengan baik di Linux, kita perlu menginstall beberapa package library. Masing-masing turunan distro diinstal dengan cara berbeda.
+
 Turunan Ubuntu/Debian:
 ```bash
-sudo apt install -y libedit-dev libncurses5-dev
+sudo apt install -y libedit-dev libncurses5-dev \
+install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl
 ```
 Fedora/CentOS/RHEL(aws ec2):
 ```
@@ -22,7 +26,6 @@ yay -S ncurses5-compat-libs
 ```
 
 ## Cara install
-
 Instalasi lebih dianjurkan menggunakan git:
 ```bash
  git clone https://github.com/pyenv/pyenv.git ~/.pyenv
@@ -59,6 +62,8 @@ Untuk mulai menginstall python sesuai versi yang anda inginkan:
 ```bash
 pyenv install x.x.x
 ```
+dimana `x.x.x` diganti dengan versi python yang akan diinstall
+
 Untuk melihat versi python mana saja yang sudah anda install:
 ```bash
 pyenv versions
@@ -73,5 +78,3 @@ Untuk itu coba list versi python dengan list yang lebih pendek, misalnya versi 3
 ```bash
 pyenv install --list | grep " 3\.[6789]"
 ```
-
-Jika kita mengetikkan `python --version` akan kelihatan versi python yang terinstall
