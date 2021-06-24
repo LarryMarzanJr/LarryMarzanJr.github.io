@@ -54,6 +54,15 @@ status is-login; and pyenv init --path | source
 ```
 Setelah itu restart shell anda. instalasi selesai.
 
+## Cara Menggunakan Pyenv
+Untuk mulai menginstall python sesuai versi yang anda inginkan:
+```bash
+pyenv install x.x.x
+```
+Untuk melihat versi python mana saja yang sudah anda install:
+```bash
+pyenv versions
+```
 ## List versi python
 Untuk melihat versi python secara keseluruhan menggunakan:
 ```bash
@@ -64,3 +73,5 @@ Untuk itu coba list versi python dengan list yang lebih pendek, misalnya versi 3
 ```bash
 pyenv install --list | grep " 3\.[6789]"
 ```
+
+Jika kita mengetikkan `python --version` akan kelihatan versi python yang terinstall
