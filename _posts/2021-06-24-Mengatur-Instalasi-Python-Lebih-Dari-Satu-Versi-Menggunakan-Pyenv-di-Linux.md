@@ -57,10 +57,10 @@ status is-login; and pyenv init --path | source
 ```
 Setelah itu restart shell anda. instalasi selesai.
 
-## Cara Menggunakan Pyenv
+## Instalasi Pyenv
 Untuk mulai menginstall python sesuai versi yang anda inginkan:
 ```bash
-pyenv install x.x.x
+pyenv install -v x.x.x
 ```
 dimana `x.x.x` diganti dengan versi python yang akan diinstall
 
@@ -68,7 +68,7 @@ Untuk melihat versi python mana saja yang sudah anda install:
 ```bash
 pyenv versions
 ```
-## List versi python
+## List versi python di pyenv
 Untuk melihat versi python secara keseluruhan menggunakan:
 ```bash
 pyenv install --list
@@ -77,4 +77,11 @@ Tapi ini akan sangat panjang karena versi python sangat banyak.
 Untuk itu coba list versi python dengan list yang lebih pendek, misalnya versi 3.6.x sampai dengan 3.9.x. Gunakan perintah berikut:
 ```bash
 pyenv install --list | grep " 3\.[6789]"
+```
+## Cara Menggunakan Pyenv, mengganti ke versi python tertentu
+Untuk menggunakan versi python yang anda inginkan, anda haru install versi python tersebut menggunakan `pyenv install x.x.x`. Seandainya anda ingin menggunakan python versi 3.8.10 maka install dengan perintah `pyenv install 3.8.10`.
+
+Setelah itu untuk mengganti python ke versi yang inginkan, dalam hal ini `3.8.10` maka gunakan perintah
+```bash
+pyenv global 3.8.10
 ```
