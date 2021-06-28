@@ -41,3 +41,7 @@ Setelah virtual environment aktif, kita sudah bisa memulai project kita. setelah
 mkdir src
 cd src
 ```
+Kemudian buat project baru dengan mengetikkan perintah
+```bash
+django-admin startproject <nama_project>
+```
