@@ -24,3 +24,11 @@ python -m venv django207-venv-py365
 ```
 Nama virtual environment bisa apa saja. Tapi untuk referensi saya, nama environment saya gunakan `django207-venv-py365` agar mudah diketahui bahwa virtual environment yang saya buat menggunakan versi `django 2.0.7` dan `python 3.6.5`.
 
+Untuk menggunakan virtual environment, kita perlu masuk ke dalam direktori virtual environment, dalam hal ini yang kita buat adalah `django207-venv-py365`, untuk itu ketikkan
+```bash
+cd django207-venv-py365
+```
+Kemudian aktifkan virtual environment dengan mengetikkan
+```bash
+source bin/activate
+```
