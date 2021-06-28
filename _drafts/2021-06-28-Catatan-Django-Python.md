@@ -45,3 +45,33 @@ Kemudian buat project baru dengan mengetikkan perintah
 ```bash
 django-admin startproject <nama_project>
 ```
+Misalnya nama project kita namakan `belajardjango` maka perintahnya adalah
+```bash
+django-admin startproject belajardjango
+```
+Projek inisial Django sudah siap digunakan. Untuk mencoba menjalankan project anda, masuk ke dalan direktori project, kemudian jalankan dengan perintah
+```bash
+python manage.py runserver
+```
+Anda akan melihat tampilan kurang lebih seperti ini:
+```bash
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+June 28, 2021 - 09:18:33
+Django version 2.0.7, using settings 'trydjango.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[28/Jun/2021 09:18:43] "GET / HTTP/1.1" 200 16348
+[28/Jun/2021 09:18:43] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[28/Jun/2021 09:18:43] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[28/Jun/2021 09:18:43] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[28/Jun/2021 09:18:43] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+Not Found: /favicon.ico
+[28/Jun/2021 09:18:43] "GET /favicon.ico HTTP/1.1" 404 1975
+```
+Kemudian anda bisa melihat project ini berjalan dengan mengakses web browser di alamat `http://127.0.0.1:8000/` seperti yang terlihat diatas.
