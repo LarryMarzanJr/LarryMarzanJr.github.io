@@ -75,3 +75,22 @@ Not Found: /favicon.ico
 [28/Jun/2021 09:18:43] "GET /favicon.ico HTTP/1.1" 404 1975
 ```
 Kemudian anda bisa melihat project ini berjalan dengan mengakses web browser di alamat `http://127.0.0.1:8000/` seperti yang terlihat diatas.
+
+## Pengenalan Fitur Dasari di Django Framework
+Setelah `python manage.py runserver` dijalankan, struktur direktori project kita akan seperti ini
+```bash
+trydjango
+├── db.sqlite3
+├── manage.py
+├── README.md
+└── trydjango
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-36.pyc
+    │   ├── settings.cpython-36.pyc
+    │   ├── urls.cpython-36.pyc
+    │   └── wsgi.cpython-36.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
