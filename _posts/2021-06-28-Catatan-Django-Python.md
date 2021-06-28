@@ -76,7 +76,7 @@ Not Found: /favicon.ico
 ```
 Kemudian anda bisa melihat project ini berjalan dengan mengakses web browser di alamat `http://127.0.0.1:8000/` seperti yang terlihat diatas.
 
-## Pengenalan Fitur Dasari di Django Framework
+## Pengenalan Fitur Dasar di Django Framework
 Setelah `python manage.py runserver` dijalankan, struktur direktori project kita akan seperti ini
 ```bash
 trydjango
@@ -94,3 +94,6 @@ trydjango
     ├── urls.py
     └── wsgi.py
 ```
+Mari kita bahas beberapa fitur dasar yang ada didalamnya. Karena kita membuat project dengan nama `trydjango`, maka struktur direktori akan banyak muncul dengan nama direktori ini. Nama project yang anda gunakan bisa saja berbeda, sesuai dengan kebutuhan.
+### Setting project anda (settings.py)
+File ini terletak di `trydjango/trydjango/settings.py`. Fungsinya adalah sebagai setting dasar pada project Django tertentu yang sedang anda kerjakan, dalam hal ini nama project yang sedang kita kerjakan adalah `trydjango`.
