@@ -146,7 +146,7 @@ ALLOWED_HOSTS = []
 ```
 mengijinkan host / PC mana saja yang bisa mengakses aplikasi ini
 
-
+#### Installed Apps
 ```python
 
 # Application definition
@@ -157,14 +157,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-
-    # external apps
-
-    # own app
-    
+    'django.contrib.staticfiles',   
 ]
 ```
+Tempat menampung aplikasi anda. Mulai dari aplikasi bawaan  django, aplikasi eksternal yanga anda tambahkan, maupun aplikasi buatan anda sendiri.
+
 ```python
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
