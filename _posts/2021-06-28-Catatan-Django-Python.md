@@ -114,12 +114,14 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 ```
 Dengan `import os` maka Django mengenali semua jenis Operating System yang anda gunakan baik itu Linux, Windows maupun Mac.
+
 #### BASE_DIR
 ```python
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ```
 Variabel `BASE_DIR` dengan isinya, mengidentifikasi letak dari file `manage.py` namun lebih utama lagi lokasi atau path direktori sebelum masuk ke direktori project kita yang dalam hal ini saya namakan `trydjango`.
+
 #### Secret Key
 ```python
 
@@ -131,16 +133,20 @@ SECRET_KEY = 'disini_secret_key_anda_harus_dirahasiakan_#(l%7_f1=n10c41-kq1x(zp)
 ```
 Setiap project django memiliki `secret key` yang berhubungan dengan keamanan pada aplikasi dan anda harus merahasiakannya. Disarankan untuk membuat sedikit perubahan pada secret key dengan menambahkan beberapa karakter.
 
-### Debuging
+#### Debuging
 ```python
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ```
 Saat masa develop maka value debug kita atur menjadi `True` sehingga jika ada error saat test running, bisa kelihatan apa errornya. Namun ketika suda final & apikasi web kita sudah live dan bisa diakses online oleh siapa saja, maka anda harus merubahnya menjadi `False`.
 
+#### Allowed Hosts
 ```python
 ALLOWED_HOSTS = []
 ```
+mengijinkan host / PC mana saja yang bisa mengakses aplikasi ini
+
+
 ```python
 
 # Application definition
