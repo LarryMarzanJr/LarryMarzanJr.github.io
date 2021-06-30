@@ -131,11 +131,13 @@ SECRET_KEY = 'disini_secret_key_anda_harus_dirahasiakan_#(l%7_f1=n10c41-kq1x(zp)
 ```
 Setiap project django memiliki `secret key` yang berhubungan dengan keamanan pada aplikasi dan anda harus merahasiakannya. Disarankan untuk membuat sedikit perubahan pada secret key dengan menambahkan beberapa karakter.
 
-
+### Debuging
 ```python
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ```
+Saat masa develop maka value debug kita atur menjadi `True` sehingga jika ada error saat test running, bisa kelihatan apa errornya. Namun ketika suda final & apikasi web kita sudah live dan bisa diakses online oleh siapa saja, maka anda harus merubahnya menjadi `False`.
+
 ```python
 ALLOWED_HOSTS = []
 ```
