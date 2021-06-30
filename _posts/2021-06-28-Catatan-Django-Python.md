@@ -97,7 +97,7 @@ trydjango
 Mari kita bahas beberapa fitur dasar yang ada didalamnya. Karena kita membuat project dengan nama `trydjango`, maka struktur direktori akan banyak muncul dengan nama direktori ini. Nama project yang anda gunakan bisa saja berbeda, sesuai dengan kebutuhan.
 ### Setting project anda (settings.py)
 File ini terletak di `trydjango/trydjango/settings.py`. Fungsinya adalah sebagai setting dasar pada project Django tertentu yang sedang anda kerjakan, dalam hal ini nama project yang sedang kita kerjakan adalah `trydjango`.
-
+#### Import OS
 ```python
 """
 Django settings for trydjango project.
@@ -113,10 +113,14 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 ```
+Dengan `import os` maka Django mengenali semua jenis Operating System yang anda gunakan baik itu Linux, Windows maupun Mac.
+#### BASE_DIR
 ```python
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ```
+Variabel `BASE_DIR` dengan isinya, mengidentifikasi letak dari file `manage.py` namun lebih utama lagi lokasi atau path direktori sebelum masuk ke direktori project kita yang dalam hal ini saya namakan `trydjango`.
+
 ```python
 
 # Quick-start development settings - unsuitable for production
