@@ -120,7 +120,7 @@ Dengan `import os` maka Django mengenali semua jenis Operating System yang anda 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ```
 Variabel `BASE_DIR` dengan isinya, mengidentifikasi letak dari file `manage.py` namun lebih utama lagi lokasi atau path direktori sebelum masuk ke direktori project kita yang dalam hal ini saya namakan `trydjango`.
-
+#### Secret Key
 ```python
 
 # Quick-start development settings - unsuitable for production
@@ -129,6 +129,9 @@ Variabel `BASE_DIR` dengan isinya, mengidentifikasi letak dari file `manage.py` 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'disini_secret_key_anda_harus_dirahasiakan_#(l%7_f1=n10c41-kq1x(zp)*b)a5g0h)p+8<'
 ```
+Setiap project django memiliki `secret key` yang berhubungan dengan keamanan pada aplikasi dan anda harus merahasiakannya. Disarankan untuk membuat sedikit perubahan pada secret key dengan menambahkan beberapa karakter.
+
+
 ```python
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
