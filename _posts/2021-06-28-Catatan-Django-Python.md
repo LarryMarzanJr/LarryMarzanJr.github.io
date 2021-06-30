@@ -162,6 +162,7 @@ INSTALLED_APPS = [
 ```
 Tempat menampung aplikasi anda. Mulai dari aplikasi bawaan  django, aplikasi eksternal yanga anda tambahkan, maupun aplikasi buatan anda sendiri.
 
+#### Middleware
 ```python
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -173,6 +174,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 ```
+Berhubungan dengan requests dan fitur keamanan yang sudah terinstall di dalam Django.
+
+
 ```python
 ROOT_URLCONF = 'trydjango.urls'
 ```
