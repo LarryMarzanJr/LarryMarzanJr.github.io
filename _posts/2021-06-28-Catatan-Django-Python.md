@@ -176,10 +176,12 @@ MIDDLEWARE = [
 ```
 Berhubungan dengan requests dan fitur keamanan yang sudah terinstall di dalam Django.
 
-
+#### URL Configuration
 ```python
 ROOT_URLCONF = 'trydjango.urls'
 ```
+Menangani URL pada aplikasi Django.
+
 ```python
 TEMPLATES = [
     {
