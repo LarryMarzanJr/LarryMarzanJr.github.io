@@ -201,7 +201,8 @@ TEMPLATES = [
 ```
 ```python
 WSGI_APPLICATION = 'trydjango.wsgi.application'
-
+```
+```python
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
