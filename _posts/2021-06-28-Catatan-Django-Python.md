@@ -17,11 +17,11 @@ dengan `python 3.6.5` dan `django 2.0.7`.
 
 Untuk membuat virtual environment ketikkan:
 ```bash
-python -m venv <nama_virtual_environment>
+python3 -m venv <nama_virtual_environment>
 ```
 Misalnya nama virtual environmentnya saya namakan `django207-venv-py365`, maka perintah untuk membuat virutal environment menjadi:
 ```bash
-python -m venv django207-venv-py365
+python3 -m venv django207-venv-py365
 ```
 Nama virtual environment bisa apa saja. Tapi untuk referensi saya, nama environment saya gunakan `django207-venv-py365` agar mudah diketahui bahwa virtual environment yang saya buat menggunakan versi `django 2.0.7` dan `python 3.6.5`.
 
