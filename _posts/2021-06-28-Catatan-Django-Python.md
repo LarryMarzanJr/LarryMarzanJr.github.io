@@ -335,18 +335,17 @@ INSTALLED_APPS = [
    'products',
 ]
 ```
-
-# CREATE DATABASE MODEL
-# Create model class for the Application.
-# Edit the models.py inside the Application folder
-# for example myapp>models.py
+#### Membuat Database Model untuk app anda
+kemudian models.py yang ada di direktori Aplikasi, dalam hal ini `trydjango/products/models.py`
+```python
 from django.db import models
 
 # Create your models here.
-
-class Todo(models.Model):
-    content = models.TextField()
-
+class Product(models.Model):
+    title       = models.TextField
+    description = models.TextField
+    price       = models.TextField
+```
 # To create migration type:
 python manage.py makemigrations modelName
 # it will create database migration 0001_initial, 0002_..., and so on.
