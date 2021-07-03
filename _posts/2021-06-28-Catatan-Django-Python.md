@@ -78,6 +78,7 @@ Not Found: /favicon.ico
 [28/Jun/2021 09:18:43] "GET /favicon.ico HTTP/1.1" 404 1975
 ```
 Kemudian anda bisa melihat project ini berjalan dengan mengakses web browser di alamat `http://127.0.0.1:8000/` seperti yang terlihat diatas.
+Dapat kita lihat python sudah memiliki apps admin, auth, contenttypes dan sessions yang terintegrasi database dimana terdapat 14 migration yang belum dijalankan. Sebelum lanjut membuat aplikasi nantinya kita harus jalankan terlebih dahulu `python manage.py migrate` atau jika menggunakan python3 maka `python3 manage.py migrate`.
 
 ## Pengenalan Fitur Dasar di Django Framework
 Setelah `python manage.py runserver` dijalankan, struktur direktori project kita akan seperti ini
@@ -271,3 +272,39 @@ Internationalization seringkali disebut dengan singkatan `i18n`, artinya bahwa t
 STATIC_URL = '/static/'
 ```
 Tempat dimana django menangani static files seperti CSS, Javascript dan Gambar.
+
+## Membuat Aplikasi Pertama Kita
+### Aplikasi Bawaan Django
+Aplikasi kita atau dikenal dengan _apps_, merupakan komponen utama yang menjadi satu kesatuan dalam project yang kita kerjakan. Jika kita kembali pada `settings.py` di bagian *INSTALLED_APPS*, dapat kita lihat sudah terinstal beberapa apps bawaan django. Disini juga dapat kita daftarkan _aplikasi tambahan_ termasuk _aplikasi buatan sendiri_.
+```python
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    # third party / aplikasi tambahan
+
+    # own app / aplikasi buatan sendiri
+    
+]
+```
+#### app admin
+Apps bawaan bernama admin, yaitu `django.contrib.admin` dibuat untuk mengelola user menggunakan database. untuk masuk ke aplikasi tersebut kita harus pastikan server lokal telah berjalan dan dengan mengetikkan <http://127.0.0.1:8000/admin> maka aplikasi admin bisa dibuka. Anda akan diminta memasukkan user ID. Bagaimana kita masuk jika belum ada user ID pada database? Disini app selanjutnya berperan dalam membuat user, yaitu _auth_.
+#### app auth
+Apps bawaan bernama auth, yaitu `django.contrib.auth` berfungsi membuat user ID pertama di aplikasi dengan level super user. Untuk menjalankannya kita hanya perlu mengetikkan
+```bash
+python3 manage.py createsuperuser
+```
+Anda akan diminta mengisi profil user seperti pada contoh dibawah:
+```bash
+Username (leave blank to use 'joenmarz'): jun
+Email address: 
+Password: 
+Password (again): 
+Superuser created successfully.
+```
