@@ -243,8 +243,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ```
 Ini untuk memvalidasi apakah password yang kita gunakan sudah sesuai standard yang digunakan saat ini oleh Django.
 
+#### Internationalization
 ```python
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -258,8 +258,9 @@ USE_L10N = True
 
 USE_TZ = True
 ```
-```python
+Internationalization seringkali disebut dengan singkatan `i18n`, artinya bahwa terdapat 18 huruf diantara huruf pertama dan terakhir. Internationalization merupakan proses atau prosedur dalam perancangan suatu aplikasi, sehingga memungkinkan penyesuaian atau adaptasi terhadap berbagai bahasa, negara, format penulisan angka maupun pengaturan-pengaturan lainnya yang bersifat spesifik dengan mudah. Dengan kata lain, internationalization merupakan prosedur generalisasi suatu aplikasi.
 
+```python
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
