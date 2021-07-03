@@ -315,7 +315,7 @@ python manage.py startapp <AppName>
 ```
 Misalnya nama app kita adalah _products_ maka
 ```bash
-python manage.py startapp <AppName>
+python manage.py startapp products
 ```
 Setelah itu daftarkan apps products ke _INSTALLED_APPS_ pada file `settings.py`
 ```python
