@@ -182,6 +182,7 @@ ROOT_URLCONF = 'trydjango.urls'
 ```
 Menangani URL pada aplikasi Django.
 
+#### Templates
 ```python
 TEMPLATES = [
     {
@@ -199,9 +200,12 @@ TEMPLATES = [
     },
 ]
 ```
+Bagian Templates dimana Django melakukan render terhadap template HTML.
+
 ```python
 WSGI_APPLICATION = 'trydjango.wsgi.application'
 ```
+
 ```python
 
 # Database
