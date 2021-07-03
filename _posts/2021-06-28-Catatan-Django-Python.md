@@ -260,9 +260,11 @@ USE_TZ = True
 ```
 Internationalization seringkali disebut dengan singkatan `i18n`, artinya bahwa terdapat 18 huruf diantara huruf pertama dan terakhir. Internationalization merupakan proses atau prosedur dalam perancangan suatu aplikasi, sehingga memungkinkan penyesuaian atau adaptasi terhadap berbagai bahasa, negara, format penulisan angka maupun pengaturan-pengaturan lainnya yang bersifat spesifik dengan mudah. Dengan kata lain, internationalization merupakan prosedur generalisasi suatu aplikasi.
 
+#### Static files
 ```python
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
 ```
+Tempat dimana django menangani static files seperti CSS, Javascript dan Gambar.
