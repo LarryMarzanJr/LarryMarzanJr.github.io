@@ -15,6 +15,8 @@ Sebaiknya menginstall multi-versi dari python menggunakan pyenv agar versi pytho
 Buat virtual environment khusus untuk project django 
 dengan `python 3.6.5` dan `django 2.0.7`.
 
+Untuk menginstall `python 3.6.5` pada Linux dan Mac, jangan menimpa versi python pada system. Kita bisa menginstall multi-versi python dengan menggunakan tools manajemen bernama pyenv. Disarankan melihat dokumentasi [Cara Menginstall pyenv menggunakan github](https://github.com/pyenv/pyenv#basic-github-checkout){:target="_blank"}.
+
 Untuk membuat virtual environment ketikkan:
 ```bash
 python3 -m venv <nama_virtual_environment>
