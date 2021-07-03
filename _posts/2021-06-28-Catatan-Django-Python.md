@@ -308,3 +308,57 @@ Password:
 Password (again): 
 Superuser created successfully.
 ```
+### Aplikasi Buatan Anda Sendiri
+Untuk membuat app baru di dalam project anda cukup mengetikkan
+```bash
+python manage.py startapp <AppName>
+```
+Misalnya nama app kita adalah _products_ maka
+```bash
+python manage.py startapp <AppName>
+```
+Setelah itu daftarkan apps products ke _INSTALLED_APPS_ pada file `settings.py`
+```python
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    # third party / aplikasi tambahan
+
+    # own app / aplikasi buatan sendiri
+   'products',
+]
+```
+
+# CREATE DATABASE MODEL
+# Create model class for the Application.
+# Edit the models.py inside the Application folder
+# for example myapp>models.py
+from django.db import models
+
+# Create your models here.
+
+class Todo(models.Model):
+    content = models.TextField()
+
+# To create migration type:
+python manage.py makemigrations modelName
+# it will create database migration 0001_initial, 0002_..., and so on.
+
+# To view the sql schema, for example 0001_initial type:
+python manage.py sqlmigrate 0001
+
+# To run the migration type:
+python manage.py migrate
+
+
+# CREATE URL PATH FOR AN APP
+# Create urls.py inside the specific app folder
+# Import paths from django.urls
+from django.urls import paths
