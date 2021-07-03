@@ -219,9 +219,10 @@ DATABASES = {
     }
 }
 ```
-Disini tempat koneksi database. Secara default telah tersambung pada sqlite3 `db.sqlite3`. Kita bisa juga menggunakan database lain seperti MySql, PostgreSQL, dan lain sebagainya.
-```python
+Disini tempat koneksi database. Secara default telah tersambung pada sqlite3 dalam project ini yaitu `trydjango/trydjango/settings.py/db.sqlite3`. Kita bisa juga menggunakan database lain seperti MySql, PostgreSQL, dan lain sebagainya.
 
+#### Password Validator
+```python
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -240,6 +241,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 ```
+Ini untuk memvalidasi apakah password yang kita gunakan sudah sesuai standard yang digunakan saat ini oleh Django.
+
 ```python
 
 # Internationalization
