@@ -202,12 +202,13 @@ TEMPLATES = [
 ```
 Bagian Templates dimana Django melakukan render terhadap template HTML.
 
+#### WSGI Application
 ```python
 WSGI_APPLICATION = 'trydjango.wsgi.application'
 ```
 
+#### Databases
 ```python
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -218,6 +219,7 @@ DATABASES = {
     }
 }
 ```
+Disini tempat koneksi database. Secara default telah tersambung pada sqlite3 `db.sqlite3`. Kita bisa juga menggunakan database lain seperti MySql, PostgreSQL, dan lain sebagainya.
 ```python
 
 # Password validation
