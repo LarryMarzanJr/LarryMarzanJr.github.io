@@ -14,9 +14,9 @@ title: 'Reset Repositori Git Lokal Mengikuti Repositori Remote'
 <!-- https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head -->
 
 Katakanlah anda "blunder" pada mengedit repositori lokal dan ingin meresetnya sesuai Repositori yang tersimpan terakhir di Web anda. Lakukan perintah ini:
-```
+```bash
 git fetch origin
-git reset --hard origin/master
+git reset --hard origin/main
 ```
 
 Sebaliknya, katakanlah repositori lokal saat ini ingin anda simpan sementara, atau belum live, maka simpanlah di branch tersendiri sebagai backup. Lakukan perintah ini:
