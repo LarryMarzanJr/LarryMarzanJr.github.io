@@ -361,5 +361,29 @@ Operations to perform:
 Running migrations:
   Applying products.0001_initial... OK
 ```
-Saat pertama kali running migrate, tidak hanya aplikasi anda saja yang dieksekusi, termasuk aplikasi bawaan django yaitu admin, auth, dll. Dan itu normal. Selanjutnya jika anda melakukan migrate untuk model dan aplikasi baru maupun yang diedit, maka yang muncul hanya model yang baru dibuat.
+Saat pertama kali running migrate, tidak hanya aplikasi anda saja yang dieksekusi, termasuk aplikasi bawaan django yaitu admin, auth, dll. Dan itu normal. Selanjutnya jika anda melakukan migrate untuk model dan aplikasi baru maupun yang diedit, maka yang muncul hanya model yang baru dibuat. Jadi ingat kedua perintah ini setelah mengedit model, `python manage.py makemigrations` lalu `python manage.py migrate`. Kedua perintah ini akan sering anda gunakan.
 
+Untuk mendaftarkan aplikasi ini pada menu admin, buka file `admin.py` pada folder aplikasi anda. Dalam hal ini `trydjango/products/admin.py`
+```python
+from django.contrib import admin
+
+# Register your models here.
+
+```
+lalu tambahkan model Product di dalamnya
+```python
+from .models import Product
+```
+serta register
+```python
+admin.site.register(Product)
+```
+pada _admin.py_ akan menjadi seperti ini
+```python
+from django.contrib import admin
+
+# Register your models here.
+from .models import Product
+
+admin.site.register(Product)
+```
