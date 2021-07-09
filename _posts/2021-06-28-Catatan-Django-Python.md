@@ -389,7 +389,7 @@ admin.site.register(Product)
 ```
 
 #### Cara Mengubah Database Model untuk app anda
-Jika kita ingin menambahkan field pada model database, ataupun untuk mengubah tipe field tersebut bisa saja dilakukan. Untuk referensi field beserta atributnya dapat melihat pada [dokumentasi django](https://docs.djangoproject.com/en/2.1/ref/models/fields/){:target="_blank"}
+Jika kita ingin menambahkan field pada model database, ataupun untuk mengubah tipe field tersebut bisa saja dilakukan. Untuk referensi field beserta atributnya dapat melihat dokumentasi django tentang [field types](https://docs.djangoproject.com/en/2.1/ref/models/fields/){:target="_blank"}
 Model awal:
 ```python
 from django.db import models
