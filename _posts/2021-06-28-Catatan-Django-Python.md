@@ -461,3 +461,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 (InteractiveConsole)
 >>> 
 ```
+Kita bisa menggunakan perintah bawaan django karena shell ini diperuntukan buat project yang sedang kita kerjakan. Untuk menambahkan data dilakukan perintah berikut:
+```bash
+>>> from products.models import Product
+>>> Product.objects.create(title='Produk Lagi', price=355.50, summary='Produk hebat kembali beredar', active=True)
+<Product: Product object (3)>
+>>> 
+```
