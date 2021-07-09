@@ -409,6 +409,7 @@ class Product(models.Model):
     title       = models.CharField(max_length=120) # max_length=required
     description = models.TextField(blank=True, null=True) 
     price       = models.DecimalField(decimal_places=2, max_digits=1000)
+    summary     = models.TextField(default='produk baru')
     active      = models.BooleanField() # tambahan field
 ```
 Setelah itu jalankan kembali kedua perintah ini setelah mengedit model, `python manage.py makemigrations` lalu `python manage.py migrate`.
@@ -428,18 +429,8 @@ Type 'exit' to exit this prompt
 >>> True
 ```
 Dalam hal ini karena field active saya buat sebagai BooleanField maka nilainya pasti 1/0 atau True/False. Maka sebagai default telah saya isi dengan nilai `True`.
-Begitu juga dengan field `summary`:
-```bash
-You are trying to add a non-nullable field 'summary' to product without a default; we can\'t do that (the database needs something to populate existing rows).
-Please select a fix:
- 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
- 2) Quit, and let me add a default in models.py
-Select an option: 1
-Please enter the default value now, as valid Python
-The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
-Type 'exit' to exit this prompt
->>> Produk baru
-```
+Untuk field `summary` tidak ditanya lagi oleh Django karena kita sudah menentukan atribut default: `default='produk baru'`
+
 Maka proses makemigrations akan berjalan:
 ```bash
 Migrations for 'products':
