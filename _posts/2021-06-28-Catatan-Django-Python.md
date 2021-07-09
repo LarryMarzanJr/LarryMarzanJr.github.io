@@ -450,3 +450,14 @@ Running migrations:
   Applying products.0003_auto_20210709_0937... OK
 ```
 Sesudah proses ini, model anda telah siap dan database telah berubah sesuai kebutuhan.
+
+#### Mengolah data lewat Shell
+Pada masa development apliksi, kita bisa juga mengolah database, menambahkan maupun menghapus data dengan menggunakan Shell, yang khusus didesign django. Untuk membuka shell kita perlu mengetikkan perintah `python manage.py shell`
+```bash
+❯ python manage.py shell
+Python 3.6.5 (default, Jun 28 2021, 16:08:02) 
+[GCC 10.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> 
+```
