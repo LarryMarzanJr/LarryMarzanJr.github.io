@@ -440,7 +440,7 @@ The datetime and django.utils.timezone modules are available, so you can do e.g.
 Type 'exit' to exit this prompt
 >>> Produk baru
 ```
-Maka proses merubah model akan berjalan:
+Maka proses makemigrations akan berjalan:
 ```bash
 Migrations for 'products':
   products/migrations/0003_auto_20210709_0937.py
@@ -450,4 +450,12 @@ Migrations for 'products':
     - Alter field price on product
     - Alter field title on product
 ```
-
+Sampai diatas model sudah diubah dan siap dimigrasi. Lanjutkan dengan proses migrate
+```bash
+❯ python manage.py migrate       
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, products, sessions
+Running migrations:
+  Applying products.0003_auto_20210709_0937... OK
+```
+Sesudah proses ini, model anda telah siap dan database telah berubah sesuai kebutuhan.
