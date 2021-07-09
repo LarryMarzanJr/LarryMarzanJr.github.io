@@ -346,18 +346,20 @@ class Product(models.Model):
     description = models.TextField
     price       = models.TextField
 ```
-# To create migration type:
-python manage.py makemigrations modelName
-# it will create database migration 0001_initial, 0002_..., and so on.
+Buat migrasi untuk model ini dengan mengetikkan `python manage.py makemigrations`
+```bash
+❯ python manage.py makemigrations
+Migrations for 'products':
+  products/migrations/0001_initial.py
+    - Create model Product
+```
+Kemudian lanjutkan dengan migrasi dengan mengetikkan `python manage.py migrate`
+```bash
+❯ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, products, sessions
+Running migrations:
+  Applying products.0001_initial... OK
+```
+Saat pertama kali running migrate, tidak hanya aplikasi anda saja yang dieksekusi, termasuk aplikasi bawaan django yaitu admin, auth, dll. Dan itu normal. Selanjutnya jika anda melakukan migrate untuk model dan aplikasi baru maupun yang diedit, maka yang muncul hanya model yang baru dibuat.
 
-# To view the sql schema, for example 0001_initial type:
-python manage.py sqlmigrate 0001
-
-# To run the migration type:
-python manage.py migrate
-
-
-# CREATE URL PATH FOR AN APP
-# Create urls.py inside the specific app folder
-# Import paths from django.urls
-from django.urls import paths
