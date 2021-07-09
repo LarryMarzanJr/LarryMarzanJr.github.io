@@ -48,9 +48,9 @@ Kemudian buat project baru dengan mengetikkan perintah
 ```bash
 django-admin startproject <nama_project>
 ```
-Misalnya nama project kita namakan `belajardjango` maka perintahnya adalah
+Misalnya nama project kita namakan `trydjango` maka perintahnya adalah
 ```bash
-django-admin startproject belajardjango
+django-admin startproject trydjango
 ```
 Projek inisial Django sudah siap digunakan. Untuk mencoba menjalankan project anda, masuk ke dalan direktori project, kemudian jalankan dengan perintah
 ```bash
@@ -388,7 +388,7 @@ from .models import Product
 admin.site.register(Product)
 ```
 
-#### Cara Mengubah Database Model untuk app anda
+### Cara Mengubah Database Model untuk app anda
 Jika kita ingin menambahkan field pada model database, ataupun untuk mengubah tipe field tersebut bisa saja dilakukan. Untuk referensi field beserta atributnya dapat melihat dokumentasi django tentang [field types](https://docs.djangoproject.com/en/2.1/ref/models/fields/){:target="_blank"}
 Model awal:
 ```python
@@ -451,7 +451,7 @@ Running migrations:
 ```
 Sesudah proses ini, model anda telah siap dan database telah berubah sesuai kebutuhan.
 
-#### Mengolah data lewat Shell
+### Mengolah data lewat Shell
 Pada masa development apliksi, kita bisa juga mengolah database, menambahkan maupun menghapus data dengan menggunakan Shell, yang khusus didesign django. Untuk membuka shell kita perlu mengetikkan perintah `python manage.py shell`
 ```bash
 ❯ python manage.py shell
