@@ -632,3 +632,14 @@ def home_view(request, *args, **kwargs):
 ```
 Kita membutuhkan template html yang dapat kita render dari views. Hal ini menjadi sangat efisien dimana kita tidak perlu mengetikkan kode html berulang-ulang untuk template seperti navbar, sidebar menu dan sejenisnya. Ini hanyalah beberapa contoh. Mari kita pelajari tentang Django Template.
 
+Jadi untuk `return HttpResponse(arguments)` kita ganti menjadi
+```python
+from django.http import HttpResponse
+from django.shortcuts import render
+
+# Create your views here.
+def home_view(request, *args, **kwargs):
+    print(request.user)
+    # return HttpResponse("<h1>Halo Semua..!</h1>")
+    return render(request, "home.html", {}) # return render(request, "page.html", context)
+```
