@@ -36,8 +36,6 @@ Kemudian aktifkan virtual environment dengan mengetikkan
 ```bash
 source bin/activate
 ```
-Virtual Environment Django Framework siap digunakan.
-
 ### Menginstall django di dalam Virtual Environment
 Setelah virtual environment diaktifkan, disinilah kita mulai menginstall django
 ```bash
@@ -53,6 +51,8 @@ dari sini akan terlihat django sudah terinstall:
 Django==2.1.15
 pytz==2021.1
 ```
+Virtual Environment Django Framework siap digunakan.
+
 ## Membuat Project Django
 Setelah virtual environment aktif, kita sudah bisa memulai project kita. setelah masuk ke dalam direktori environment `venv-dj2115-py365`, kita buatkan 1 direktori baru untuk menampung project kita. Dalam hal ini saya menamainya `src`, kemudian kita masuk ke dalam direktori tersebut:
 ```bash
