@@ -683,7 +683,8 @@ TEMPLATES = [
     },
 ]
 ```
-Dimana penjelasannya sebagai berikut:   
+Dimana penjelasannya sebagai berikut:
+
 `os.path` - untuk memanggil path projek yang kita kerjakan   
 `.join` - untuk menghubungkan   
 `BASE_DIR` - adalah direktori projek yang didefinisikan pada _settings.py_   
