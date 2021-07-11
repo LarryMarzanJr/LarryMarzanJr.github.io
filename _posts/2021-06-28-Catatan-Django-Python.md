@@ -11,7 +11,8 @@ tags: [Django Framework]
 [Pengenalan Fitur Dasar di Django Framework](#fitur_dasar)  
 [Setting project anda (settings.py)](#pengaturan)  
 [Membuat Aplikasi Pertama Kita](#app_pertama)  
-[Mengganti Default Homepage menjadi Homepage Buatan Sendiri](#default_homepage)
+[Mengganti Default Homepage menjadi Homepage Buatan Sendiri](#default_homepage)  
+[Django Template](#django_template)  
 
 <a name="persiapan"/>
 
@@ -618,3 +619,8 @@ joenmarz
 [11/Jul/2021 08:30:23] "GET / HTTP/1.1" 200 19
 ```
 Bisa terlihat user ID saya `joenmarz` sedang aktif saat ini. Dan ini adalah salah satu contoh menangani views dengan benar.
+
+<a name="django_template"/>
+
+## Django Template
+`coming soon...`
