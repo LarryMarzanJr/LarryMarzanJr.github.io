@@ -623,4 +623,12 @@ Bisa terlihat user ID saya `joenmarz` sedang aktif saat ini. Dan ini adalah sala
 <a name="django_template"/>
 
 ## Django Template
-`coming soon...`
+Tentunya kita tidak akan melakukan render string atas kode html yang kita buat seperti contoh dibawah:
+```python
+...
+def home_view(request, *args, **kwargs):
+    print(request.user)
+    return HttpResponse("<h1>Halo Semua..!</h1> <p>dan sebagainya...</p>") # tidak direkomendasikan :)
+```
+Kita membutuhkan template html yang dapat kita render dari views. Hal ini menjadi sangat efisien dimana kita tidak perlu mengetikkan kode html berulang-ulang untuk template seperti navbar, sidebar menu dan sejenisnya. Ini hanyalah beberapa contoh. Mari kita pelajari tentang Django Template.
+
