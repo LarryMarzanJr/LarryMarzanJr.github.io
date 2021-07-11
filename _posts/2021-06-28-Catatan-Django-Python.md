@@ -575,3 +575,46 @@ urlpatterns = [
 ```
 Sehingga jika ditesting view ini pada `http://127.0.0.1:8000/` maka url sudah bisa dibuka.
 
+### Menambahkan Request pada View
+Kita bisa menambahkan _request_ pada view. Salah satu fungsi dari _request_ adalah kita bisa mengetahui user mana yang login.
+
+Tanpa request view kita terlihat seperti ini:
+```python
+from django.http import HttpResponse
+from django.shortcuts import render
+
+# Create your views here.
+def home_view(*args, **kwargs):
+    return HttpResponse("<h1>Halo Semua..!</h1>")
+```
+Dan pada _runserver_ tampilannya hanya seperti ini:
+```bash
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 11, 2021 - 08:25:35
+Django version 2.1.15, using settings 'trydjango.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+Dengan menambahkan request, kita bisa mengetahui user id mana yang sedang login. Contohnya menambahkan kode `print(request.user)` pada view.
+```python
+from django.http import HttpResponse
+from django.shortcuts import render
+
+# Create your views here.
+def home_view(request, *args, **kwargs): # request ditambahkan
+    print(request.user) # mengetahui user id yang sedang login
+    return HttpResponse("<h1>Halo Semua..!</h1>")
+```
+Dan ketika kita _runserver_ maka tampilannya akan seperti ini:
+```bash
+System check identified no issues (0 silenced).
+July 11, 2021 - 08:30:10
+Django version 2.1.15, using settings 'trydjango.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+joenmarz
+[11/Jul/2021 08:30:23] "GET / HTTP/1.1" 200 19
+```
+Bisa terlihat user ID saya `joenmarz` sedang aktif saat ini. Dan ini adalah salah satu contoh menangani views dengan benar.
