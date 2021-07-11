@@ -564,13 +564,14 @@ urlpatterns = [
 ```
 untuk menambahkan url `home_view` yang kita buat tadi, maka pada `urls.py` kita tambahkan:
 ```python
-from pages.views import home_view    # import view app pages di sini
+from pages.views import home_view    # import view app pages di sini. Jika lebih dari satu view maka pisahkan dengan koma.
 from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('', home_view, name='home'),    # tambahka url pattern di sini
+    path('', home_view, name='home'),    # tambahkan url pattern di sini
     path('admin/', admin.site.urls),
 ]
 ```
 Sehingga jika ditesting view ini pada `http://127.0.0.1:8000/` maka url sudah bisa dibuka.
+
