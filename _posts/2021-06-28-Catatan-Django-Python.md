@@ -4,11 +4,23 @@ title:  "Cara Mudah Menggunakan Django Framework"
 date:   2021-06-28 16:38:00 +0800
 tags: [Django Framework]
 ---
+## Daftar Isi  
+[Persiapan Awal](#persiapan)  
+[Virtual Environment](#venv)  
+[Membuat Project Django](#membuat_project_django)
+[Pengenalan Fitur Dasar di Django Framework](#fitur_dasar)
+[Setting project anda (settings.py)](#pengaturan)
+[Membuat Aplikasi Pertama Kita](#app_pertama)
+
+
+<a name="persiapan"/>
 
 ## Persiapan awal
 Tutorial ini cocok diikuti menggunakan `Python 3.6.5` dan `django 2.1.15`.
 
 Sebaiknya menginstall multi-versi dari python menggunakan pyenv agar versi python yang terinstall di system tidak akan terganggu. Lihat artikel Mengatur Instalasi Python Lebih Dari Satu Versi Menggunakan Pyenv di Linux untuk informasi lebih lanjut.
+
+<a name="venv"/>
 
 ## Virtual Environment
 ### Membuat Virtual environment
@@ -53,6 +65,8 @@ pytz==2021.1
 ```
 Virtual Environment Django Framework siap digunakan.
 
+<a name="membuat_project_django"/>
+
 ## Membuat Project Django
 Setelah virtual environment aktif, kita sudah bisa memulai project kita. setelah masuk ke dalam direktori environment `venv-dj2115-py365`, kita buatkan 1 direktori baru untuk menampung project kita. Dalam hal ini saya menamainya `src`, kemudian kita masuk ke dalam direktori tersebut:
 ```bash
@@ -95,6 +109,8 @@ Not Found: /favicon.ico
 Kemudian anda bisa melihat project ini berjalan dengan mengakses web browser di alamat `http://127.0.0.1:8000/` seperti yang terlihat diatas.
 Dapat kita lihat python sudah memiliki apps admin, auth, contenttypes dan sessions yang terintegrasi database dimana terdapat 14 migration yang belum dijalankan. Sebelum lanjut membuat aplikasi nantinya kita harus jalankan terlebih dahulu `python manage.py migrate` atau jika menggunakan python3 maka `python3 manage.py migrate`.
 
+<a name="fitur_dasar"/>
+
 ## Pengenalan Fitur Dasar di Django Framework
 Setelah `python manage.py runserver` dijalankan, struktur direktori project kita akan seperti ini
 ```bash
@@ -114,6 +130,9 @@ trydjango
     └── wsgi.py
 ```
 Mari kita bahas beberapa fitur dasar yang ada didalamnya. Karena kita membuat project dengan nama `trydjango`, maka struktur direktori akan banyak muncul dengan nama direktori ini. Nama project yang anda gunakan bisa saja berbeda, sesuai dengan kebutuhan.
+
+<a name="pengaturan"/>
+
 ## Setting project anda (settings.py)
 File ini terletak di `trydjango/trydjango/settings.py`. Fungsinya adalah sebagai setting dasar pada project Django tertentu yang sedang anda kerjakan, dalam hal ini nama project yang sedang kita kerjakan adalah `trydjango`.
 #### Import OS
@@ -287,6 +306,8 @@ Internationalization seringkali disebut dengan singkatan `i18n`, artinya bahwa t
 STATIC_URL = '/static/'
 ```
 Tempat dimana django menangani static files seperti CSS, Javascript dan Gambar.
+
+<a name="app_pertama"/>
 
 ## Membuat Aplikasi Pertama Kita
 ### Aplikasi Bawaan Django
