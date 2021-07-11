@@ -630,6 +630,7 @@ def home_view(request, *args, **kwargs):
     print(request.user)
     return HttpResponse("<h1>Halo Semua..!</h1> <p>dan sebagainya...</p>") # tidak direkomendasikan :)
 ```
+### Melakukan render template html lewat view
 Kita membutuhkan template html yang dapat kita render dari views. Hal ini menjadi sangat efisien dimana kita tidak perlu mengetikkan kode html berulang-ulang untuk template seperti navbar, sidebar menu dan sejenisnya. Ini hanyalah beberapa contoh. Mari kita pelajari tentang Django Template.
 
 Jadi untuk `return HttpResponse(arguments)` kita ganti menjadi
@@ -643,4 +644,49 @@ def home_view(request, *args, **kwargs):
     # return HttpResponse("<h1>Halo Semua..!</h1>")
     return render(request, "home.html", {}) # return render(request, "page.html", context)
 ```
-Jika kita jalankan tentunya akan error, karena file `home.html` belum kita buat. Untuk itu mari kita buat folder yang bisa kita namakan apa saja, dalam hal ini saya namakan `templates` yang kita buat di dalam folder `src`, menjadi `trydjango/src/templates`.
+### Membuat Folder khusus penampung Template html
+Jika kita jalankan tentunya akan error, karena file `home.html` belum kita buat. Untuk itu mari kita buat folder yang bisa kita namakan apa saja, dalam hal ini saya namakan `templates` yang kita buat di dalam folder `src`, menjadi `trydjango-dj2115-py365/src/trydjango/templates`.
+```
+└── trydjango-dj2115-py365
+    └── src
+        └── trydjango
+            ├── pages
+            ├── products
+            ├── templates
+            └── trydjango
+```
+Perhatikan dimana folder `templates` berada sejajar dengan folder apps seperti `pages`,`products` dan folder setting yaitu `trydjango`.
+
+Dari dalam folder templates ini kita mulai membuat file template html seperti `home.html`, `contacts.html`, `about.html` dan masih banyak lagi tergantung kebutuhan anda. Dalam hal ini kita coba membuat template html sederhana khusus untuk view *home_view* yang telah kita buat.
+```html
+<h1>Home Page</h1>
+<p>Ini adalah template home page</p>
+```
+Jika kita coba runserver dan buka link ini, tentunya belum akan jalan karena kita belum mendaftarkan path template pada `settings.py`.
+
+### Menambahkan Path folder template di settings.py
+Untuk menambahkan folder template kita buka file `settings.py` dan edit di bagian TEMPLATES, pada keyword DIRS
+```python
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, "templates")], # Tambahkan path folder template di sini
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+```
+Dimana penjelasannya sebagai berikut
+`os.path` - untuk memanggil path projek yang kita kerjakan   
+`.join` - untuk menghubungkan   
+`BASE_DIR` - adalah direktori projek yang didefinisikan pada _settings.py_   
+`templates` - adalah nama folder yang kita buat untuk menampung template html
+
+Jika kita coba runserver kembali maka view *home_view* tentunya sudah bisa dibuka.
