@@ -7,10 +7,10 @@ tags: [Django Framework]
 ## Daftar Isi  
 [Persiapan Awal](#persiapan)  
 [Virtual Environment](#venv)  
-[Membuat Project Django](#membuat_project_django)
-[Pengenalan Fitur Dasar di Django Framework](#fitur_dasar)
-[Setting project anda (settings.py)](#pengaturan)
-[Membuat Aplikasi Pertama Kita](#app_pertama)
+[Membuat Project Django](#membuat_project_django)  
+[Pengenalan Fitur Dasar di Django Framework](#fitur_dasar)  
+[Setting project anda (settings.py)](#pengaturan)  
+[Membuat Aplikasi Pertama Kita](#app_pertama)  
 
 
 <a name="persiapan"/>
