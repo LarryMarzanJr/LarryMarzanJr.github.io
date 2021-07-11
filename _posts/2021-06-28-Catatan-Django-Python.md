@@ -11,7 +11,7 @@ tags: [Django Framework]
 [Pengenalan Fitur Dasar di Django Framework](#fitur_dasar)  
 [Setting project anda (settings.py)](#pengaturan)  
 [Membuat Aplikasi Pertama Kita](#app_pertama)  
-
+[Mengganti Default Homepage menjadi Homepage Buatan Sendiri](#default_homepage)
 
 <a name="persiapan"/>
 
@@ -504,3 +504,34 @@ Kita bisa menggunakan perintah bawaan django karena shell ini diperuntukan buat 
 <Product: Product object (3)>
 >>> 
 ```
+
+<a name="default_homepage"/>
+
+## Mengganti Default Homepage menjadi Homepage Buatan Sendiri
+### Membuat View
+Pertama-tama kita buat satu app yang bisa kita namakan misalnya `pages`. Untuk cara membuat app dapat melihat referensi topik [Membuat Aplikasi Pertama Kita](#app_pertama).
+
+Untuk membuat view pada app yang kita buat, maka masuk di `pages/views.py`
+```python
+from django.shortcuts import render
+
+# Create your views here.
+```
+Kita definisikan fungsi `home_view`
+```python
+from django.shortcuts import render
+
+# Create your views here.
+def home_view():
+    return "<h1>Halo Semua..!</h1>"
+```
+Jika diperhatikan return hanya memberikan string dalam bentuk html, namun itu tidak langsung bisa berfungsi sebagai view html. Agar html bisa terbaca, kita perlu mengimpor fungsi http bawaan django `from django.http import HttpResponse` kemudian menggunakan fungsi tersebut pada string tersebut. Kita juga perlu menambahkan `*args` dan `**kwargs` yang fungsinya untuk membaca _argumen tanpa keyword (*args)_ dan _argumen dengan keyword (**kwargs)_
+```python
+from django.http import HttpResponse # fungsi HttpResponse ditambahkan
+from django.shortcuts import render
+
+# Create your views here.
+def home_view(*args, **kwargs): # *args dan **kwargs ditambahkan
+    return HttpResponse("<h1>Halo Semua..!</h1>") # menggunakan fungsi HttpResponse pada string
+```
+
