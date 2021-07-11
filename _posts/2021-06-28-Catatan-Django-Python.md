@@ -34,16 +34,16 @@ Untuk membuat virtual environment ketikkan:
 ```bash
 python3 -m venv <nama_virtual_environment>
 ```
-Misalnya nama virtual environmentnya saya namakan `venv-dj2115-py365`, maka perintah untuk membuat virutal environment menjadi:
+Misalnya nama virtual environmentnya saya namakan `trydjango-dj2115-py365`, maka perintah untuk membuat virutal environment menjadi:
 ```bash
-python3 -m venv venv-dj2115-py365
+python3 -m venv trydjango-dj2115-py365
 ```
-Nama virtual environment bisa apa saja. Tapi untuk referensi saya, nama environment saya gunakan `venv-dj2115-py365` agar mudah diketahui bahwa virtual environment yang saya buat menggunakan versi `django 2.1.15` dan `python 3.6.5`.
+Nama virtual environment bisa apa saja. Tapi untuk referensi saya, nama environment saya gunakan `trydjango-dj2115-py365` agar mudah diketahui bahwa virtual environment yang saya buat adalah untuk projek bernama `trydjango` menggunakan versi `django 2.1.15` dan `python 3.6.5`.
 
 ### Mengaktifkan Virtual Environment
-Untuk menggunakan virtual environment, kita perlu masuk ke dalam direktori virtual environment, dalam hal ini yang kita buat adalah `venv-dj2115-py365`, untuk itu ketikkan
+Untuk menggunakan virtual environment, kita perlu masuk ke dalam direktori virtual environment, dalam hal ini yang kita buat adalah `trydjango-dj2115-py365`, untuk itu ketikkan
 ```bash
-cd venv-dj2115-py365
+cd trydjango-dj2115-py365
 ```
 Kemudian aktifkan virtual environment dengan mengetikkan
 ```bash
@@ -69,7 +69,7 @@ Virtual Environment Django Framework siap digunakan.
 <a name="membuat_project_django"/>
 
 ## Membuat Project Django
-Setelah virtual environment aktif, kita sudah bisa memulai project kita. setelah masuk ke dalam direktori environment `venv-dj2115-py365`, kita buatkan 1 direktori baru untuk menampung project kita. Dalam hal ini saya menamainya `src`, kemudian kita masuk ke dalam direktori tersebut:
+Setelah virtual environment aktif, kita sudah bisa memulai project kita. setelah masuk ke dalam direktori environment `trydjango-dj2115-py365`, kita buatkan 1 direktori baru untuk menampung project kita. Dalam hal ini saya menamainya `src`, kemudian kita masuk ke dalam direktori tersebut:
 ```bash
 mkdir src
 cd src
@@ -643,3 +643,4 @@ def home_view(request, *args, **kwargs):
     # return HttpResponse("<h1>Halo Semua..!</h1>")
     return render(request, "home.html", {}) # return render(request, "page.html", context)
 ```
+Jika kita jalankan tentunya akan error, karena file `home.html` belum kita buat. Untuk itu mari kita buat folder yang bisa kita namakan apa saja, dalam hal ini saya namakan `templates` yang kita buat di dalam folder `src`, menjadi `trydjango/src/templates`.
