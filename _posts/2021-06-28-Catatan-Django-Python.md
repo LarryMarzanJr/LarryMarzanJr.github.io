@@ -745,4 +745,44 @@ Pesan yang kita tulis di `base.html`. Sengaja saya pasang pesan ini untu menging
 Dengan demikian laman home sudah ada extensi dari `base.html`.
 
 ### Membuat django template - include file.html
-`coming soon ...`
+Jika kita lihat pada file `base.html` navbar masih ditulis pada Header. Namun bagaimana jika kita ingin memisahkan NavBar dari `base.html` sehingga menjadi file tersendiri? Disinilah include berperan. Pertama kita harus membuat file `navbar.html` yang kita simpa dalam folder templates.
+```html
+<ul>
+  <li>Ini adalah contoh navbar</li>
+  <li>Home</li>
+  <li>Contact</li>
+  <li>About</li>
+</ul>
+```
+Lalu perhatikan file `base.html` saat ini:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joenmarz doing Try Django</title>
+</head>
+<body>
+    <nav>Ini adalah contoh NavBar</nav>
+    {% block content %}
+    ganti saya (block content belum terpasang pada laman ini)
+    {% endblock %}
+</body>
+</html>
+```
+Tag `nav` yang kita ketik sebagai navbar dapat kita ganti dengan `navbar.html` dengan cara _include_. Sehingga `base.html` menjadi seperti ini:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joenmarz doing Try Django</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    {% block content %}
+    ganti saya (block content belum terpasang pada laman ini)
+    {% endblock %}
+</body>
+</html>
+```
+Dengan demikian navbar kita sudah ter-include dalam `base.html` dan sewaktu-waktu bisa kita ubah tanpa harus mengganggu file lainnya.
