@@ -13,6 +13,7 @@ tags: [Django Framework]
 [Membuat Aplikasi Pertama Kita](#app_pertama)  
 [Mengganti Default Homepage menjadi Homepage Buatan Sendiri](#default_homepage)  
 [Django Template](#django_template)  
+[Melakukan Render Context dalam Template](#render_context)  
 
 <a name="persiapan"/>
 
@@ -786,3 +787,29 @@ Tag `nav` yang kita ketik sebagai navbar dapat kita ganti dengan `navbar.html` d
 </html>
 ```
 Dengan demikian navbar kita sudah ter-include dalam `base.html` dan sewaktu-waktu bisa kita ubah tanpa harus mengganggu file lainnya.
+
+<a name="render_context"/>
+
+## Melakukan Render Context dalam Template
+Kegunaan context dalam Template, adalah untuk membuat konteks kita sendiri. Artinya, misalkan dalam suatu view kita ingin mengganti Title Page khusus untuk view tersebut, maka kita menggunakan Context.
+
+Jika kita kembali ke `views.py` pada app _pages_ yang kita buat sebelumnya
+```python
+from django.shortcuts import render
+
+# Create your views here.
+def home_view(request, *args, **kwargs):
+    print(request.user)
+    return render(request, "home.html", {})
+
+def contact_view(request, *args, **kwargs):
+    return render(request, "contact.html", {})
+
+def about_view(request, *args, **kwargs):
+    return render(request, "about.html", {})
+```
+Pada setiap view anda akan melihat bahwa Django melakukan render terhadap request, template html dan context yang memiliki tanda `{}`:
+```python
+return render(request, template, context)
+```
+
