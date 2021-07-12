@@ -691,3 +691,58 @@ Dimana penjelasannya sebagai berikut:
 `templates` - adalah nama folder yang kita buat untuk menampung template html
 
 Jika kita coba runserver kembali maka view *home_view* tentunya sudah bisa dibuka.
+
+### Membuat django template - extends base.html
+Dalam membuat web tentunya ada satu file base yang akan dipanggil berulang-ulang seperti Title, NavBar dan tentunya tidak efisien jika kita harus mengulan kode atau menuliskan setiap Title atau Navbar pada setiap _file.html_ yang kita buat. Disinilah Django templating `{% extends 'file.html' %}` berperan. Pertama-tama kita buat satu file yang bisa dinamakan `base.html` yang kita simpan di dalam folder _templates_ yang kita buat sebelumnya. Di dalamnya kita ketik code berikut:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joenmarz doing Try Django</title>
+</head>
+<body>
+    <nav>Ini adalah contoh NavBar</nav>
+    {% block content %}
+    ganti saya (block content belum terpasang pada laman ini)
+    {% endblock %}
+</body>
+</html>
+```
+Perhatikan di `base.html` kita sudah menambahkan _title_, kemudian pada _body_ sudah kita tambahkan tag _nav_ sebagai contoh NavBar, dan juga terdapat:
+```html
+<body>
+    {% block content %}
+    ganti saya (block content belum terpasang pada laman ini)
+    {% endblock %}
+</body>
+```
+Apapun yang ada di antara `{% block content %}` dan `{% endblock %}` akan terisi dengan file yang kita buat misalnya `home.html`, `contact.html` dan `about.html`.
+
+Perhatikan isi code `home.html` yang kita buat sebelumnya:
+```html
+<h1>Homepage</h1>
+<p>Ini adalah template homepage</p>
+```
+Agar `base.html` bisa muncul di `home.html` kita perlu menambahkan `{% extends 'base.html' %}`
+```html
+{% extends 'base.html' %}
+<h1>Homepage</h1>
+<p>Ini adalah template homepage</p>
+```
+Namun ketika kita memanggil url home, tentunya akan muncul
+```
+replace me (block content belum terpasang pada laman ini)
+```
+Pesan yang kita tulis di `base.html`. Sengaja saya pasang pesan ini untu mengingatkan jika tag _block content_ pada file yang kita panggil sudah terpasang atau belum. Untuk itu mari kita tambahkan:
+```html
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Tentang Laman ini</h1>
+<p>Ini adalah template html</p>
+{% endblock %}
+```
+Dengan demikian laman home sudah ada extensi dari `base.html`.
+
+### Membuat django template - include file.html
+`coming soon ...`
