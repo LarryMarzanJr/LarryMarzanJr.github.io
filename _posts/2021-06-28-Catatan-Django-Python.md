@@ -813,3 +813,4 @@ Pada setiap view anda akan melihat bahwa Django melakukan render terhadap reques
 return render(request, template, context)
 ```
 
+`to be continued ...`
