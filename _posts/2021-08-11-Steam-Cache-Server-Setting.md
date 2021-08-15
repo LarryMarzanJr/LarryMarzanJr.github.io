@@ -23,8 +23,22 @@ Dengan alasan tersebut maka kita menggunakan Steam Cache.
 ## Install Docker
 
 ## Install lancache
+Install lancache:
+```
+not yet...
+```
+Run lancache:
+```bash
+sudo docker run --restart unless-stopped --name lancache --detach -v /srv/pool/cache:/data/cache -v /srv/pool/cache/logs -p 80:80 lancachenet/monolithic:latest
+```
 
 ## Install lancache-dns
+Install lancache-dns:
+```
+not yet...
+```
+
+Run lancache-dns:
 ```bash
 sudo docker run --restart unless-stopped --name lancache-dns --detach -p 53:53/udp -e USE_GENERIC_CACHE=true -e LANCACHE_IP=192.168.2.2 lancachenet/lancache-dns:latest
 ```
