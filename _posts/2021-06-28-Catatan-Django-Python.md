@@ -693,7 +693,7 @@ Dimana penjelasannya sebagai berikut:
 
 Jika kita coba runserver kembali maka view *home_view* tentunya sudah bisa dibuka.
 
-### Membuat django template - extends base.html
+### Membuat django template - base.html
 Dalam membuat web tentunya ada satu file base yang akan dipanggil berulang-ulang seperti Title, NavBar dan tentunya tidak efisien jika kita harus mengulan kode atau menuliskan setiap Title atau Navbar pada setiap _file.html_ yang kita buat. Disinilah Django templating `{% extends 'file.html' %}` berperan. Pertama-tama kita buat satu file yang bisa dinamakan `base.html` yang kita simpan di dalam folder _templates_ yang kita buat sebelumnya. Di dalamnya kita ketik code berikut:
 ```html
 <!DOCTYPE html>
