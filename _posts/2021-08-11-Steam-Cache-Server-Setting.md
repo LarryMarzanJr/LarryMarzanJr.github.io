@@ -29,7 +29,7 @@ not yet...
 ```
 Run lancache:
 ```bash
-sudo docker run --restart unless-stopped --name lancache --detach -v /srv/pool/cache:/data/cache -v /srv/pool/cache/logs -p 80:80 lancachenet/monolithic:latest
+sudo docker run --restart unless-stopped --name lancache --detach -v /srv/pool/cache:/data/cache -v /srv/pool/cache/logs:/data/logs -p 80:80 lancachenet/monolithic:latest
 ```
 
 ## Install lancache-dns
