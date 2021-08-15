@@ -31,6 +31,12 @@ sudo docker run --restart unless-stopped --name lancache-dns --detach -p 53:53/u
 
 IP `192.168.2.2` adalah server kita dimana steam cache terinstall.
 
+## Lancache log
+Untuk melihat log file lancache, jalankan perintah
+```bash
+sudo docker exec -it lancache tail -f /data/logs/access.log
+```
+
 Sumber:
 
 [Youtube.com - Steam Library Caching](https://www.youtube.com/watch?v=cSi-NOlomLc&t=1229s){:target="_blank"} 
