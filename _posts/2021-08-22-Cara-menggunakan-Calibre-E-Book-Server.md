@@ -11,7 +11,7 @@ title: 'Cara Menggunakan Calibre Server sebagai Perpustakaan Pribadi E-Book Anda
 ---
 
 # Cara Menggunakan Calibre Server sebagai Perpustakaan Pribadi E-Book Anda
-Download NBMiner dari https://nbminer.com/
+
 
 Sumber:
 
