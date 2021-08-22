@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [Linux]
-categories: [OS]
+categories: [Operating System]
 date: 2021-07-09 12:41:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
