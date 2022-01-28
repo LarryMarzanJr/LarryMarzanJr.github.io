@@ -1,13 +1,12 @@
 ---
 layout: post
-tags: [Android]
-categories: [Crypto Mining]
+title: Mining Crypto dari Smart Phone Android
+category: cryptomining  
 date: 2021-08-15 13:44:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Mining Crypto dari Smart Phone Android'
 ---
 
 # Mining Crypto dari Smart Phone Android
