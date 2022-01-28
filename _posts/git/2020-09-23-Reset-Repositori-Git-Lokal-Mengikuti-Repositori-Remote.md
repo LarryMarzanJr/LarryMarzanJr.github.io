@@ -21,6 +21,14 @@ git reset --hard origin/main
 
 Sebaliknya, katakanlah repositori lokal saat ini ingin anda simpan sementara, atau belum live, maka simpanlah di branch tersendiri sebagai backup. Lakukan perintah ini:
 ```
+git commit -a -m "komentar anda"
+git branch <nama_branch_baru>
+git push origin <nama_branch_baru>
+```
+
+Sehingga contohnya menjadi seperti ini:
+```
 git commit -a -m "Simpan Pekerjaan saya, untuk jaga-jaga"
 git branch simpan-kerjaan
+git push origin simpan-kerjaan
 ```
