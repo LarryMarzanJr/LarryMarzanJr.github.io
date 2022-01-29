@@ -3,8 +3,7 @@ layout: post
 title:  "Membuat GUI Control Panel XAMPP di Linux Ubuntu / Debian Base"
 date:   2013-06-19 00:00:00 +0800
 image: 'assets/images/Testing.png'
-tags: [Ubuntu]
-categories: [Web Service]
+category: linux
 ---
 
 ![XAMPP Control Panel](http://3.bp.blogspot.com/-vfGcG58dIUM/UcEyVD0wtnI/AAAAAAAAADU/LBkpNuM0r8E/s320/xampp-control-panel-ubuntu-linux-cinnamon.jpg)

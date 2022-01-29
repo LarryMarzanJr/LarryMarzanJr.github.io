@@ -1,7 +1,6 @@
 ---
 layout: post
-tags: [Yii2 Framework]
-categories: [Web Programming]
+categories: [post, php]
 date: 2015-11-05 00:00:00
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

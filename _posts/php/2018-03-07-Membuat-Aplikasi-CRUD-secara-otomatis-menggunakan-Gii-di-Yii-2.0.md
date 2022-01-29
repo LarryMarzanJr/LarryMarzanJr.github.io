@@ -2,8 +2,7 @@
 layout: post
 title:  "Membuat Aplikasi CRUD Secara Otomatis Menggunakan Gii di Yii 2.0"
 date:   2018-03-07 00:00:00 +0800
-tags: [Yii2 Framework]
-categories: [Web Programming]
+categories: [post, php]
 ---
 
 ![Yii2 Gii](https://2.bp.blogspot.com/-crV7CGs1oK4/VitThGhb57I/AAAAAAAAFXg/zcNtSgzCmq4/s640/Gii.png){:target="_blank"}

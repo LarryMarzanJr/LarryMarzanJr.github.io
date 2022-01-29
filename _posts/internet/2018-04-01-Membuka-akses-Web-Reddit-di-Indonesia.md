@@ -1,7 +1,6 @@
 ---
 layout: post
-tags: [Reddit]
-categories: [Website]
+categories: [post, internet]
 date: 2018-04-01 00:00:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

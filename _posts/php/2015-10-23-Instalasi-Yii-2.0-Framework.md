@@ -2,8 +2,7 @@
 layout: post
 title:  "Instalasi Yii 2.0 Framework"
 date:   2015-10-23 00:00:00 +0800
-tags: [Yii2 Framework]
-categories: [Web Programming]
+categories: [post, php]
 ---
 
 ![Yii2](https://1.bp.blogspot.com/-htYx9pASWbQ/VirsysuRT1I/AAAAAAAAFXI/mLEuJ8GfMr8/s1600/yii2framework-logo.jpg)

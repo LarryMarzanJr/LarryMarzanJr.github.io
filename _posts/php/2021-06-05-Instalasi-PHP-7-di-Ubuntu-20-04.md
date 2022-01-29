@@ -2,8 +2,7 @@
 layout: post
 title:  "Instalasi PHP 7 di Ubuntu 20.04"
 date:   2021-06-05 07:20:00 +0800
-tags: [PHP]
-categories: [Web Programming]
+categories: [post, php]
 ---
 
 ## Cara install PHP di Ubuntu 20.04

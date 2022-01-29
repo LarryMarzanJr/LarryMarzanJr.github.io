@@ -1,7 +1,6 @@
 ---
 layout: post
-tags: [NBMiner]
-categories: [Crypto Mining]
+categories: [post, cryptomining]
 date: 2021-08-22 17:45:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

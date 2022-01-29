@@ -2,7 +2,7 @@
 layout: post
 title:  "Mengatur Instalasi Python Lebih Dari Satu Versi Menggunakan Pyenv di Linux"
 date:   2021-06-24 08:33:00 +0800
-tags: [Python]
+categories: [post, python]
 ---
 
 ## Pre-Requisites

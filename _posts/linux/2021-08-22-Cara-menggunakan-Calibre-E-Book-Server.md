@@ -1,7 +1,6 @@
 ---
 layout: post
-tags: [Calibre]
-categories: [Server]
+categories: [post, linux]
 date: 2021-08-15 13:44:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'
