@@ -1,6 +1,61 @@
 ---
 layout: default
 ---
-<h1>Planets</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita facilis debitis nulla at, pariatur nemo fugiat accusantium reprehenderit nam aspernatur excepturi neque vel, delectus veniam officiis mollitia ea, eaque iure?</p>
+<div class="section-header">
+    <h3 class="section-title">Postingan Terbaru</h3>
+</div>
+
+<div class="padding-30 rounded bordered">
+    <div class="row">
+        <div class="col-md-12 col-sm-6">
+            <!-- post  -->
+            {% for posts in site.categories.cryptomining %}
+            <div class="post post-list clearfix">
+                <div class="thumb rounded">
+                    <span class="post-format-sm">
+                        <i class="icon-camrecorder"></i>
+                    </span>
+                    <a href="#">
+                        <div class="inner">
+                            <img src="images/posts/latest-3.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="details">
+                    <ul class="meta list-inline mb-3">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <img src="images/other/author-sm.jpg" class="author" alt="">
+                                Techie Coder
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">Technology</a>
+                        </li>
+                        <li class="list-inline-item">26 May 2021</li>
+                    </ul>
+                    <h5 class="post-tile">
+                        <a href="">
+                            {{cryptomining.title}}
+                        </a>
+                    </h5>
+                    <p class="excerpt mb-0">
+                        This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                        iure.
+                    </p>
+                    <div class="post-bottom clearfix d-flex align-items-center">
+                        <div class="more-button float-end">
+                            <a href="#"><span class="icon-options"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center">
+            <button class="btn btn-simple">Tampilkan Lebih Banyak</button>
+        </div>
+    </div>
+</div>
     
