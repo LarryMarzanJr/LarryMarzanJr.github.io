@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 <div class="section-header">
     <h3 class="section-title">Postingan Terbaru</h3>
@@ -9,7 +9,7 @@ layout: default
     <div class="row">
         <div class="col-md-12 col-sm-6">
             <!-- post  -->
-            {% for posts in site.categories.cryptomining %}
+            {% for posts in site.categories.post %}
             <div class="post post-list clearfix">
                 <div class="thumb rounded">
                     <span class="post-format-sm">
@@ -36,7 +36,7 @@ layout: default
                     </ul>
                     <h5 class="post-tile">
                         <a href="">
-                            {{cryptomining.title}}
+                            {{post.title}}
                         </a>
                     </h5>
                     <p class="excerpt mb-0">
