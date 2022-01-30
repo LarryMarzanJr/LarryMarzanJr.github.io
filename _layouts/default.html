@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teknologi Untuk Hidup</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" base href={{ "/assets/css/bootstrap.min.css" | absolute_url }}>
+    <!-- {{ "/assets/css/bootstrap.min.css" | absolute_url }} -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel=" stylesheet" href="../css/slick.css">
+    <link rel=" stylesheet" base href={{ "/assets/css/slick.css" | absolute_url }}>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href={{ "/assets/style.css" | absolute_url }}>
 </head>
 
 <body>
@@ -270,12 +271,12 @@
 
 
     <!-- javascripts  -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.sticky-sidebar.min.js"></script>
-    <script src="main.js"></script>
+    <script src={{ "/assets/js/jquery.min.js" | absolute_url }}></script>
+    <script src={{ "/assets/js/popper.min.js" | absolute_url }}></script>
+    <script src={{ "/assets/js/bootstrap.min.js" | absolute_url }}></script>
+    <script src={{ "/assets/js/slick.min.js" | absolute_url }}></script>
+    <script src={{ "/assets/js/jquery.sticky-sidebar.min.js" | absolute_url }}></script>
+    <script src={{ "/assets/main.js" | absolute_url}}></script>
 
 </body>
 
