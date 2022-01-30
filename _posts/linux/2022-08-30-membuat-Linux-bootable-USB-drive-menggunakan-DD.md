@@ -31,17 +31,18 @@ sudo fdisk -l
 
 ### Mengembalikan / Restore USB flash drive ke kondisi semula
 
-Bersihkan flash drive anda:
+##### Bersihkan flash drive anda:
 ```bash
 sudo wipefs --all /dev/sdX
 ```
 
-Buat partisi baru:
+##### Buat partisi baru:
 ```bash
 sudo cfdisk /dev/sdX
 ```
+Pada saat muncul `Select Label type` pilih dos. Setelah itu write perubahan anda.
 
-Format partisi menjadi FAT file system:
+##### Format partisi menjadi FAT file system:
 ```bash
 sudo mkfs.vfat -n 'label-USB-anda' /dev/sdX1
 ```
