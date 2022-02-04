@@ -2,7 +2,7 @@
 layout: post
 title:  "Membangun GitLab Pages Secara Mendasar"
 date:   2020-09-15 00:34:00 +0800
-categories: [post, gitlab]
+categories: gitlab
 ---
 
 Sebelum mulai membuatnya, anda perlu [mengenal apa itu GitLab Pages](#){:target="_blank"}. Dan jika belum punya anda dapat [membuat Akun GitLab](https://gitlab.com/users/sign_up){:target="_blank"}.

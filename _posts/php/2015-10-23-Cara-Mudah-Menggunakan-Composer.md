@@ -2,7 +2,7 @@
 layout: post
 title:  "Cara Mudah Menggunakan Composer"
 date:   2015-10-23 10:40:14 +0800
-categories: [post, php]
+categories: php
 ---
 
 ![Composer](http://3.bp.blogspot.com/-bZmpSD9gcF8/ViqwccuT-jI/AAAAAAAAFW0/ipwLVYml04o/s1600/logo-composer-transparent2.png)

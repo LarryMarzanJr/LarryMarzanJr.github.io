@@ -2,7 +2,7 @@
 layout: post
 title:  "Markdown Cheatsheet"
 date:   2020-04-01 10:40:14 +0800
-categories: [post, markdown]
+categories: markdown
 ---
 Ini adalah referensi singkat dalam menggunakan markdown.
 

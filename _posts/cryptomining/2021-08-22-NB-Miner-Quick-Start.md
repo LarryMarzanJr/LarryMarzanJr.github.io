@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [post, cryptomining]
+categories: cryptomining
 date: 2021-08-22 17:45:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

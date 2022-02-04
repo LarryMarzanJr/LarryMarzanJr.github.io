@@ -2,7 +2,7 @@
 layout: post
 title:  "Cara Membuat / Generate SSH keygen"
 date:   2020-10-25 04:45:00 +0800
-categories: [post, linux]
+categories: linux
 ---
 
 ## Cara Membuat / Generate SSH keygen

@@ -2,7 +2,7 @@
 layout: post
 title:  "Membuat Linux bootable USB drive menggunakan DD"
 date:   2022-01-30 17:31:00 +0800
-categories: [post, linux]
+categories: linux
 ---
 
 # Membuat Linux bootable USB drive menggunakan DD

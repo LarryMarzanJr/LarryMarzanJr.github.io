@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [post, php]
+categories: php
 date: 2015-11-05 00:00:00
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

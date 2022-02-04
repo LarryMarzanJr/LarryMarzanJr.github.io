@@ -2,7 +2,7 @@
 layout: post
 title:  "Konfigurasi Server FTP pada Debian 10 Buster"
 date:   2021-08-22 14:28:00 +0800
-categories: [post, linux]
+categories: linux
 ---
 
 ## Konfigurasi Server FTP pada Debian 10

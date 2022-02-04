@@ -2,7 +2,7 @@
 layout: post
 title:  "Instalasi Jekyll di WSL Ubuntu"
 date:   2021-06-05 12:47:00 +0800
-categories: [post, jekyll]
+categories: jekyll
 ---
 
 https://www.vgemba.net/blog/Setup-Jekyll-WSL/

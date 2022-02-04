@@ -2,7 +2,7 @@
 layout: post
 title:  "Perkenalan GitLab Pages"
 date:   2020-09-14 21:39:00 +0800
-categories: [post, gitlab]
+categories: gitlab
 published: true # publish page true or false
 ---
 

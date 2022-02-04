@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [post, git]
+categories: git
 date: 2020-09-23 18:56:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

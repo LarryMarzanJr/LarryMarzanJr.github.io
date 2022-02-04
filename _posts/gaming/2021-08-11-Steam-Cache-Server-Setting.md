@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [post, games]
+categories: games
 date: 2021-08-11 10:08:00 +0800
 #excerpt: ''
 #image: 'BASEURL/assets/blog/img/.png'

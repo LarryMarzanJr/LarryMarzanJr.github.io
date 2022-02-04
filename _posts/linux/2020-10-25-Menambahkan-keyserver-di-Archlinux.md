@@ -2,7 +2,7 @@
 layout: post
 title:  "Menambahkan Keyserver di Arch Linux AUR"
 date:   2020-10-25 04:45:00 +0800
-categories: [post, linux]
+categories: linux
 ---
 
 ## Menambahkan keyserver di Archlinux

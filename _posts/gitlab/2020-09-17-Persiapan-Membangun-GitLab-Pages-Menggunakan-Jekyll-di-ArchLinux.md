@@ -2,7 +2,7 @@
 layout: post
 title:  "Persiapan Membangun Gitlab Pages Menggunakan Jekyll di ArchLinux"
 date:   2020-09-17 04:40:00 +0800
-categories: [post, gitlab]
+categories: gitlab
 ---
 
 
