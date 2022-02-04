@@ -126,7 +126,7 @@
                                     <ul class="list">
                                         <!-- loop categories category[0] is the name, category[1].size to count number of posts on each category-->
                                         {% for category in site.categories %}
-                                        <li><a href="#{{ category[0] | slugify }}">{{ category[0] }}<span>{{ category[1].size }}</span></a></li>
+                                        <li><a href="categories#{{ category[0] | slugify }}">{{ category[0] }}<span>{{ category[1].size }}</span></a></li>
                                         {% endfor %}
                                     </ul>
                                 </div>
