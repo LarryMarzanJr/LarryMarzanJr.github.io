@@ -120,20 +120,14 @@
                         <div class="sidebar">
                             <div class="widget rounded">
                                 <div class="widget-header text-center">
-                                    <h3 class="widget-title">Kategori</h3>
+                                    <h3 class="widget-title"><a href={{"categories" | absolute_url}}>Kategori</a></h3>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="#">Crypto Mining</a><span>(7)</span></li>
-                                        <li><a href="#">Gaming</a><span>(5)</span></li>
-                                        <li><a href="#">Git</a><span>(1)</span></li>
-                                        <li><a href="#">Gitlab</a><span>(9)</span></li>
-                                        <li><a href="#">Internet</a><span>(2)</span></li>
-                                        <li><a href="#">Jekyll</a><span>(4)</span></li>
-                                        <li><a href="#">Linux</a><span>(5)</span></li>
-                                        <li><a href="#">Markdown</a><span>(1)</span></li>
-                                        <li><a href="#">PHP</a><span>(9)</span></li>
-                                        <li><a href="#">Python</a><span>(2)</span></li>
+                                        <!-- loop categories category[0] is the name, category[1].size to count number of posts on each category-->
+                                        {% for category in site.categories %}
+                                        <li><a href="#{{ category[0] | slugify }}">{{ category[0] }}<span>{{ category[1].size }}</span></a></li>
+                                        {% endfor %}
                                     </ul>
                                 </div>
                             </div>
