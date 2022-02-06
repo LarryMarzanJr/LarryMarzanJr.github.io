@@ -1,5 +1,5 @@
 ---
-title: 'Git-Branch'
+title: 'Git Branch'
 layout: post
 categories: git
 tags: git
