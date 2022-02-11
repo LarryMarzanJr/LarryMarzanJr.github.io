@@ -28,10 +28,16 @@ Kemudian lakukan merge dengan perintah:
 ```
 git merge branch-tambahan
 ```
-### Hapus Branch Lokal (Delete)
+### Hapus Branch (Delete)
+##### Cara Menghapus Branch Lokal
 Untuk menghapus branch lokal atau yang ada di PC anda, gunakan perintah:
 ```
 git branch -d <nama-branch-lokal>
+```
+##### Cara Menghapus Branch Remote (Repositori Github)
+Untuk menghapus branch yang ada di repository github anda, gunakan perintah:
+```
+git push origin --delete <nama-branch-remote>
 ```
 
 ## Referensi
