@@ -11,7 +11,7 @@ Biasanya dalam sebuah git repository sudah tersedia 1 branch secara default yait
 ### Branch Baru (New)
 Untuk membuat branch gunakan perintah:
 ```
-git branch nama-branch-baru
+git branch <nama-branch-baru>
 ```
 ### Pindah Branch (Checkout)
 Untuk berpindah branch gunakan perintah:
@@ -28,6 +28,12 @@ Kemudian lakukan merge dengan perintah:
 ```
 git merge branch-tambahan
 ```
+### Hapus Branch Lokal (Delete)
+Untuk menghapus branch lokal atau yang ada di PC anda, gunakan perintah:
+```
+git branch -d <nama-branch-lokal>
+```
 
 ## Referensi
 [W3schools tentang git branch merge](https://www.w3schools.com/git/git_branch_merge.asp?remote=github){:target="_blank"}
+[Git Tower tentang delete local branch](https://www.git-tower.com/learn/git/faq/delete-local-branch/){:target="_blank"}
