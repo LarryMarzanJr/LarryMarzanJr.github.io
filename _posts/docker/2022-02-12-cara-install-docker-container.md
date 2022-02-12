@@ -20,6 +20,7 @@ Untuk menginstall docker di Linux [Ubuntu](https://ubuntu.com/download/desktop){
 * Ubuntu Hirsute 21.04
 * Ubuntu Focal 20.04 (LTS)
 * Ubuntu Bionic 18.04 (LTS)
+
 ##### Uninstall Docker Versi Lama
 Docker versi lama yang terinstal di system anda perlu di-uninstall terlebih dahulu. Atau setidaknya untuk memastikan tidak ada docker versi lama di system anda maka perintah untuk uninstall adalah:
 ```bash
