@@ -4,30 +4,8 @@ title: About
 permalink: /about/
 ---
 
-## Theme Monos
-> Simple and lightweight theme for Jekyll
+## Hi There..!
 
-### Features
-- Responsive.
-- Syntax Highlight
-- Most optimized theme for tech blog.
-- Lightweight with minimum stylesheet.
-- Easy to customize.
-- Offers category menu.
+_Larry Benedicto Marzan Jr._ adalah seorang penggemar Teknologi. Sejak kuliah mulai menggeluti bidang IT dan saat ini bekerja di Perbankan sebagai Kepala Cabang. Benar-benar profesi dan latar belakang pendidikan yang sangat bertolak belakang!
 
-### _config.yml
-> Code block will look like this.
-```yml
-highlighter-theme: monokai //you can change your syntax color scheme.
-date_format: "%Y-%M-%D" //and date format.
-```
-
-### Screenshots
-#### Page
-![alt text](/public/img/screenshot-1.png)
-#### Articles
-![alt text](/public/img/screenshot-2.png)
-#### Page - Mobile
-![alt text](/public/img/screenshot-m1.png)
-#### Page - Articles
-![alt text](/public/img/screenshot-m2.png)
+Hal ini tidak menghilangkan kegemarannya dalam mempelajari hal-hal yang baru dalam teknologi. Untuk itu Page ini dibuat sebagai bahan referensi pribadi, dan mungkin bisa berguna bagi anda yang kebetulan lewat di page ini.
