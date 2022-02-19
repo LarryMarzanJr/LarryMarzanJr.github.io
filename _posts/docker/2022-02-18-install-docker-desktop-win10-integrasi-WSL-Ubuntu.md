@@ -1,8 +1,8 @@
 ---
 title: 'Instalasi Docker Desktop di Windows dan integrasi dengan WSL Ubuntu'
 layout: post
-categories: WSL, Docker
-tags: WSL
+categories: [Windows, WSL, Docker]
+tags: [Windows, WSL, Docker]
 date: 2022-02-18 20:38:00 +0800
 ---
 
