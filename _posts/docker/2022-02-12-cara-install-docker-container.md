@@ -1,5 +1,5 @@
 ---
-title: 'Cara Install Docker Container'
+title: 'Cara Install Docker Container di Linux Ubuntu'
 layout: post
 categories: docker
 tags: docker
@@ -13,9 +13,9 @@ Docker adalah container environment virtual yang digunakan sebagai versioning te
 Karena kita tahu bahwa setiap aplikasi selalu memiliki update, dan aplikasi yang kita sedang kembangkan sangat bergantung pada versi aplikasi pengembang yang saat itu kita gunakan.
 Seiring waktu saat sistem operasi kita diupdate secara global, versi aplikasi pengembang pun ikut terupdate, mengakibatkan aplikasi yang sedang kita buat bisa rusak karena tidak lagi kompatibel dengan versi terupdate. Disinilah container, dalam hal ini Docker, membantu membuat kita sebuah environment virtual khusus yang dapat memenuhi kebutuhan versi aplikasi pengembang sesuai dengan versi aplikasi yang kita kembangkan.
 
-### Instalasi Docker di Linux Ubuntu ataupun WSL Ubuntu menggunakan Repository
+### Instalasi Docker di Linux Ubuntu menggunakan Repository
 ##### Prasyarat
-Untuk menginstall docker di Linux [Ubuntu](https://ubuntu.com/download/desktop){:target="_blank"} ataupun [WSL Ubuntu](https://docs.microsoft.com/en-us/windows/wsl/about){:target="_blank"} anda perlu menginstal setidaknya versi Ubuntu 64-bit berikut ini:
+Untuk menginstall docker di Linux [Ubuntu](https://ubuntu.com/download/desktop){:target="_blank"} anda perlu menginstal setidaknya versi Ubuntu 64-bit berikut ini:
 * Ubuntu Impish 21.10
 * Ubuntu Hirsute 21.04
 * Ubuntu Focal 20.04 (LTS)
