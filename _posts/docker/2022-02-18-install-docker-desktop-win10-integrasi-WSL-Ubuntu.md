@@ -14,4 +14,4 @@ Download aplikasi [Docker Desktop](https://www.docker.com/products/docker-deskto
 
 
 ## Referensi
-- [Youtube - ](https://www.youtube.com/watch?v=2ezNqqaSjq8&t=4s){:target="_blank"}
+- [Youtube - Docker Complete Setup on Windows (With WSL Ubuntu)](https://www.youtube.com/watch?v=2ezNqqaSjq8&t=4s){:target="_blank"}
