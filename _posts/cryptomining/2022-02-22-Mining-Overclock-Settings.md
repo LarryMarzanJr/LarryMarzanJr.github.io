@@ -37,6 +37,6 @@ Fan Speed: 80
 Or reset afterburner to stock, on t-rex miner, add `--lock-cclock 1520` and run as administrator.
 
 ## Referensi
-- [Reddit - nvidia 30xx series old vs new LHR Identification](#){:target="_blank"}
+- [Youtube - Red Fox Crypto - RTX 3070 Ti Most Efficient Ergo Overclocks & Hashrates](https://www.youtube.com/watch?v=vtrVQ5TYPLE){:target="_blank"}
 
 
