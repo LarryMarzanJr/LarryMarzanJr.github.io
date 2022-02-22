@@ -6,7 +6,7 @@ date: 2020-09-23 18:56:00 +0800
 #image: 'BASEURL/assets/blog/img/.png'
 #description:
 #permalink:
-title: 'Reset Repositori Git Lokal Mengikuti Repositori Remote'
+title: 'Reset Git Repositori Lokal Mengikuti Repositori Remote'
 ---
 
 <!-- Sumber: -->
