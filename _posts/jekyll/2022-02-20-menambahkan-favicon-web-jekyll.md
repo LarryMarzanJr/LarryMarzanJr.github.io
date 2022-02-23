@@ -23,11 +23,7 @@ Sehingga file `head.html` menjadi:
 	<!-- Tambahkan favicon pada 1 baris dibawah ini -->
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
     
-	{%- feed_meta -%}
-	
-	{%- if jekyll.environment == 'production' and site.google_analytics -%}
-		{%- include google-analytics.html -%}
-	{%- endif -%}
+	...
 </head>
 ```
 
