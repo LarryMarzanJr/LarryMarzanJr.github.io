@@ -7,8 +7,10 @@ category: linux
 
 ## Daftar Isi  
 [Apa itu Tmux?](#tmux_intro)
+
 [Membuat Session Baru](#create_session)
-[Membuka Tmux Session](#open_session)  
+
+[Membuka Tmux Session](#open_session)
 
 
 <a name="tmux_intro"/>
@@ -17,7 +19,7 @@ category: linux
 
 Tmux adalah aplikasi yang memungkinkan kita membuat session tersendiri di dalam terminal shell. Session tersebut bisa kita biarkan berjalan walaupun terminal sudah diclose. Keuntungan memakai session tmux salah satunya ketika kita mengakses shell secara remote menggunakan ssh, kita bisa mengakses session tmux yang sedang aktif.
 
-Untuk menginstall tmux pada distro linux anda, silahkan melihat referensi pada [repository resmi tmux](https://github.com/tmux/tmux/wiki/Installing){:target="_blank"}.
+Untuk menginstall tmux pada distro linux anda, silahkan melihat referensi pada [repository resmi tmux](https://github.com/tmux/tmux/wiki/Installing){:target="_blank"}
 
 
 <a name="create_session"/>
