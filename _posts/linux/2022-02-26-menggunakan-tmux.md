@@ -4,9 +4,8 @@ title:  "Menggunakan Tmux"
 date:   2022-02-26 23:51:00 +0800
 category: linux
 ---
-Ini adalah referensi singkat dalam menggunakan markdown.
 
-##### Daftar Isi  
+## Daftar Isi  
 [Apa itu Tmux?](#tmux_intro)
 
 [Tmux Session](#tmux_session)  
