@@ -25,8 +25,8 @@ Selamat anda sudah berhasil menginstall Hive OS.
 
 
 ## Referensi
-- [hiveon.com tentang Install](https://hiveon.com/install/){:target="_blank"}
+[hiveon.com tentang Install](https://hiveon.com/install/){:target="_blank"}
 
-- [Youtuber The Hobbyist Miner tentang How to Install HIVEOS onto a SSD | Guide for New Crypto Miners](https://www.youtube.com/watch?v=caNETOK2X5M){:target="_blank"}
+[Youtuber The Hobbyist Miner tentang How to Install HIVEOS onto a SSD](https://www.youtube.com/watch?v=caNETOK2X5M){:target="_blank"}
 
 
