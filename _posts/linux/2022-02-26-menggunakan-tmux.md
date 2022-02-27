@@ -2,7 +2,7 @@
 layout: post
 title:  "Menggunakan Tmux"
 date:   2022-02-26 23:51:00 +0800
-category:linux
+category: linux
 ---
 Ini adalah referensi singkat dalam menggunakan markdown.
 
