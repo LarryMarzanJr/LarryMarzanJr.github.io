@@ -7,8 +7,8 @@ category: linux
 
 ## Daftar Isi  
 [Apa itu Tmux?](#tmux_intro)
-
-[Tmux Session](#tmux_session)  
+[Membuat Session Baru](#create_session)
+[Membuka Tmux Session](#open_session)  
 
 
 <a name="tmux_intro"/>
@@ -19,7 +19,22 @@ Tmux adalah aplikasi yang memungkinkan kita membuat session tersendiri di dalam 
 
 Untuk menginstall tmux pada distro linux anda, silahkan melihat referensi pada [repository resmi tmux](https://github.com/tmux/tmux/wiki/Installing){:target="_blank"}.
 
-<a name="tmux_session"/>
+
+<a name="create_session"/>
+
+## Membuat Session Baru
+### Session Baru
+Untuk membuat session baru di Tmux jalankan
+```bash
+> tmux
+```
+### Session Baru dengan label Nama
+Untuk membuat session baru yg memiliki label nama di Tmux jalankan
+```bash
+> tmux new -s nama_session_anda
+```
+
+<a name="open_session"/>
 
 ## Tmux Session
 
