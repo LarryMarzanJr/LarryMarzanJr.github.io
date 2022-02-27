@@ -38,7 +38,7 @@ Untuk membuat session baru yg memiliki label nama di Tmux jalankan
 
 <a name="open_session"/>
 
-## Tmux Session
+## Membuka Tmux Session
 
 Untuk memperoleh daftar session yang sedang aktif dalam sebuah [shell](https://www.tutorialspoint.com/unix/unix-what-is-shell.htm){:target="_blank"}, gunakan perintah `tmux ls`
 ```bash
