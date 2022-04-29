@@ -107,7 +107,7 @@ sudo mysql -u root -p
 setup:
 ```sql
 CREATE DATABASE nextcloud;
-CREATE USER 'joenmarz'@'localhost' IDENTIFIED BY 'C@k4l4ng**';
+CREATE USER 'joenmarz'@'localhost' IDENTIFIED BY '1234';
 GRANT ALL ON nextcloud.* TO 'joenmarz'@'localhost';
 FLUSH PRIVILEGES;
 \q
