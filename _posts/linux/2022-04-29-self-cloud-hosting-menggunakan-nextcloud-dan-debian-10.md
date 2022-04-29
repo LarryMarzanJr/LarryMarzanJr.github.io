@@ -5,22 +5,44 @@ date:   2022-04-29 08:02:00 +0800
 category: linux
 ---
 
-INSTALL REQUIRED PACKAGES:
+## Daftar Isi
+[Instalasi Package Dasar](#req_packages)
+
+[Enable PHP 7.3](#enable_php73)
+
+[Restart Servis Apache2](#restart_apache2)
+
+[Konfigurasi MARIADB:](#config_mariadb)
+
+[Konfigurasi Database](#config_db)
+
+[Install Nextcloud](#install_nextcloud)
+
+
+<a name="req_packages"/>
+
+## Instalasi Package Dasar
 ```bash
 sudo apt install apache2 libapache2-mod-php7.3 mariadb-server php7.3-xml php7.3-cli php7.3-cgi php7.3-mysql php7.3-mbstring php7.3-gd php7.3-curl php7.3-zip
 ```
 
-ENABLE PHP 7.3
+<a name="enable_php73"/>
+
+## Enable PHP 7.3
 ```bash
 sudo a2enmod php7.3
 ```
 
-RESTART APACHE2 SERVICE:
+<a name="restart_apache2"/>
+
+## Restart Servis Apache2
 ```bash
 sudo systemctl restart apache2
 ```
 
-CONFIGURE MARIADB:
+<a name="config_mariadb"/>
+
+## Konfigurasi MARIADB:
 ```bash
 sudo mysql_secure_installation
 ```
@@ -76,7 +98,9 @@ will take effect immediately.
 Reload privilege tables now? [Y/n] y
 ```
 
-DATABASE SETUP:
+<a name="config_db"/>
+
+## Konfigurasi Database
 ```bash
 sudo mysql -u root -p
 ```
@@ -89,7 +113,9 @@ FLUSH PRIVILEGES;
 \q
 ```
 
-NEXTCLOUD INSTALLATION
+<a name="install_nextcloud"/>
+
+## Install Nextcloud
 Download Nextcloud 17:
 ```bash
 wget https://download.nextcloud.com/server/releases/nextcloud-17.0.0.zip
