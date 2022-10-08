@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2022-10-09-Install-Debian-11-Tanpa-GUI-atau-DE-minimal"
+title:  "Install Debian 11 Tanpa GUI atau DE minimal"
 date:   2022-10-09 06:50:00 +0800
 category: linux
 ---
