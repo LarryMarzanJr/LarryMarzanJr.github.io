@@ -28,9 +28,11 @@ Human readable atau dapat dibaca oleh bahasa manusia biasanya menambahkan tag `-
 ```bash
 df -h
 ```
+Untuk menampilkan angka disk dalam inodes tambahkan `-i`
 ```bash
 df -i
 ```
+Kita dapat mengetahui filesystem dalam disk (ext4,NTFS, dll.) dengan menambahkan tag `-T`
 ```bash
 df -T
 ```
@@ -51,7 +53,7 @@ Menampikan disk partisi tertentu
 df /dev/sdX1
 ```
 
-
+Dengan mengkombinasikan tag yang ada, kita bisa memperoleh informasi disk sesuai kebutuhan. Semoga bermanfaat
 
 <a name="reference"/>
 
