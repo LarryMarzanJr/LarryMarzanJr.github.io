@@ -64,8 +64,6 @@ Port default yang digunakan adalah 20, namun anda bisa mengubahnya:
 #connect_from_port_20=YES
 listen_port=21
 ```
-Here comes a slightly delicate matter. It is normal that when we use an FTP server we have to create users who use it. The problem is that some users can upload and delete files from other users. This should be avoided. It is necessary to define what each user has his folder and that he cannot modify or see the others.
-
 Kita bisa mengatur pengguna yang berhak mengubah file pada server FTP dengan menyediakan file yang berisi list user. File tersebut bisa kita simpan misalnya di file `/etc/vsftpd.chroot_list`, yang bisa kita panggil melalui konfigurasi `chroot_list_file`. Kemudian aktifkan konfigurasi ini:
 ```
 chroot_local_user=YES
