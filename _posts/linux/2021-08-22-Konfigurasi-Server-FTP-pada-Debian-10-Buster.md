@@ -44,13 +44,19 @@ Sekarang bisa kita lanjutkan konfigurasinya:
 sudo nano /etc/vsftpd.conf
 ```
 
+Disable anonymous:
+```
+anonymous_enable=NO
+```
+
 Nonaktifkan IPV6 jika anda tidak menggunakannya:
 ```
 listen=YES
 #listen_ipv6=NO
 ```
-Agar bisa mengubah folder dan file pada server, kita perlu mengaktifkan `write_enable`:
+Agar bisa mengubah folder dan file pada server, kita perlu mengaktifkan `write_enable` dan `local_enable`:
 ```
+local_enable=YES
 write_enable=YES
 ```
 Port default yang digunakan adalah 20, namun anda bisa mengubahnya:
@@ -83,7 +89,8 @@ sudo cat /etc/vsftpd.conf | grep -v "^#"
 ```
 ```
 listen=YES
-anonymous_enable=YES
+anonymous_enable=NO
+local_enable=YES
 write_enable=YES
 dirmessage_enable=YES
 use_localtime=YES
