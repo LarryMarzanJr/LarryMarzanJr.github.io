@@ -20,11 +20,13 @@ Dengan alasan tersebut maka kita menggunakan Steam Cache.
 # Instalasi
 
 ## Install Docker
+Berikut adalah link cara instalasi docker di [Linux](https://larrymarzanjr.github.io/docker/2022/02/12/cara-install-docker-container.html){:target="_blank"} dan [Windows](https://larrymarzanjr.github.io/docker/2022/02/18/install-docker-desktop-win10-integrasi-WSL-Ubuntu.html){:target="_blank"}
+
 
 ## Install lancache
 Install lancache:
 ```
-not yet...
+sudo docker pull lancachenet/monolithic
 ```
 Run lancache:
 ```bash
@@ -34,15 +36,15 @@ sudo docker run --restart unless-stopped --name lancache --detach -v /srv/pool/c
 ## Install lancache-dns
 Install lancache-dns:
 ```
-not yet...
+sudo docker pull lancachenet/lancache-dns
 ```
 
 Run lancache-dns:
 ```bash
-sudo docker run --restart unless-stopped --name lancache-dns --detach -p 53:53/udp -e USE_GENERIC_CACHE=true -e LANCACHE_IP=192.168.2.2 lancachenet/lancache-dns:latest
+sudo docker run --restart unless-stopped --name lancache-dns --detach -p 53:53/udp -e USE_GENERIC_CACHE=true -e LANCACHE_IP=192.168.x.x lancachenet/lancache-dns:latest
 ```
 
-IP `192.168.2.2` adalah server kita dimana steam cache terinstall.
+IP `192.168.x.x` adalah server kita dimana steam cache terinstall.
 
 ## Lancache log
 Untuk melihat log file lancache, jalankan perintah
