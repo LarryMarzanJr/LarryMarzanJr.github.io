@@ -69,8 +69,23 @@ Pastikan service telah berjalan baik dengan mengetikkan
 ```bash
 sudo systemctl status qbittorrent-nox.service
 ```
+Jika service berjalan dengan baik akan muncul tampilan seperti ini:
+```bash
+● qbittorrent-nox.service - qbittorrent-nox terminal application
+     Loaded: loaded (/etc/systemd/system/qbittorrent-nox.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2022-10-29 02:01:40 PST; 2s ago
+    Process: 75570 ExecStart=/usr/bin/qbittorrent-nox -d --webui-port=6969 (code=exited, status=0/SUCCESS)
+   Main PID: 75571 (qbittorrent-nox)
+      Tasks: 11 (limit: 7069)
+     Memory: 6.6M
+        CPU: 95ms
+     CGroup: /system.slice/qbittorrent-nox.service
+             └─75571 /usr/bin/qbittorrent-nox -d --webui-port=6969
+```
 
 qBittorrent-nox web user interface sudah bisa digunakan. Untuk menjalankan cukup mengetikkan pada web browser anda `localhost:6969` secara lokal, atau dari PC lain dengan mengetikkan ip address host anda diikuti port 6969 `192.x.x.x:6969`
+
+Saat login pertama kali, user bawaannya adalah `admin` dan passwordnya `adminadmin`. Anda dapat mengubah user pada pengaturan web interface qBittorrent-nox setelah login.
 
 <a name="reference"/>
 
