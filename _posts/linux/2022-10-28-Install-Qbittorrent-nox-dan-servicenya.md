@@ -9,6 +9,8 @@ category: linux
 
 [Proses Instalasi](#installation)
 
+[Menambahkan Service qBittorrent-nox](#adding-service)
+
 [Referensi](#reference)
 
 
@@ -17,9 +19,58 @@ category: linux
 
 ## Proses Instalasi
 
+Proses instalasi pada debian based cukup mudah:
+```bash
+sudo apt update
+sudo apt install qbittorrent-nox
 ```
-coming soon ...
+
+<a name="adding-service"/>
+
+## Menambahkan Service qBittorrent-nox
+
+Agar qBittorrent-nox bisa running otomatis atau secara headless, kita perlu menambahkan servicenya dengan cara membuat file `/etc/systemd/system/qbittorrent-nox.service`
+Di dalam file tersebut kita input sebagai berikut
+```bash
+[Unit]
+Description=qbittorrent-nox terminal application
+After=network.target
+
+[Service]
+Type=forking
+User=qbittorrent-nox
+Group=qbittorrent-nox
+Umask=007
+ExecStart=/usr/bin/qbittorrent-nox -d --webui-port=6969
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
 ```
+
+Tambahkan User dan Group pada system, dengan mengetikkan pada terminal
+```bash
+sudo adduser --system --group qbittorrent-nox
+```
+
+Tambahkan User yang akan digunakan login pada grup `qbittorrent-nox`, dalam hal ini nama user saya adalah `joenmarz`
+```bash
+sudo adduser joenmarz qbittorrent-nox
+```
+
+Enable dan Restart service dengan mengetikkan pada terminal
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable qbittorrent-nox.service
+sudo systemctl restart qbittorrent-nox.service
+```
+
+Pastikan service telah berjalan baik dengan mengetikkan
+```bash
+sudo systemctl status qbittorrent-nox.service
+```
+
+qBittorrent-nox web user interface sudah bisa digunakan. Untuk menjalankan cukup mengetikkan pada web browser anda `localhost:6969` secara lokal, atau dari PC lain dengan mengetikkan ip address host anda diikuti port 6969 `192.x.x.x:6969`
 
 <a name="reference"/>
 
