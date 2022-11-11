@@ -83,4 +83,4 @@ Double klik pada `DependOnService` kemudian pada value data `rpcss` diganti menj
 Sampai disini auto update Windows 10 telah berhasil dinonaktifkan.
 
 ## Referensi
-- [Youtube - How to Disable the Latest Windows 10 Update 2020](https://www.youtube.com/watch?v=0qQMpsfj2hw&t=284s){:target="_blank"}
+- [Youtube - How to Disable the Latest Windows 10 Update 2020](https://www.youtube.com/watch?v=0qQMpsfj2hw&t=284s)
