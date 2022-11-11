@@ -1,8 +1,8 @@
 ---
 title: "Cara disable auto update pada Windows 10"
 subtitle: ""
-date: 2022-02-19T15:33:+08:00
-lastmod: 2022-02-19T15:33:+08:00
+date: 2022-02-19T15:33:00+08:00
+lastmod: 2022-02-19T15:33:00+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""

@@ -1,8 +1,8 @@
 ---
 title: "Mengidentifikasi Device ID Graphic Card Nvidia RTX Series Versi Non LHR"
 subtitle: ""
-date: 2022-02-06T08:18:+08:00
-lastmod: 2022-02-06T08:18:+08:00
+date: 2022-02-06T08:18:00+08:00
+lastmod: 2022-02-06T08:18:00+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""

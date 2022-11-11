@@ -1,8 +1,8 @@
 ---
 title: "NB Miner Quick Start"
 subtitle: ""
-date: 2021-08-22T17:45:+08:00
-lastmod: 2021-08-22T17:45:+08:00
+date: 2021-08-22T17:45:00+08:00
+lastmod: 2021-08-22T17:45:00+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""

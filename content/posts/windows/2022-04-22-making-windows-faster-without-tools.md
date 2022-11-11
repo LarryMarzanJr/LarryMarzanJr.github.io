@@ -1,8 +1,8 @@
 ---
 title: "Mempercepat Windows Tanpa Tools"
 subtitle: ""
-date: 2022-04-22T18:06:+08:00
-lastmod: 2022-04-22T18:06:+08:00
+date: 2022-04-22T18:06:00+08:00
+lastmod: 2022-04-22T18:06:00+08:00
 draft: false 
 author: ""
 authorLink: ""

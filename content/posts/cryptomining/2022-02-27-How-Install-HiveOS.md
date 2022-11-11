@@ -1,8 +1,8 @@
 ---
 title: "Cara Install HiveOS"
 subtitle: ""
-date: 2022-02-27T15:11:+08:00
-lastmod: 2022-02-27T15:11:+08:00
+date: 2022-02-27T15:11:00+08:00
+lastmod: 2022-02-27T15:11:00+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""

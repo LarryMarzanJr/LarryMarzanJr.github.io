@@ -1,8 +1,8 @@
 ---
 title: "Mining Crypto dari Smart Phone Android"
 subtitle: ""
-date: 2021-08-15T13:44:+08:00
-lastmod: 2021-08-15T13:44:+08:00
+date: 2021-08-15T13:44:00+08:00
+lastmod: 2021-08-15T13:44:00+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""

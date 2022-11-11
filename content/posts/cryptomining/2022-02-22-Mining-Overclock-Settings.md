@@ -1,8 +1,8 @@
 ---
 title: "Mining Overclock Settings"
 subtitle: ""
-date: 2022-02-22T04:29:+08:00
-lastmod: 2022-02-22T04:29:+08:00
+date: 2022-02-22T04:29:00+08:00
+lastmod: 2022-02-22T04:29:00+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""
