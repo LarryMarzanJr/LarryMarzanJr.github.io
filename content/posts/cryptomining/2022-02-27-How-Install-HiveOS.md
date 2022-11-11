@@ -1,9 +1,64 @@
 ---
-categories: cryptomining
-date: "2022-02-27T15:11:00Z"
-tags: cryptomining
-title: Cara Install HiveOS
+title: "Cara Install HiveOS"
+subtitle: ""
+date: 2022-02-27T15:11:+08:00
+lastmod: 2022-02-27T15:11:+08:00
+draft: false 
+author: "Larry Marzan Jr."
+authorLink: ""
+description: ""
+license: ""
+images: []
+
+tags: [hiveos]
+categories: [cryptomining]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
+
 
 ### Download Image Hive OS
 [Download Image Hive OS](https://hiveon.com/install/){:target="_blank"} dan pilih image di bagian `GPU`, karena kita akan melakukan mining lewat Graphic Card.
