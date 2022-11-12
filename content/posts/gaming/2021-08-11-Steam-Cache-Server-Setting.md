@@ -1,7 +1,62 @@
 ---
-categories: games
-date: "2021-08-11T10:08:00Z"
-title: Steam Cache untuk menyimpan Game hasil Download
+title: "Steam Cache untuk menyimpan Game hasil Download"
+subtitle: ""
+date: 2021-08-11T10:08:00+08:00
+lastmod: 2021-08-11T10:08:00+08:00
+draft: false 
+author: "Larry Marzan Jr."
+authorLink: ""
+description: ""
+license: ""
+images: []
+
+tags: [lancache]
+categories: [gaming]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
 
 # Latar Belakang
@@ -15,7 +70,7 @@ Dengan alasan tersebut maka kita menggunakan Steam Cache.
 # Instalasi
 
 ## Install Docker
-Berikut adalah link cara instalasi docker di [Linux](https://larrymarzanjr.github.io/docker/2022/02/12/cara-install-docker-container.html){:target="_blank"} dan [Windows](https://larrymarzanjr.github.io/docker/2022/02/18/install-docker-desktop-win10-integrasi-WSL-Ubuntu.html){:target="_blank"}
+Berikut adalah link cara instalasi docker di [Linux](https://larrymarzanjr.github.io/docker/2022/02/12/cara-install-docker-container.html) dan [Windows](https://larrymarzanjr.github.io/docker/2022/02/18/install-docker-desktop-win10-integrasi-WSL-Ubuntu.html)
 
 
 ## Install lancache
@@ -49,4 +104,4 @@ sudo docker exec -it lancache tail -f /data/logs/access.log
 
 Sumber:
 
-[Youtube.com - Steam Library Caching](https://www.youtube.com/watch?v=cSi-NOlomLc&t=1229s){:target="_blank"} 
+[Youtube.com - Steam Library Caching](https://www.youtube.com/watch?v=cSi-NOlomLc&t=1229s) 
