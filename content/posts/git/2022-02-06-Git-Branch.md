@@ -1,8 +1,62 @@
 ---
-categories: git
-date: "2022-02-06T07:50:00Z"
-tags: git
-title: Git Branch
+title: "Git Branch"
+subtitle: ""
+date: 2022-02-06T07:50:00+08:00
+lastmod: 2022-02-06T07:50:00+08:00
+draft: false 
+author: "Larry Marzan Jr."
+authorLink: ""
+description: ""
+license: ""
+images: []
+
+tags: [github]
+categories: [git]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
 
 Biasanya dalam sebuah git repository sudah tersedia 1 branch secara default yaitu _master_ atau _main_. Namun terkadang kita perlu membuat branch baru untuk beberapa kebutuhan seperti backup project, membuat draft sub-project yang nantinya akan kita gabung (merge) ke branch utama (main), atau mungkin kita sedang membuat project dengan tim kemudian membagi tugas untuk ke masing-masing tim.
