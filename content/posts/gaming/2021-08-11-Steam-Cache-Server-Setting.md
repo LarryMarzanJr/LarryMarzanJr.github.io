@@ -91,7 +91,7 @@ sudo docker pull lancachenet/lancache-dns
 
 Run lancache-dns:
 ```bash
-sudo docker run --restart unless-stopped --name lancache-dns --detach -p 53:53/udp -e USE_GENERIC_CACHE=true -e LANCACHE_IP=192.168.x.x lancachenet/lancache-dns:latest
+sudo docker run --restart unless-stopped --name lancache-dns --detach -p 53:53/udp -e USE_GENERIC_CACHE=true -e LANCACHE_IP=192.168.x.x -e UPSTREAM_DNS=1.1.1.1 lancachenet/lancache-dns:latest
 ```
 
 IP `192.168.x.x` adalah server kita dimana steam cache terinstall.
