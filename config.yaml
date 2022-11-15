@@ -1,0 +1,5 @@
+baseURL: http://example.org/
+disablePathToLower: true
+languageCode: en-us
+title: Larry Marzan Jr.
+theme: LoveIt
