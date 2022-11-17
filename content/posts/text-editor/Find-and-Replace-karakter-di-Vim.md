@@ -3,7 +3,7 @@ title: "Find and Replace Karakter Di Vim"
 subtitle: ""
 date: 2022-11-12T14:36:41+08:00
 lastmod: 2022-11-12T14:36:41+08:00
-draft: true
+draft: false
 author: "Larry Marzan Jr."
 authorLink: ""
 description: ""
@@ -67,42 +67,47 @@ Secara umum perintah yang digunakan sebagai berikut:
 :[range]s/{pattern}/{string}/[flags] [count]
 ```
 
-The command searches each line in [range] for a {pattern}, and replaces it with a {string}.
-[count] is a positive integer that multiplies the command.
-If no [range] and [count] are given, only the pattern found in the current line is replaced.
-The current line is the line where the cursor is placed.
-For example, to search for the first occurrence of the string ‘foo’ in the current line and
-replace it with ‘bar’, you would use:
+Perintah diatas mencari setiap line pada [range] dengan kata kunci pada {pattern}, kemudian
+menggantinya dengan {string}
+[count] merupakan bilangan positif yang menghitung berapa kali perintah ini dieksekusi.
+Jika [range] dan [count] tidak digunakan maka hanya baris yang sedang kita edit yang akan
+berpengaruh. Baris yang diedit yaitu dimana kursor berada.
 
+Contoh sederhana, misal kita akan mencari kata `foo` dan untuk hasil pencarian pertama kita
+menggantinya dengan `bar`, maka kita gunakan perintah:
+```
 :s/foo/bar/
-Copy
-To replace all occurrences of the search pattern in the current line, add the g flag:
-
+```
+Untuk melakukan replace pada keseluruhan baris yang dengan kondisi yang sama, kita tambahkan
+flag g:
+```
 :s/foo/bar/g
-Copy
-If you want to search and replace the pattern in the entire file, use the percentage
-character % as a range. This character indicates a range from the first to the last line of
-the file:
-
+```
+Jika dengan kondisi yang sama anda ingin melakukan replace ke seluruh isi file, tambahkan
+karakter % yang berfungsi sebagai range.
+```
 :%s/foo/bar/g
-Copy
-If the {string} part is omitted, it is considered as an empty string, and the matched
-pattern is deleted. The following command deletes all instances of the string ‘foo’ in the
-current line:
-
+```
+Jika pada {string} kita kosongkan, maka semua hasil pencarian akan dihapus.
+Pada contoh berikut akan menghapus semua {pattern} yang mengandung string 'foo' pada satu baris:
+```
 :s/foo//g
-Copy
-Instead of the slash character (/), you can use any other non-alphanumeric single-byte
-character except as a delimiter. This option is useful when you have the ‘/’ character in
-the search pattern or the replacement string.
-:s|foo|bar|
-Copy
-To confirm each substitution, use the c flag:
+```
+Disamping menggunakan karakter garis miring (/) sebagai pemisah, kita juga dapat menggunakan karakter
+non-alphanumeric lain sebagai pemisah string. Ini berfungsi jika disaat kita sedang melakukan pencarian
+yang mengandung karakter '/', seperti contoh berikut kita akan mencari 'foo/' dan menggantinya
+dengan 'bar':
+```
+:s|foo/|bar|
+```
+Untuk mengkonfirmasi tiap perubahan, gunakan flag c seperti contoh:
+```
 :s/foo/bar/gc
-Copy
+```
+```
 replace with bar (y/n/a/q/l/^E/^Y)?
-Copy
-Press y to replace the match or l to replace the match and quit. Press n to skip the match
-and q or Esc to quit substitution. The a option substitutes the match and all remaining
-occurrences of the match. To scroll the screen down, use CTRL+Y, and to scroll up, use
-CTRL+E.
+```
+Tekan y untuk menimpa hasil atau l untuk menimpa dan selesai. Tekan n untuk mengabaikan hasil pencarian
+dan q atau Esc untuk menghentikan pencarian. Pilihan a atau 'all' mencari dan mengganti semua
+hasil pencarian yang cocok dengan string yang disediakan. Untuk scroll kebawah CTRL+Y (^Y) dan CTRL+E
+(^E) untuk scroll ke atas.
