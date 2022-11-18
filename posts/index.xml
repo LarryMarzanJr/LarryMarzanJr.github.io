@@ -11,7 +11,12 @@
 Proses Instalasi
 Referensi
 Minimum Requirements untuk instalasi Debian 11 Requirements Minimum Rekomendasi RAM 512MB 2GB Processor 1Ghz Hard Drive 10GB Dengan spesifikasi komputer diatas anda sudah bisa running Debian 11 secara minimal.
-Proses Instalasi coming soon ... Referensi dev.to tentang How To Install Debian 11 Bullseye Expert Mode Minimal Install{:target=&amp;rdquo;_blank&amp;rdquo;}</description></item><item><title>Mining Overclock Settings</title><link>https://larrymarzanjr.github.io/posts/cryptomining/2022-02-22-Mining-Overclock-Settings/</link><pubDate>Tue, 22 Feb 2022 04:29:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/cryptomining/2022-02-22-Mining-Overclock-Settings/</guid><description>Ethereum (ETH) Red Panda Mining's setup:
+Proses Instalasi coming soon ... Referensi dev.to tentang How To Install Debian 11 Bullseye Expert Mode Minimal Install{:target=&amp;rdquo;_blank&amp;rdquo;}</description></item><item><title>Mempercepat Windows Tanpa Tools</title><link>https://larrymarzanjr.github.io/posts/windows/2022-04-22-making-windows-faster-without-tools/</link><pubDate>Fri, 22 Apr 2022 18:06:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/windows/2022-04-22-making-windows-faster-without-tools/</guid><description>Atur startup Tekan Win+R kemudian ketikkan
+shell:startup Lalu hapus startup yang tidak digunakan. Tekan Win+R kemudian ketikkan
+shell:common startup Atur Regedit Tekan Win+R kemudian ketikkan regedit
+Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\CurrentUser\run Lalu disable beberapa aplikasi yang tidak digunakan
+Disable Aplikasi Startup dari Task Manager Buka Task Manager, lalu ke Tab Startup. Disable semua aplikasi startup yang tidak anda gunakan.
+Task Scheduler Pada menu start, buka Task Scheduler. Pada Task Schedule Library, disable aplikasi yang tidak digunakan seperti</description></item><item><title>Mining Overclock Settings</title><link>https://larrymarzanjr.github.io/posts/cryptomining/2022-02-22-Mining-Overclock-Settings/</link><pubDate>Tue, 22 Feb 2022 04:29:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/cryptomining/2022-02-22-Mining-Overclock-Settings/</guid><description>Ethereum (ETH) Red Panda Mining's setup:
 Power Limit: 100 Temp Limit: 83 Core Clock: -502 Memory Clock: +1300 Fan Speed: 60 My custom setting:
 Power Limit: 76 Temp Limit: 73 Core Clock: -502 Memory Clock: +1300 Fan Speed: 60 Ergo (ERG) Red Panda Mining's setup:
 Power Limit: 45 Temp Limit: 68 Core Clock: +0 Memory Clock: +0 Fan Speed: 80 Or reset afterburner to stock, on t-rex miner, add --lock-cclock 1520 and run as administrator.</description></item><item><title>Cara disable auto update pada Windows 10</title><link>https://larrymarzanjr.github.io/posts/windows/2022-02-19-disable-win10-autoupdate/</link><pubDate>Sat, 19 Feb 2022 15:33:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/windows/2022-02-19-disable-win10-autoupdate/</guid><description>&amp;lt;
@@ -26,8 +31,4 @@ GeForce RTX 3090 - GA102-300 (PCI Device ID: 2204) GeForce RTX 3080 - GA102-200 
 Install Andronix
 Go to unmineable.com and Use RandomX for start mining from your phone
 Sumber:
-youtube.com - How To Mine Crypto On Android [Full Guide 2021]{:target=&amp;rdquo;_blank&amp;rdquo;}</description></item><item><title>Cara Membuat / Generate SSH keygen</title><link>https://larrymarzanjr.github.io/posts/linux/2020-10-26-Membuat-Keygen-SSH/</link><pubDate>Mon, 26 Oct 2020 04:45:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/linux/2020-10-26-Membuat-Keygen-SSH/</guid><description>Cara Membuat / Generate SSH keygen Instalasi Tentunya package ssh sudah harus terinstall di system anda: Untuk Distro berbasis debian/ubuntu/turunannya:
-sudo apt install openssh Untuk Distro Archlinux/Manjaro/Turunannya:
-sudo pacman -S openssh Generate keygen SSH Setelah SSH terinstall lakukan, waktunya membuat keygen ssh untuk system kita dengan mengetikkan perintah:
-ssh-keygen -t rsa Edit file ~/.ssh/id_rsa.pub dan akan muncul:
-ssh-rsa BiasanyaKeySSHMunculDalamKarakterRandom Proses selesai.</description></item></channel></rss>
+youtube.com - How To Mine Crypto On Android [Full Guide 2021]{:target=&amp;rdquo;_blank&amp;rdquo;}</description></item></channel></rss>
