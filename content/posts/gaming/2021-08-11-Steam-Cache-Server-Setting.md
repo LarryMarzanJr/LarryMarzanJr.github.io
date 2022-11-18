@@ -1,8 +1,4 @@
 ---
-#excerpt: ''
-#image: 'BASEURL/assets/blog/img/.png'
-#description:
-#permalink:
 title: "Steam Cache untuk menyimpan Game hasil Download"
 subtitle: ""
 date: 2021-08-11T10:08:00+08:00
@@ -74,7 +70,7 @@ Dengan alasan tersebut maka kita menggunakan Steam Cache.
 # Instalasi
 
 ## Install Docker
-Berikut adalah link cara instalasi docker di [Linux](https://larrymarzanjr.github.io/docker/2022/02/12/cara-install-docker-container.html){:target="_blank"} dan [Windows](https://larrymarzanjr.github.io/docker/2022/02/18/install-docker-desktop-win10-integrasi-WSL-Ubuntu.html){:target="_blank"}
+Berikut adalah link cara instalasi docker di [Linux](https://larrymarzanjr.github.io/docker/2022/02/12/cara-install-docker-container.html) dan [Windows](https://larrymarzanjr.github.io/docker/2022/02/18/install-docker-desktop-win10-integrasi-WSL-Ubuntu.html)
 
 
 ## Install lancache
@@ -108,4 +104,4 @@ sudo docker exec -it lancache tail -f /data/logs/access.log
 
 Sumber:
 
-[Youtube.com - Steam Library Caching](https://www.youtube.com/watch?v=cSi-NOlomLc&t=1229s){:target="_blank"} 
+[Youtube.com - Steam Library Caching](https://www.youtube.com/watch?v=cSi-NOlomLc&t=1229s) 
