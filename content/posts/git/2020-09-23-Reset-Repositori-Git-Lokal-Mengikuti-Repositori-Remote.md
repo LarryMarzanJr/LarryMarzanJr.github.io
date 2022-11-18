@@ -10,7 +10,7 @@ description: ""
 license: ""
 images: []
 
-tags: [github]
+tags: [git]
 categories: [git]
 
 featuredImage: ""
