@@ -16,7 +16,13 @@ sudo apt update sudo apt install qbittorrent-nox Menambahkan Service qBittorrent
 Proses Instalasi
 Referensi
 Minimum Requirements untuk instalasi Debian 11 Requirements Minimum Rekomendasi RAM 512MB 2GB Processor 1Ghz Hard Drive 10GB Dengan spesifikasi komputer diatas anda sudah bisa running Debian 11 secara minimal.
-Proses Instalasi coming soon ... Referensi dev.to tentang How To Install Debian 11 Bullseye Expert Mode Minimal Install{:target=&amp;rdquo;_blank&amp;rdquo;}</description></item><item><title>Mempercepat Windows Tanpa Tools</title><link>https://larrymarzanjr.github.io/posts/windows/2022-04-22-making-windows-faster-without-tools/</link><pubDate>Fri, 22 Apr 2022 18:06:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/windows/2022-04-22-making-windows-faster-without-tools/</guid><description>Atur startup Tekan Win+R kemudian ketikkan
+Proses Instalasi coming soon ... Referensi dev.to tentang How To Install Debian 11 Bullseye Expert Mode Minimal Install{:target=&amp;rdquo;_blank&amp;rdquo;}</description></item><item><title>Self Cloud Hosting Menggunakan Nextcloud dan Debian 10</title><link>https://larrymarzanjr.github.io/posts/linux/2022-04-29-self-cloud-hosting-menggunakan-nextcloud-dan-debian-10/</link><pubDate>Fri, 29 Apr 2022 08:02:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/linux/2022-04-29-self-cloud-hosting-menggunakan-nextcloud-dan-debian-10/</guid><description>Daftar Isi Instalasi Package Dasar
+Enable PHP 7.3
+Restart Servis Apache2
+Konfigurasi MARIADB:
+Konfigurasi Database
+Install Nextcloud
+Instalasi Package Dasar sudo apt install apache2 libapache2-mod-php7.3 mariadb-server php7.3-xml php7.3-cli php7.3-cgi php7.3-mysql php7.3-mbstring php7.3-gd php7.3-curl php7.3-zip Enable PHP 7.3 sudo a2enmod php7.3 Restart Servis Apache2 sudo systemctl restart apache2 Konfigurasi MARIADB: sudo mysql_secure_installation NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB SERVERS IN PRODUCTION USE! PLEASE READ EACH STEP CAREFULLY!</description></item><item><title>Mempercepat Windows Tanpa Tools</title><link>https://larrymarzanjr.github.io/posts/windows/2022-04-22-making-windows-faster-without-tools/</link><pubDate>Fri, 22 Apr 2022 18:06:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/windows/2022-04-22-making-windows-faster-without-tools/</guid><description>Atur startup Tekan Win+R kemudian ketikkan
 shell:startup Lalu hapus startup yang tidak digunakan. Tekan Win+R kemudian ketikkan
 shell:common startup Atur Regedit Tekan Win+R kemudian ketikkan regedit
 Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\CurrentUser\run Lalu disable beberapa aplikasi yang tidak digunakan
@@ -34,8 +40,4 @@ Power Limit: 45 Temp Limit: 68 Core Clock: +0 Memory Clock: +0 Fan Speed: 80 Or 
 Tambahkan link favicon Tambahkan link favicon pada head.html biasanya terletak di _includes/head.html script berikut:
 &lt;link rel=&#34;shortcut icon&#34; type=&#34;image/png&#34; href=&#34;favicon.png&#34;&gt; Sehingga file head.html menjadi:
 &lt;head&gt; &lt;meta charset=&#34;utf-8&#34;&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt; &lt;!--Tambahkan favicon pada 1 baris dibawah ini --&gt; &lt;link rel=&#34;shortcut icon&#34; type=&#34;image/png&#34; href=&#34;favicon.png&#34;&gt; ... &lt;/head&gt; Selamat mencoba.
-Referensi  Youtube - Github Pages Add a Favicon{:target=&rdquo;_blank&rdquo;}  ]]></description></item><item><title>Cara disable auto update pada Windows 10</title><link>https://larrymarzanjr.github.io/posts/windows/2022-02-19-disable-win10-autoupdate/</link><pubDate>Sat, 19 Feb 2022 15:33:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/posts/windows/2022-02-19-disable-win10-autoupdate/</guid><description>&amp;lt;
-Disable Windows Update pada menu Services Klik Start kemudian ketikkan services. Double klik pada Windows Update kemudian ubah startup type menjadi disabled dan apply settingan anda.
-Disable Windows Update pada menu Registry Tekan tombol Win + R, ketikkan regedit dan tekan Enter. Dari menu Regedit kita buka menu tree berikut:
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv ImagePath Double klik pada ImagePath kemudian pada value data
-%systemroot%\system32\svchost.exe -k netsvcs -p ubah svchost.exe menjadi svchost0.exe sehingga value data menjadi:</description></item></channel></rss>
+Referensi  Youtube - Github Pages Add a Favicon{:target=&rdquo;_blank&rdquo;}  ]]></description></item></channel></rss>
