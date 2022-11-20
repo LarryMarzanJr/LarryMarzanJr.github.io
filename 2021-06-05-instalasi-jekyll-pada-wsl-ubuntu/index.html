@@ -1,0 +1,319 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>Instalasi Jekyll di WSL Ubuntu - Teknologi Untuk Hidup - by Larry Marzan Jr.</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Instalasi Jekyll di WSL Ubuntu"><meta property="og:description" content="https://www.vgemba.net/blog/Setup-Jekyll-WSL/
+[Software Versions](#Software Versions) This post was written assuming the following software requirements:
+Windows Environment:
+Windows 10 1909 Windows Subsystem for Linux v1 Ubuntu 18.04 LTS hosted on the Microsoft Store Jekyll:
+Jekyll version 3.8.5 WSL SetupPermalink This is well documented on the Microsoft Docs page but for completeness I will outline the steps.
+First we need to install the WSL feature. Open a PowerShell prompt as an Administrator and run:"><meta property="og:type" content="article"><meta property="og:url" content="https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/"><meta property="og:image" content="https://larrymarzanjr.github.io/logo.png"><meta property="article:published_time" content="2021-06-05T12:47:00+08:00"><meta property="article:modified_time" content="2022-11-18T18:32:01+08:00"><meta property="og:site_name" content="LoveIt"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://larrymarzanjr.github.io/logo.png"><meta name=twitter:title content="Instalasi Jekyll di WSL Ubuntu"><meta name=twitter:description content="https://www.vgemba.net/blog/Setup-Jekyll-WSL/
+[Software Versions](#Software Versions) This post was written assuming the following software requirements:
+Windows Environment:
+Windows 10 1909 Windows Subsystem for Linux v1 Ubuntu 18.04 LTS hosted on the Microsoft Store Jekyll:
+Jekyll version 3.8.5 WSL SetupPermalink This is well documented on the Microsoft Docs page but for completeness I will outline the steps.
+First we need to install the WSL feature. Open a PowerShell prompt as an Administrator and run:"><meta name=application-name content="LoveIt"><meta name=apple-mobile-web-app-title content="LoveIt"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/><link rel=prev href=https://larrymarzanjr.github.io/2020-10-26-membuat-keygen-ssh/><link rel=next href=https://larrymarzanjr.github.io/2021-07-09-mengaktifkan-dan-menggunakan-wayland-session/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Instalasi Jekyll di WSL Ubuntu","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/larrymarzanjr.github.io\/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu\/"},"image":["https:\/\/larrymarzanjr.github.io\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"jekyll","wordcount":952,"url":"https:\/\/larrymarzanjr.github.io\/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu\/","datePublished":"2021-06-05T12:47:00+08:00","dateModified":"2022-11-18T18:32:01+08:00","license":"joenmarz","publisher":{"@type":"Organization","name":"xxxx","logo":"https:\/\/larrymarzanjr.github.io\/images\/avatar.png"},"author":{"@type":"Person","name":"Larry Marzan Jr."},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':('auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark'))&&document.body.setAttribute('theme','dark');</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Teknologi Untuk Hidup - by Larry Marzan Jr.">TUH</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>Posts </a><a class=menu-item href=/tags/>Tags </a><a class=menu-item href=/categories/>Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop><input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Teknologi Untuk Hidup - by Larry Marzan Jr.">TUH</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/>Posts</a><a class=menu-item href=/tags/>Tags</a><a class=menu-item href=/categories/>Categories</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Instalasi Jekyll di WSL Ubuntu</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Larry Marzan Jr.</a></span>&nbsp;<span class=post-category>included in <a href=/categories/static-site-generator/><i class="far fa-folder fa-fw" aria-hidden=true></i>static-site-generator</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2021-06-05>2021-06-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;952 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;5 minutes&nbsp;<span id=/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/ class=leancloud_visitors data-flag-title="Instalasi Jekyll di WSL Ubuntu">
+<i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+</span>&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#software-versionssoftware-versions>[Software Versions](#Software Versions)</a></li></ul></li></ul></nav></div></div><div class=content id=content><p><a href=https://www.vgemba.net/blog/Setup-Jekyll-WSL/>https://www.vgemba.net/blog/Setup-Jekyll-WSL/</a></p><h3 id=software-versionssoftware-versions>[Software Versions](#Software Versions)</h3><p>This post was written assuming the following software requirements:</p><p>Windows Environment:</p><p>Windows 10 1909
+Windows Subsystem for Linux v1
+Ubuntu 18.04 LTS hosted on the Microsoft Store
+Jekyll:</p><p>Jekyll version 3.8.5
+WSL SetupPermalink
+This is well documented on the Microsoft Docs page but for completeness I will outline the steps.</p><p>First we need to install the WSL feature. Open a PowerShell prompt as an Administrator and run:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-powershell data-lang=powershell><span class=nb>Enable-WindowsOptionalFeature</span> <span class=n>-Online</span> <span class=n>-FeatureName</span> <span class=n>Microsoft</span><span class=n>-Windows</span><span class=n>-Subsystem</span><span class=n>-Linux</span>
+</code></pre></td></tr></table></div></div><p>Once complete press Y to reboot the computer. Once logged back in it is time to install Ubuntu from the Microsoft Store. Open a PowerShell prompt as an Administrator again:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-powershell data-lang=powershell><span class=c># Move to C:\Temp</span>
+<span class=nb>Set-Location</span> <span class=n>-Path</span> <span class=n>C</span><span class=err>:</span><span class=p>\</span><span class=n>Temp</span>
+
+<span class=c># Download Ubuntu 18.04</span>
+<span class=nb>Invoke-WebRequest</span> <span class=n>-Uri</span> <span class=n>https</span><span class=err>:</span><span class=p>/</span><span class=p>/</span><span class=n>aka</span><span class=p>.</span><span class=n>ms</span><span class=p>/</span><span class=n>wsl</span><span class=n>-ubuntu</span><span class=p>-</span><span class=n>1804</span> <span class=n>-OutFile</span> <span class=n>Ubuntu1804</span><span class=p>.</span><span class=n>appx</span> <span class=n>-UseBasicParsing</span>
+
+<span class=c># Install Ubuntu 18.04</span>
+<span class=nb>Add-AppxPackage</span> <span class=p>.</span><span class=p>\</span><span class=n>Ubuntu1804</span><span class=p>.</span><span class=n>appx</span>
+</code></pre></td></tr></table></div></div><p>Ubuntu should now be installed on your computer and appear in the Start Menu. Start the distro and we will have to do some initial setup. You need to add a username and password on the install. This can be different from your Windows credentials.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>Installing, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: joenmarz
+Enter new UNIX password:
+Retype new UNIX password:
+passwd: password updated successfully
+Installation successful!
+To run a <span class=nb>command</span> as administrator <span class=o>(</span>user <span class=s2>&#34;root&#34;</span><span class=o>)</span>, use <span class=s2>&#34;sudo &lt;command&gt;&#34;</span>.
+See <span class=s2>&#34;man sudo_root&#34;</span> <span class=k>for</span> details.
+
+joenmarz@joenmarz-studio:~$
+</code></pre></td></tr></table></div></div><p>The next step is to update the installation with the latest patches/packages:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>joenmarz@joenmarz-studio:~$ sudo apt update <span class=o>&amp;&amp;</span> sudo apt upgrade -y
+</code></pre></td></tr></table></div></div><p>The output above has been truncated. We now have Ubuntu 18.04 LTS installed on Windows 10.</p><p>Jekyll InstallationPermalink
+Next is to install Jekyll. It is a case of broadly following the Jekyll installation guide but with one point that needs changed.</p><p>First is to install the dependencies:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>sudo apt install -y ruby-full build-essential zlib1g-dev
+</code></pre></td></tr></table></div></div><p>Once these are installed the next step is to setup environment variables to your ~/.bashrc file:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash><span class=nb>echo</span> <span class=s1>&#39;# Install Ruby Gems to ~/gems&#39;</span> &gt;&gt; ~/.bashrc
+<span class=nb>echo</span> <span class=s1>&#39;export GEM_HOME=&#34;$HOME/gems&#34;&#39;</span> &gt;&gt; ~/.bashrc
+<span class=nb>echo</span> <span class=s1>&#39;export PATH=&#34;$HOME/gems/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.bashrc
+<span class=nb>source</span> ~/.bashrc
+</code></pre></td></tr></table></div></div><p>Next up is to install Bundler:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>gem install bundler
+</code></pre></td></tr></table></div></div><p>Finally we can install Jekyll. Now in the official install guide reference above the command given will install Jekyll v4.0.0. This is incompatible with GitHub pages as referenced in the GitHub Pages dependencies and versions. We require Jekyll v3.8.5.</p><p>It is simple to specify we want this version:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>gem install jekyll --version 3.8.5
+</code></pre></td></tr></table></div></div><p>To check the right version of Jekyll is installed:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>joenmarz@joenmarz-studio:~$ jekyll --version
+jekyll 3.8.5
+</code></pre></td></tr></table></div></div><p>We can also list all installed Gems and compare to the GitHub Pages requried versions by running the command gem list:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-bash data-lang=bash>joenmarz@joenmarz-studio:/mnt/c/Users/joenmarz$ gem list
+
+*** LOCAL GEMS ***
+
+addressable <span class=o>(</span>2.7.0<span class=o>)</span>
+afm <span class=o>(</span>0.2.2<span class=o>)</span>
+Ascii85 <span class=o>(</span>1.0.3<span class=o>)</span>
+benchmark <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+bigdecimal <span class=o>(</span>default: 2.0.0<span class=o>)</span>
+blankslate <span class=o>(</span>3.1.3<span class=o>)</span>
+bundler <span class=o>(</span>2.2.19, 2.1.4, default: 2.1.2<span class=o>)</span>
+cgi <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+classifier-reborn <span class=o>(</span>2.2.0<span class=o>)</span>
+coderay <span class=o>(</span>1.1.2<span class=o>)</span>
+colorator <span class=o>(</span>1.1.0<span class=o>)</span>
+concurrent-ruby <span class=o>(</span>1.1.8, 1.1.6<span class=o>)</span>
+concurrent-ruby-edge <span class=o>(</span>0.6.0<span class=o>)</span>
+csv <span class=o>(</span>default: 3.1.2<span class=o>)</span>
+date <span class=o>(</span>default: 3.0.0<span class=o>)</span>
+dbm <span class=o>(</span>default: 1.1.0<span class=o>)</span>
+delegate <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+did_you_mean <span class=o>(</span>default: 1.4.0<span class=o>)</span>
+em-websocket <span class=o>(</span>0.5.2, 0.5.1<span class=o>)</span>
+etc <span class=o>(</span>default: 1.1.0<span class=o>)</span>
+eventmachine <span class=o>(</span>1.2.7, 1.0.7<span class=o>)</span>
+fast-stemmer <span class=o>(</span>1.0.2<span class=o>)</span>
+fcntl <span class=o>(</span>default: 1.0.0<span class=o>)</span>
+ffi <span class=o>(</span>1.15.1, 1.12.2<span class=o>)</span>
+fiddle <span class=o>(</span>default: 1.0.0<span class=o>)</span>
+fileutils <span class=o>(</span>default: 1.4.1<span class=o>)</span>
+forwardable <span class=o>(</span>default: 1.3.1<span class=o>)</span>
+forwardable-extended <span class=o>(</span>2.6.0<span class=o>)</span>
+gdbm <span class=o>(</span>default: 2.1.0<span class=o>)</span>
+getoptlong <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+hashery <span class=o>(</span>2.1.2<span class=o>)</span>
+http_parser.rb <span class=o>(</span>0.6.0<span class=o>)</span>
+i18n <span class=o>(</span>1.8.2, 0.9.5<span class=o>)</span>
+io-console <span class=o>(</span>default: 0.5.3<span class=o>)</span>
+ipaddr <span class=o>(</span>default: 1.2.2<span class=o>)</span>
+irb <span class=o>(</span>default: 1.2.1<span class=o>)</span>
+jekyll <span class=o>(</span>3.8.7, 3.8.5<span class=o>)</span>
+jekyll-feed <span class=o>(</span>0.15.1<span class=o>)</span>
+jekyll-sass-converter <span class=o>(</span>1.5.2<span class=o>)</span>
+jekyll-seo-tag <span class=o>(</span>2.7.1<span class=o>)</span>
+jekyll-watch <span class=o>(</span>2.2.1<span class=o>)</span>
+json <span class=o>(</span>default: 2.3.0<span class=o>)</span>
+kramdown <span class=o>(</span>1.17.0<span class=o>)</span>
+launchy <span class=o>(</span>2.3.0<span class=o>)</span>
+liquid <span class=o>(</span>4.0.3<span class=o>)</span>
+listen <span class=o>(</span>3.5.1, 3.1.5<span class=o>)</span>
+logger <span class=o>(</span>default: 1.4.2<span class=o>)</span>
+matrix <span class=o>(</span>default: 0.2.0<span class=o>)</span>
+mercenary <span class=o>(</span>0.3.6<span class=o>)</span>
+mime-types <span class=o>(</span>3.3.1<span class=o>)</span>
+mime-types-data <span class=o>(</span>3.2015.1120<span class=o>)</span>
+minima <span class=o>(</span>2.5.1<span class=o>)</span>
+minitest <span class=o>(</span>5.13.0<span class=o>)</span>
+molinillo <span class=o>(</span>0.6.4<span class=o>)</span>
+multi_json <span class=o>(</span>1.14.1<span class=o>)</span>
+mutex_m <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+net-http-persistent <span class=o>(</span>2.9.4<span class=o>)</span>
+net-pop <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+net-smtp <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+net-telnet <span class=o>(</span>0.1.1<span class=o>)</span>
+observer <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+oj <span class=o>(</span>3.10.1<span class=o>)</span>
+open3 <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+openssl <span class=o>(</span>default: 2.1.2<span class=o>)</span>
+ostruct <span class=o>(</span>default: 0.2.0<span class=o>)</span>
+parslet <span class=o>(</span>1.8.2<span class=o>)</span>
+pathutil <span class=o>(</span>0.16.2, 0.16.1<span class=o>)</span>
+pdf-core <span class=o>(</span>0.8.1<span class=o>)</span>
+pdf-reader <span class=o>(</span>2.1.0<span class=o>)</span>
+posix-spawn <span class=o>(</span>0.3.13<span class=o>)</span>
+power_assert <span class=o>(</span>1.1.7<span class=o>)</span>
+prawn <span class=o>(</span>2.2.0<span class=o>)</span>
+prawn-table <span class=o>(</span>0.2.2<span class=o>)</span>
+prime <span class=o>(</span>default: 0.1.1<span class=o>)</span>
+pstore <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+psych <span class=o>(</span>default: 3.1.0<span class=o>)</span>
+public_suffix <span class=o>(</span>4.0.6, 3.0.3<span class=o>)</span>
+pygments.rb <span class=o>(</span>1.2.0<span class=o>)</span>
+racc <span class=o>(</span>default: 1.4.16<span class=o>)</span>
+rake <span class=o>(</span>13.0.1<span class=o>)</span>
+rb-fsevent <span class=o>(</span>0.11.0<span class=o>)</span>
+rb-inotify <span class=o>(</span>0.10.1, 0.9.10<span class=o>)</span>
+rdiscount <span class=o>(</span>2.1.8<span class=o>)</span>
+rdoc <span class=o>(</span>default: 6.2.1<span class=o>)</span>
+readline <span class=o>(</span>default: 0.0.2<span class=o>)</span>
+readline-ext <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+redcarpet <span class=o>(</span>3.5.0<span class=o>)</span>
+reline <span class=o>(</span>default: 0.1.2<span class=o>)</span>
+rexml <span class=o>(</span>default: 3.2.3<span class=o>)</span>
+rouge <span class=o>(</span>3.26.0, 3.15.0<span class=o>)</span>
+rss <span class=o>(</span>default: 0.2.8<span class=o>)</span>
+ruby-rc4 <span class=o>(</span>0.1.5<span class=o>)</span>
+safe_yaml <span class=o>(</span>1.0.5<span class=o>)</span>
+sass <span class=o>(</span>3.7.4<span class=o>)</span>
+sdbm <span class=o>(</span>default: 1.0.0<span class=o>)</span>
+singleton <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+stringex <span class=o>(</span>2.8.4<span class=o>)</span>
+stringio <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+strscan <span class=o>(</span>default: 1.0.3<span class=o>)</span>
+test-unit <span class=o>(</span>3.3.5<span class=o>)</span>
+thor <span class=o>(</span>0.19.4<span class=o>)</span>
+timeout <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+toml <span class=o>(</span>0.2.0<span class=o>)</span>
+tracer <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+ttfunk <span class=o>(</span>1.5.1<span class=o>)</span>
+uri <span class=o>(</span>default: 0.10.0<span class=o>)</span>
+webrick <span class=o>(</span>default: 1.6.0<span class=o>)</span>
+xmlrpc <span class=o>(</span>0.3.0<span class=o>)</span>
+yajl-ruby <span class=o>(</span>1.3.1<span class=o>)</span>
+yaml <span class=o>(</span>default: 0.1.0<span class=o>)</span>
+zlib <span class=o>(</span>default: 1.1.0<span class=o>)</span>
+</code></pre></td></tr></table></div></div><p>We should now have Jekyll and its dependencies installed to publish a blog on GitHub pages.</p><p>Wrap UpPermalink
+This is a simple set of steps to follow but as someone that does not know Linux very well let alone Ruby it took me a while to figure out why Jekyll was not building my site. The step of using gem install jekyll &ndash;version 3.8.5 is key to success.</p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2022-11-18&nbsp;<a class=git-hash href=https://github.com/dillonzq/LoveIt/commit/8aca5b7a9380c03de5d188b518ce7a18990b04ac target=_blank title="commit by Larry Marzan Jr(larry.marzanjr@gmail.com) 8aca5b7a9380c03de5d188b518ce7a18990b04ac: migrated content">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>8aca5b7</a></span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/ data-title="Instalasi Jekyll di WSL Ubuntu" data-via=joenmarz data-hashtags=jekyll><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/ data-hashtag=jekyll><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on WhatsApp" data-sharer=whatsapp data-url=https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/ data-title="Instalasi Jekyll di WSL Ubuntu" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/ data-title="Instalasi Jekyll di WSL Ubuntu"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/jekyll/>jekyll</a></section><section><span><a href=javascript:void(0); onclick=window.history.back();>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/2020-10-26-membuat-keygen-ssh/ class=prev rel=prev title="Cara Membuat / Generate SSH keygen"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Cara Membuat / Generate SSH keygen</a>
+<a href=/2021-07-09-mengaktifkan-dan-menggunakan-wayland-session/ class=next rel=next title="Mengaktifkan Wayland Session di Linux">Mengaktifkan Wayland Session di Linux<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments><div id=valine class=comment></div><noscript>Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.</noscript></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2013 - 2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Larry Marzan Jr.</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i></a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/lib/valine/valine.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"lightgallery":true,"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
