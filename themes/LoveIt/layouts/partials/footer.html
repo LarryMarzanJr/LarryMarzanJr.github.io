@@ -9,7 +9,6 @@
             {{- end -}}
 
             {{- /* Hugo and LoveIt */ -}}
-<!--
             {{- if ne .Site.Params.footer.hugo false -}}
                 <div class="footer-line">
                     {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo %v">Hugo</a>` hugo.Version -}}
@@ -17,14 +16,11 @@
                     {{- dict "Hugo" $hugo "Theme" $theme | T "poweredBySome" | safeHTML }}
                 </div>
             {{- end -}}
--->
 
             <div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork">
-                Larry Marzan Jr.  
                 {{- /* Copyright year */ -}}
                 {{- if ne .Site.Params.footer.copyright false -}}
                     <i class="far fa-copyright fa-fw" aria-hidden="true"></i>
-                    2013-   
                     {{- with .Site.Params.footer.since -}}
                         <span itemprop="copyrightYear">
                             {{- if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year -}}

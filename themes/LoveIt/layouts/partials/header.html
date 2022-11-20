@@ -3,7 +3,6 @@
     <div class="header-wrapper">
         <div class="header-title">
             <a href="{{ .Site.Home.RelPermalink }}" title="{{ .Site.Title }}">
-                {{ .Hugo.Generator }} 
                 {{- with .Site.Params.header.title -}}
                     {{- with .logo -}}
                         {{- dict "Src" . "Class" "logo" | partial "plugin/img.html" -}}
