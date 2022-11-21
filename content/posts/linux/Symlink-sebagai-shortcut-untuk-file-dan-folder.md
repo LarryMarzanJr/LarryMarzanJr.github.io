@@ -58,8 +58,10 @@ seo:
   images: []
   # ...
 ---
-How to Create a Symlink for a File – Example Command
-ln -s /home/james/transactions.txt trans.txt
+## Contoh Perintah
+```
+ln -s /home/joenmarz/folder1/file_asli.txt file.txt
+```
 After running this command, you will be able to access the /home/james/transactions.txt with
 trans.txt. Any modification to trans.txt will also be reflected in the original file.
 
