@@ -1,8 +1,61 @@
 ---
-layout: post
-title:  "Mengatur Instalasi Python Lebih Dari Satu Versi Menggunakan Pyenv di Linux"
-date:   2021-06-24 08:33:00 +0800
-categories: python
+title: "Mengatur Instalasi Python Lebih Dari Satu Versi Menggunakan Pyenv di Linux"
+subtitle: ""
+date: 2021-06-24T08:33:00+08:00
+lastmod: 2021-06-24T08:33:00+08:00
+author: "Larry Marzan Jr."
+authorLink: ""
+description: ""
+license: ""
+images: []
+
+tags: [python]
+categories: [programming]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
 
 ## Pre-Requisites
