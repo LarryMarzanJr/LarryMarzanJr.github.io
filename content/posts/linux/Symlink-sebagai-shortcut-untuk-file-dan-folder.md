@@ -62,30 +62,15 @@ seo:
 ```
 ln -s /home/joenmarz/folder1/file_asli.txt file.txt
 ```
-After running this command, you will be able to access the /home/james/transactions.txt with
-trans.txt. Any modification to trans.txt will also be reflected in the original file.
+Setelah menjalankan perintah ini kita bisa mengakses `/home/joenmarz/folder1/file_asli.txt` dengan `file.txt`
+Jika terdapat perubahan pada `file.txt` maka akan berpengaruh juga pada file aslinya.
 
-Note that this command above would create the link file trans.txt in your current directory.
-You can as well create a linked file in a folder link this:
-
-ln -s /home/james/transactions.txt my-stuffs/trans.txt
-There must be a directory already called "my-stuffs" in your current directory – if not the
-command will throw an error.
-
-How to Create a Symlink for a Folder – Example Command
-Similar to above, we'd use:
-
-ln -s /home/james james
-This would create a symlinked folder called 'james' which would contain the contents of
-/home/james. Any changes to this linked folder will also affect the original folder.
-
-How to remove a symlink
-Before you'd want to remove a symlink, you may want to confirm that a file or folder is a
-symlink, so that you do not tamper with your files.
-
-One way to do this is:
-
-ls -l <path-to-assumed-symlink>
+## Cara Melepas Symlink
+Sebelum melepas (remove) symlink, kita perlu mengkonfirmasi bahwa file ataupun folder
+tersebut benar merupakan symlink. Caranya adalah:
+```
+ls -l <path-ke-symlink>
+```
 Running this command on your terminal will display the properties of the file. In the
 result, if the first character is a small letter L ('l'), it means the file/folder is a
 symlink.
