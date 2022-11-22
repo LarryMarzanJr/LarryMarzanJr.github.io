@@ -81,3 +81,4 @@ Setelah itu untuk mengganti python ke versi yang inginkan, dalam hal ini `3.8.10
 ```bash
 pyenv global 3.8.10
 ```
+
