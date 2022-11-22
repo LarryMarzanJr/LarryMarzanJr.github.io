@@ -112,4 +112,4 @@ Dengan mengkombinasikan tag yang ada, kita bisa memperoleh informasi disk sesuai
 <a name="reference"/>
 
 ## Referensi
-- [howtogeek.com tentang How to View Free Disk Space and Disk Usage From the Linux Terminal](https://www.howtogeek.com/409611/how-to-view-free-disk-space-and-disk-usage-from-the-linux-terminal/){:target="_blank"}
+- [howtogeek.com tentang How to View Free Disk Space and Disk Usage From the Linux Terminal](https://www.howtogeek.com/409611/how-to-view-free-disk-space-and-disk-usage-from-the-linux-terminal/)
