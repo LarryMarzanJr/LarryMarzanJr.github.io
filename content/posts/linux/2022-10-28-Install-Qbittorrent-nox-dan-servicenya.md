@@ -58,19 +58,6 @@ seo:
   images: []
   # ...
 ---
-
-## Daftar Isi  
-
-[Proses Instalasi](#installation)
-
-[Menambahkan Service qBittorrent-nox](#adding-service)
-
-[Referensi](#reference)
-
-
-
-<a name="installation"/>
-
 ## Proses Instalasi
 
 Proses instalasi pada debian based cukup mudah:
@@ -78,8 +65,6 @@ Proses instalasi pada debian based cukup mudah:
 sudo apt update
 sudo apt install qbittorrent-nox
 ```
-
-<a name="adding-service"/>
 
 ## Menambahkan Service qBittorrent-nox
 
@@ -141,7 +126,5 @@ qBittorrent-nox web user interface sudah bisa digunakan. Untuk menjalankan cukup
 
 Saat login pertama kali, user bawaannya adalah `admin` dan passwordnya `adminadmin`. Anda dapat mengubah user pada pengaturan web interface qBittorrent-nox setelah login.
 
-<a name="reference"/>
-
 ## Referensi
-- [YT SKaii Nyght tentang qBitTorrent-nox on Headless Debian - Let's Install](https://www.youtube.com/watch?v=NQ3T-2Xf9-c){:target="_blank"}
+- [YT SKaii Nyght tentang qBitTorrent-nox on Headless Debian - Let's Install](https://www.youtube.com/watch?v=NQ3T-2Xf9-c)
