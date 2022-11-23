@@ -3,7 +3,7 @@ title: "Daftar Repository Lokal Indonesia Debian 11 Bullseye"
 subtitle: ""
 date: 2022-11-23T07:12:46+08:00
 lastmod: 2022-11-23T07:12:46+08:00
-draft: true
+draft: false
 author: ""
 authorLink: ""
 description: ""
@@ -68,6 +68,7 @@ mendapat kwalitas download package yang tercepat.
 
 ### Data Utama Surabaya
 ```
+# Data Utama Surabaya - Indonesia
 deb http://kartolo.sby.datautama.net.id/debian/ bullseye main contrib non-free
 deb http://kartolo.sby.datautama.net.id/debian/ bullseye-updates main contrib non-free
 deb http://kartolo.sby.datautama.net.id/debian-security/ bullseye-security main contrib non-free
@@ -75,35 +76,26 @@ deb http://kartolo.sby.datautama.net.id/debian-security/ bullseye-security main 
 
 ### Kambing UI
 ```
-deb deb http://kartolo.sby.datautama.net.id/debian/ bullseye main contrib non-free
-deb http://kartolo.sby.datautama.net.id/debian/ bullseye-updates main contrib non-free
-deb http://kartolo.sby.datautama.net.id/debian-security/ bullseye-security main contrib non-free
-`ttp://kartolo.sby.datautama.net.id/debian/ bullseye main contrib non-free
-deb http://kartolo.sby.datautama.net.id/debian/ bullseye-updates main contrib non-free
-deb http://kartolo.sby.datautama.net.id/debian-security/ bullseye-security main contrib non-free
-`    deb http://kambing.ui.ac.id/debian/ bullseye main contrib non-free
-         deb http://kambing.ui.ac.id/debian/ bullseye-updates main contrib non-free
-             deb http://kambing.ui.ac.id/debian-security/ bullseye/updates main contrib
-             non-free 
+# Kambing UI - Indonesia
+deb http://kambing.ui.ac.id/debian/ bullseye main contrib non-free
+deb http://kambing.ui.ac.id/debian/ bullseye-updates main contrib non-free
+deb http://kambing.ui.ac.id/debian-security/ bullseye-security main contrib non-free 
 ```
 
 ### Kebo VLSM
 ```
-                 deb http://kebo.vlsm.org/debian/ bullseye main contrib non-free
-                     deb http://kebo.vlsm.org/debian/ bullseye-updates main contrib non-free
-                         deb http://kebo.vlsm.org/debian-security/ bullseye/updates main
-                         contrib non-free 
+# Kebo VLSM - Indonesia
+deb http://kebo.vlsm.org/debian/ bullseye main contrib non-free
+deb http://kebo.vlsm.org/debian/ bullseye-updates main contrib non-free
+deb http://kebo.vlsm.org/debian-security/ bullseye-security main contrib non-free 
 ```
 
 ### Mirror Unej
 ```
-                                         deb http://mirror.unej.ac.id/debian/ bullseye main
-                                         contrib non-free
-                                             deb http://mirror.unej.ac.id/debian/
-                                             bullseye-updates main contrib non-free
-                                                 deb
-                                                 http://mirror.unej.ac.id/debian-security/
-                                                 bullseye/updates main contrib non-free
+# Mirror Unej - Indonesia
+deb http://mirror.unej.ac.id/debian/ bullseye main contrib non-free
+deb http://mirror.unej.ac.id/debian/bullseye-updates main contrib non-free
+deb http://mirror.unej.ac.id/debian-security/ bullseye-security main contrib non-free
 ```
 
 ## Cara Menggunakan atau Mengganti Repository
