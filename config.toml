@@ -9,11 +9,11 @@ themesDir = "themes"
 title = "Teknologi Untuk Hidup - by Larry Marzan Jr."
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
-defaultContentLanguage = "en"
+defaultContentLanguage = "id"
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "en"
+languageCode = "id"
 # language name ["English", "简体中文", "Français", "Polski", ...]
-languageName = "English"
+languageName = "Indonesian"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
 
@@ -74,7 +74,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/LarryMarzanJr/LarryMarzanJr.github.io/
+  #gitRepo = "https://github.com/LarryMarzanJr/LarryMarzanJr.github.io/
+  gitRepo = ""
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
