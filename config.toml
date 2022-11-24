@@ -74,16 +74,16 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/dillonzq/LoveIt"
+  gitRepo = "https://github.com/LarryMarzanJr/LarryMarzanJr.github.io/
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
   # date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "LoveIt"
+  title = "Teknologi Untuk Hidup"
   # website description for RSS, SEO, Open Graph and Twitter Cards
-  description = "Hugo theme - LoveIt"
+  description = "Teknologi Untuk Hidup - Larry Marzan Jr."
   # website images for Open Graph and Twitter Cards
   images = ["/logo.png"]
 
@@ -143,7 +143,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "LoveIt"
+    title = "Teknologi Untuk Hidup"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -410,7 +410,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         emoji = ""
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
-        enable = false
+        enable = true 
         width = "100%"
         numPosts = 10
         appId = ""
@@ -546,28 +546,19 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       link = ""
 
   # CDN config for third-party library files
-  # 第三方库文件的 CDN 设置
   [params.cdn]
     # CDN data file name, disabled by default
     # ["jsdelivr.yml"]
     # located in "themes/LoveIt/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
-    # CDN 数据文件名称, 默认不启用
-    # ["jsdelivr.yml"]
-    # 位于 "themes/LoveIt/assets/data/cdn/" 目录
-    # 可以在你的项目下相同路径存放你自己的数据文件:
-    # "assets/data/cdn/"
     data = "jsdelivr.yml"
 
   # Compatibility config
-  # 兼容性设置
   [params.compatibility]
     # whether to use Polyfill.io to be compatible with older browsers
-    # 是否使用 Polyfill.io 来兼容旧式浏览器
     polyfill = false
     # whether to use object-fit-images to be compatible with older browsers
-    # 是否使用 object-fit-images 来兼容旧式浏览器
     objectFit = false
 
 # Markup related configuration in Hugo
