@@ -3,7 +3,7 @@ title: "Symlink Sebagai 'Shortcut' Untuk File Dan Folder"
 subtitle: ""
 date: 2022-11-21T11:34:04+08:00
 lastmod: 2022-11-21T11:34:04+08:00
-draft: true
+draft: false
 author: ""
 authorLink: ""
 description: ""
