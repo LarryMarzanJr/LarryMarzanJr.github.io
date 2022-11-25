@@ -10,8 +10,8 @@ description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: [linux]
+categories: [linux]
 
 featuredImage: ""
 featuredImagePreview: ""
@@ -67,67 +67,53 @@ Jika terdapat perubahan pada `file.txt` maka akan berpengaruh juga pada file asl
 
 ## Cara Melepas Symlink
 Sebelum melepas (remove) symlink, kita perlu mengkonfirmasi bahwa file ataupun folder
-tersebut benar merupakan symlink. Caranya adalah:
+tersebut benar merupakan symlink.
 ```
 ls -l <path-ke-symlink>
 ```
-Running this command on your terminal will display the properties of the file. In the
-result, if the first character is a small letter L ('l'), it means the file/folder is a
-symlink.
+Menjalankan perintah ini di terminal akan menampilkan properties dari file. File symlink
+ditandai dengan adanya tanda panah (->) yang mengindikasikan path dari file symlink
+tersebut.
 
-You'd also see an arrow (->) at the end indicating the file/folder the simlink is pointing
-to.
+Ada dua cara melepas atau menghapus symlink.
+Cara pertama dengan menggunakan perintah `unlink`
+```
+unlink <path-ke-symlink>
+```
+contohnya
+```
+unlink file.txt
+```
 
-There are two methods to remove a symlink:
+Cara kedua dengan menggunakan perintah `rm`. Jika anda familiar dengan linux pasti perintah
+`rm` sudah sering digunakan untuk menghapus file. Dalam hal ini menghapus symlink juga bisa
+menggunakan perintah yang sama.
+```
+rm <path-ke-symlink>
+```
+contohnya
+```
+rm files.txt
+rm nama_symlink 
+```
+Jika kita melakukan perintah `rm nama_symlink/` akan berakibat error, karena Linux akan
+menganggap `nama_symlink/` adalah sebuah directory atau folder sehinga membutuhkan tambahan
+flag r dan f. Tapi bukan itu yang ingin kita lakukan.
 
-How to Use Unlink to Remove a Symlink
-The syntax is:
+## Cara Menemukan dan Menghapus Symlink yang Rusak
+Symlink yang rusak terjadi ketika file atau folder tujuan dari sebuah symlink telah terhapus
+atau berpindah path.
 
-unlink <path-to-symlink>
-This deletes the symlink if the process is successful.
-
-Even if the symlink is in the form of a folder, do not append '/', because Linux will assume
-it's a directory and unlink can't delete directories.
-
-How to use rm to Remove a Symlink
-As we've seen, a symlink is just another file or folder pointing to an original file or
-folder. To remove that relationship, you can remove the linked file.
-
-Hence, the syntax is:
-
-rm <path-to-symlink>
-For example:
-
-rm trans.txt
-rm james
-Note that trying to do rm james/ would result an error, because Linux will assume 'james/'
-is a directory, which would require other options like r and f. But that's not what we want.
-A symlink may be a folder, but we are only concerned with the name.
-
-The main benefit of rm over unlink is that you can remove multiple symlinks at once, like
-you can with files.
-
-How to Find and Delete Broken Links
-Broken links occur when the file or folder that a symlink points to changes path or is
-deleted.
-
-For example, if 'transactions.txt' moves from /home/james to /home/james/personal, the
-'trans.txt' link becomes broken. Every attempt to access to the file will result in a 'No
-such file or directory' error. This is because the link has no contents of its own.
-
-When you discover broken links, you can easily delete the file. An easy way to find broken
-symlinks is:
-
-find /home/james -xtype l
-This will list all broken symlinks in the james directory – from files to directories to
-sub-directories.
-
-Passing the -delete option will delete them like so:
-
-find /home/james -xtype l -delete
-Wrapping up
-Symbolic link are an interesting feature of Linux and UNIX systems.
-
-You can create easily accessible symlinks to refer to a file or folder that would otherwise
-not be convenient to access. With some practice, you will understand how these work on an
-intuitive level, and they will make you much more efficient at managing file systems.
+Contohnya jika `file.txt` berpindah tempat dari `/home/joenmarz/` ke
+`/home/joenmarz/folder1`, maka symlink yang terkoneksi ke `file.txt` menjadi rusak.
+Cara menemukan symlink yang rusak dari file tersebut adalah:
+```bash
+find /home/joenmarz -xtype l
+```
+Perintah ini akan menampilkan semua symlink yang rusak yang ada pada folder joenmarz, dari
+file, folder bahkan sub-folder di dalamnya.
+Menambahkan flag `-delete` akan otomatis menghapus symlink yang rusak, yang ada di folder
+tersebut.
+```bash
+find /home/joenmarz -xtype l -delete
+```
