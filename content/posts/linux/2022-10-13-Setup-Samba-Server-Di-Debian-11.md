@@ -110,5 +110,5 @@ Edit atau tambahkan binary DWORD `AllowInsecureGuestAuth` dan ubah value data me
 <a name="reference"/>
 
 ## Referensi
-- [Novaspirit Tech YT tentang DIY NAS Server Setup with Debian / Plex / Raid 5 / Steam Library Caching / UrBackup / SMB Part 2](https://www.youtube.com/watch?v=cSi-NOlomLc&t=696s){:target="_blank"}
-- [Tech Review Tech YT tentang Windows 10 You Can't Access This Shared Folder Because Your Organization's Security Policies Block Unauthenticated Guest Access.](https://www.youtube.com/watch?v=vyatMj1Z2NQ){:target="_blank"}
+- [Novaspirit Tech YT tentang DIY NAS Server Setup with Debian / Plex / Raid 5 / Steam Library Caching / UrBackup / SMB Part 2](https://www.youtube.com/watch?v=cSi-NOlomLc&t=696s)
+- [Tech Review Tech YT tentang Windows 10 You Can't Access This Shared Folder Because Your Organization's Security Policies Block Unauthenticated Guest Access.](https://www.youtube.com/watch?v=vyatMj1Z2NQ)

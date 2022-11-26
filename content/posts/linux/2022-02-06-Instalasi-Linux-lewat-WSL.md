@@ -79,8 +79,8 @@ wsl --install -d Ubuntu
 ```
 
 ## Referensi
-- [Microsoft tentang Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install){:target="_blank"}
-- [wsl-guide.kennethreitz.org tentang Installing WSL](https://wsl-guide.kennethreitz.org/en/latest/installation.html){:target="_blank"}
-- [ntweekly.com tentang Install WSL distribution using Command](https://www.ntweekly.com/2021/09/10/list-available-for-install-wsl-distribution-using-command/){:target="_blank"}
+- [Microsoft tentang Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
+- [wsl-guide.kennethreitz.org tentang Installing WSL](https://wsl-guide.kennethreitz.org/en/latest/installation.html)
+- [ntweekly.com tentang Install WSL distribution using Command](https://www.ntweekly.com/2021/09/10/list-available-for-install-wsl-distribution-using-command/)
 
 

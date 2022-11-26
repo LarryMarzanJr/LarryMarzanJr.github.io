@@ -191,4 +191,4 @@ sudo chown -R www-data:www-data /var/www/html/nextcloud
 ```
 
 ## Referensi
-[EF - Linux Made Simple - How to install Nextcloud on Debian 10](https://www.youtube.com/watch?v=P_SXZ_K3-e4){:target="_blank"}
+[EF - Linux Made Simple - How to install Nextcloud on Debian 10](https://www.youtube.com/watch?v=P_SXZ_K3-e4)

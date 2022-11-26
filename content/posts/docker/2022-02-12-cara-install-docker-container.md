@@ -110,4 +110,4 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 ```
 
 ## Referensi
-[docker.com tentang Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/){:target="_blank"}
+[docker.com tentang Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)

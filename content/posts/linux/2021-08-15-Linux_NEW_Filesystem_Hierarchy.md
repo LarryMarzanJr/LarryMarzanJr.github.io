@@ -59,7 +59,7 @@ seo:
   # ...
 ---
 
-# Hirarki Filesystem Linux
+## Hirarki Filesystem Linux
 
 | Path |  Description |
 | :---: |:--------------------:|
@@ -81,4 +81,4 @@ seo:
 
 Sumber:
 
-[hackthebox.eu - Linux File System Hierarchy](https://academy.hackthebox.eu/module/18){:target="_blank"} 
+[hackthebox.eu - Linux File System Hierarchy](https://academy.hackthebox.eu/module/18)

@@ -76,4 +76,4 @@ Anda akan merasakan bedanya, OS Linux anda tidak akan _laggy_ seperti sebelumya.
 
 Sumber:
 
-[Reddit.com - how do i start wayland session](https://www.reddit.com/r/pop_os/comments/75wn18/how_do_i_start_wayland_session/){:target="_blank"} 
+[Reddit.com - how do i start wayland session](https://www.reddit.com/r/pop_os/comments/75wn18/how_do_i_start_wayland_session/)
