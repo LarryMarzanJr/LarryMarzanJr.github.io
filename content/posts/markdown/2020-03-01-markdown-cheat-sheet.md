@@ -1,26 +1,65 @@
 ---
-layout: post
 title:  "Markdown Cheatsheet"
-date:   2020-04-01 10:40:14 +0800
-categories: markdown
+subtitle: ""
+date:  2020-04-01T10:40:14+08:00
+lastmod:  2020-04-01T10:40:14+08:00
+draft: false 
+author: "Larry Marzan Jr."
+authorLink: ""
+description: ""
+license: ""
+images: []
+
+tags: [markdown]
+categories: [markdown]
+
+featuredImage: ""
+featuredImagePreview: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: []
+  # ...
 ---
+
 Ini adalah referensi singkat dalam menggunakan markdown.
-
-##### Daftar Isi  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-[Lists](#lists)  
-[Links](#links)  
-[Gambar](#images)  
-[Koding dan Syntax Highlighting](#code)  
-[Tabel](#tables)  
-[Blockquotes](#blockquotes)  
-[Inline HTML](#html)  
-[Horizontal Rule](#hr)  
-[Line Breaks](#lines)  
-[YouTube Videos](#videos)  
-
-<a name="headers"/>
 
 ## Headers
 
@@ -56,7 +95,6 @@ Alt-H1
 Alt-H2
 ------
 
-<a name="emphasis"/>
 
 ## Emphasis
 
@@ -78,8 +116,6 @@ Kombinasi Bold dengan **tanda-bintang dan _garis-bawah_**.
 
 Strikethrough menggunakan dua tanda tilde. ~~Scratch this.~~
 
-
-<a name="lists"/>
 
 ## Lists
 
@@ -120,8 +156,6 @@ Strikethrough menggunakan dua tanda tilde. ~~Scratch this.~~
 * List tanpa urutan angka dapat menggunakan tanda bintang
 - atau tanda kurang
 + Atau tanda tambah
-
-<a name="links"/>
 
 ## Links
 
@@ -169,8 +203,6 @@ http://www.contoh.com or <http://www.contoh.com> dan kadang juga dengan contoh.c
 [1]: http://slashdot.org
 [link dengan text ini]: https://duckduckgo.com/
 
-<a name="images"/>
-
 ## Gambar
 
 ```no-highlight
@@ -194,8 +226,6 @@ Reference-style:
 ![alt text][logo]
 
 [logo]: https://assets.gitlab-static.net/uploads/-/system/project/avatar/21091714/Profile_Picture3.png "Logo Title Text 2"
-
-<a name="code"/>
 
 ## Koding dan Syntax Highlighting
 
@@ -226,8 +256,6 @@ Walaupun diinput kode html, contohnya &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
 
-
-
 ```javascript
 var s = "Syntax highlighting untuk Javascript";
 alert(s);
@@ -243,9 +271,6 @@ Pada blok ini tidak ditandai dengan bahasa pemrograman apapun.
 sehingga tidak ada syntax highlighting, tulisannya hanya polos.
 Walaupun diinput kode html, contohnya <b>tag</b>.
 ```
-
-
-<a name="tables"/>
 
 ## Tabel
 
@@ -289,8 +314,6 @@ Markdown | Tidak | Sejajar
 *Namun* | `tabelnya` | **tetap rapih**
 1 | 2 | 3
 
-<a name="blockquotes"/>
-
 ## Blockquotes
 
 ```no-highlight
@@ -308,8 +331,6 @@ Quote terputus.
 Quote terputus.
 
 > Ini adalah contoh baris yang sangat panjang tapi tetap masuk dalam quote ketika berpindah baris. Mari kita coba membuat baris ini lebih panjang dengan menambahkan kalimat. Di dalam quote anda juga dapat menambahkan **Markdown** dan pasti berfungsi.
-
-<a name="html"/>
 
 ## Inline HTML
 
@@ -333,10 +354,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-<a name="hr"/>
-
 ## Horizontal Rule
-
 ```
 Three or more...
 
@@ -392,8 +410,6 @@ This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
 (Technical note: *Markdown Here* uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
-
-<a name="videos"/>
 
 ## YouTube Videos
 
