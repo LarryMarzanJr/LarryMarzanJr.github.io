@@ -3,7 +3,6 @@ title: "Install Debian 11 Tanpa GUI atau DE minimal"
 subtitle: ""
 date: 2022-10-09T06:50:00+08:00
 lastmod: 2022-10-09T06:50:00+08:00
-draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""
 description: ""
