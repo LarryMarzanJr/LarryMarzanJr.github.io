@@ -88,10 +88,10 @@ Tentukan nama **domain** untuk server.
 
 **Set up users and passwords** untuk membuat user ID pengguna.
 
-**Enable Shadow Passwords* untuk mengenkripsi password user kita.
+**Enable Shadow Passwords** untuk mengenkripsi password user kita.
 
 ```
-... to be continued.
+to be continued.
 ```
 
 ## Referensi
