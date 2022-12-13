@@ -1,7 +1,7 @@
 baseURL = "https://larrymarzanjr.github.io/"
 
 # theme
-theme = "LoveIt"
+theme = "PaperMod"
 # themes directory
 themesDir = "themes"
 
