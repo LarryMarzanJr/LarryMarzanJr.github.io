@@ -26,6 +26,11 @@ toc:
 code:
   copy: true
   maxShownLines: 50
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
 
 ---
 
