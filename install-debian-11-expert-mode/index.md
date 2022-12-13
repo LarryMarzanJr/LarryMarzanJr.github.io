@@ -14,8 +14,10 @@ Dengan spesifikasi komputer diatas anda sudah bisa running Debian 11 secara mini
 ## Persiapan Installer
 Download image Debian 11 dari link resmi. Tergantung arsitektur komputer yang kita miliki,
 apakah 32-bit atau 64-bit, pilihlah antara kedua jenis installer berikut:
+
 Arsitektur 64 bit:
 [firmware-11.3.0-amd64-netinst.iso](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-cd/)
+
 Arsitektur 32 bit:
 [firmware-11.5.0-i386-netinst.iso](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/i386/iso-cd/)
 
