@@ -9,8 +9,8 @@ description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: [debian]
+categories: [linux]
 
 featuredImage: ""
 featuredImagePreview: ""
