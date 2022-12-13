@@ -119,7 +119,7 @@ Tentukan nama **domain** untuk server.
 **Enable Shadow Passwords** untuk mengenkripsi password user kita.
 
 ```
-to be continued.
+to be continued..
 ```
 
 ## Referensi
