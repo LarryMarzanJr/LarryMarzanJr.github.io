@@ -1,6 +1,6 @@
 {{- $content := .Content -}}
 
-{{- if $content -}}
+{{- if ne "" $content -}}
 
     {{- if .Ruby -}}
         {{- $content = partial "function/ruby.html" $content -}}
