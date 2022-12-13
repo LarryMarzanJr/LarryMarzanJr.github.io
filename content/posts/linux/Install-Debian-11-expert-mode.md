@@ -3,7 +3,6 @@ title: "Install Debian 11 Expert Mode"
 subtitle: ""
 date: 2022-12-13T09:41:03+08:00
 lastmod: 2022-12-13T09:41:03+08:00
-draft: true
 author: ""
 authorLink: ""
 description: ""
