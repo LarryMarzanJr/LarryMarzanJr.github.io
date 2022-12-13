@@ -11,7 +11,7 @@ license: ""
 images: []
 
 tags: [docker]
-categories: [linux]
+categories: [container]
 
 featuredImage: ""
 featuredImagePreview: ""
