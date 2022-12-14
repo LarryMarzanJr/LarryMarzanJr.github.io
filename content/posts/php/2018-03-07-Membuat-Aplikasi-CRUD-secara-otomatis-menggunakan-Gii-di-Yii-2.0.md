@@ -1,5 +1,4 @@
 ---
-
 title:  "Membuat Aplikasi CRUD Secara Otomatis Menggunakan Gii di Yii 2.0"
 subtitle: ""
 date: 2018-03-07T00:00:00+08:00
