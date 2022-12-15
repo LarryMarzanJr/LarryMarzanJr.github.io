@@ -90,4 +90,4 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
 
 # Referensi
-
+[ItzGeek - How to Install Node Js and Npm On Debian 11](https://www.itzgeek.com/how-tos/linux/debian/how-to-install-node-js-and-npm-on-debian-11.html)
