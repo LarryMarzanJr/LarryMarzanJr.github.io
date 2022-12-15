@@ -66,3 +66,4 @@ seo:
 
 
 # Referensi
+[label](link)
