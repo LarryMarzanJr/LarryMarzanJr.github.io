@@ -1,0 +1,49 @@
+# Install Homebrew Di Debian 11
+
+
+## Persiapan
+
+Update Debian 11:
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+Setelah itu install package yang diperlukan sebelum menginstall Homebrew.
+```bash
+sudo apt install build-essential procps curl file git
+```
+
+## Install Homebrew
+Then, we can install Homebrew by executing this command which downloads and executes the installation script recommended by the developers.
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Setelah proses download dan instalasi selesai, akan muncul pesan **Installation
+successful!**.
+The only caveat is that the folder where Homebrew will save the binaries is not in the path. To fix this, run each of these commands.
+Path pada debian untuk instalasi Homebrew perlu diperbaiki. Jalankan perintah berikut:
+```bash
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+test -r ~/.bash_profile && echo "eval "$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bash_profile
+echo "eval "$($(brew --prefix)/bin/brew shellenv)\" >> ~/.bash_profile
+```
+
+Untuk memastikan Homebrew telah terinstall dengan baik, jalankan instalasi pertama anda
+```bash
+brew install hello
+```
+
+Dan jalankan aplikasi yang baru diinstall
+```bash
+hello
+Hello, world!
+```
+
+Homebrew sudah siap digunakan.
+
+# Referensi
+[UnixCop - How to install Homebrew on Debian 11](https://unixcop.com/install-homebrew-debian/)
+
