@@ -9,8 +9,8 @@ description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: [nodejs]
+categories: [linux]
 
 featuredImage: ""
 featuredImagePreview: ""

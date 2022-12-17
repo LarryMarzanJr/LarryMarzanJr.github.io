@@ -9,8 +9,8 @@ description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: [homebrew]
+categories: [package-manager, linux]
 
 featuredImage: ""
 featuredImagePreview: ""
