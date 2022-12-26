@@ -9,7 +9,7 @@ description: ""
 license: ""
 images: []
 
-tags: [vim, nvim]
+tags: [vim, nvim, flutter]
 categories: [text-editor]
 
 featuredImage: ""
@@ -67,7 +67,9 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ```
 Setelah neovim dijalankan dan menemui error seperti ini:
-> [coc.nvim] “node” is not executable, checkout https://nodejs.org/en/download/
+```
+[coc.nvim] “node” is not executable, checkout https://nodejs.org/en/download/
+```
 
 Artinya kita perlu menginstall [nodejs](https://larrymarzanjr.github.io/2022-02-12-how-to-install-nodejs-npm-in-linux-debian/)
 
