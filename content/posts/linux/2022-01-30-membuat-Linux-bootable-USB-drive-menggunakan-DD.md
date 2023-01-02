@@ -93,15 +93,20 @@ sudo wipefs --all /dev/sdX
 > penyimpanan yang terpasang pada komputer anda. Dalam hal ini jika media penyimpanan selain
 > hardisk utama anda hanya ada 1 flashdisk, maka jika kita list menggunakan `lsblk` maka
 > akan muncul pilihan partisi `/dev/sdb`.
-
-Buat partisi baru:
+Sesuai kondisi diatas maka jika flashdisk anda berada pada partisi `/dev/sdb` maka perintah
+membersihkan flashdisk anda menjadi:
 ```bash
-sudo cfdisk /dev/sdX
+sudo wipefs --all /dev/sdb
+```
+
+Lanjutkan dengan membuat partisi baru:
+```bash
+sudo cfdisk /dev/sdb
 ```
 Pada saat muncul `Select Label type` pilih dos. Buatlah sebuah partisi primary sehingga akan
 terbentuk partisi. yaitu `/dev/sdb1`, Setelah itu write perubahan anda.
 
 Format partisi menjadi FAT file system:
 ```bash
-sudo mkfs.vfat -n 'label-USB-anda' /dev/sdX1
+sudo mkfs.vfat -n 'label-USB-anda' /dev/sdb1
 ```
