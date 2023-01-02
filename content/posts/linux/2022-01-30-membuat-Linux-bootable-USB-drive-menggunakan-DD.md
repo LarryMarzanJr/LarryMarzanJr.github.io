@@ -89,12 +89,17 @@ sudo fdisk -l
 ```bash
 sudo wipefs --all /dev/sdX
 ```
+> Note: `/dev/sdX` bisa berubah-ubah `/dev/sdb, ..sdc, dst.` tergantung banyaknya media
+> penyimpanan yang terpasang pada komputer anda. Dalam hal ini jika media penyimpanan selain
+> hardisk utama anda hanya ada 1 flashdisk, maka jika kita list menggunakan `lsblk` maka
+> akan muncul pilihan partisi `/dev/sdb`.
 
 ##### Buat partisi baru:
 ```bash
 sudo cfdisk /dev/sdX
 ```
-Pada saat muncul `Select Label type` pilih dos. Setelah itu write perubahan anda.
+Pada saat muncul `Select Label type` pilih dos. Buatlah sebuah partisi primary sehingga akan
+terbentuk partisi. yaitu `/dev/sdb1`, Setelah itu write perubahan anda.
 
 ##### Format partisi menjadi FAT file system:
 ```bash
