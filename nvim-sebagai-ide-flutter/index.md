@@ -18,10 +18,11 @@ Artinya kita perlu menginstall [nodejs](https://larrymarzanjr.github.io/2022-02-
 
 ## Install Coc extension
 
-Selanjutnya kita perlu install coc-flutter extension yaitu dengan menambahkan variable
-dibawah pada file konfigurasi neovim di `init.vim`. Dengan ini kita bisa mendapatkan fitur
-lengkap seperti snippet untuk flutter. Pada saat menjalankan neovim berikutnya, ketiga
-extension yang ditambahkan pada variable dibawah akan terinstall secara otomatis.
+Selanjutnya kita perlu install [coc-flutter](https://github.com/iamcco/coc-flutter)
+extension yaitu dengan menambahkan variable dibawah pada file konfigurasi neovim di
+`init.vim`. Dengan ini kita bisa mendapatkan fitur lengkap seperti snippet untuk flutter.
+Pada saat menjalankan neovim berikutnya, ketiga extension yang ditambahkan pada variable
+dibawah akan terinstall secara otomatis.
 ```
 let g:coc_global_extensions = [
   \ 'coc-flutter',
@@ -29,6 +30,8 @@ let g:coc_global_extensions = [
   \ 'coc-yaml',
   \]
 ```
+> NOTE: Jika proses instalasi tidak berjalan otomatis, jalankan perintah `:CocInstall
+> coc-flutter` pada nvim
 
 ## Coc Key Bindings untuk Flutter
 
