@@ -85,7 +85,7 @@ sudo fdisk -l
 
 ### Mengembalikan / Restore USB flash drive ke kondisi semula
 
-##### Bersihkan flash drive anda:
+Bersihkan flash drive anda:
 ```bash
 sudo wipefs --all /dev/sdX
 ```
@@ -94,14 +94,14 @@ sudo wipefs --all /dev/sdX
 > hardisk utama anda hanya ada 1 flashdisk, maka jika kita list menggunakan `lsblk` maka
 > akan muncul pilihan partisi `/dev/sdb`.
 
-##### Buat partisi baru:
+Buat partisi baru:
 ```bash
 sudo cfdisk /dev/sdX
 ```
 Pada saat muncul `Select Label type` pilih dos. Buatlah sebuah partisi primary sehingga akan
 terbentuk partisi. yaitu `/dev/sdb1`, Setelah itu write perubahan anda.
 
-##### Format partisi menjadi FAT file system:
+Format partisi menjadi FAT file system:
 ```bash
 sudo mkfs.vfat -n 'label-USB-anda' /dev/sdX1
 ```
