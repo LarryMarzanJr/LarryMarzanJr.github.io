@@ -88,5 +88,12 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
+# Cara Uninstall Node Js
+Jika anda ingin meng-uninstall nodejs, lakukan perintah berikut:
+```bash
+sudo apt autoremove nodejs
+sudo rm /etc/apt/sources.list.d/nodesource.list
+```
+
 # Referensi
 [ItzGeek - How to Install Node Js and Npm On Debian 11](https://www.itzgeek.com/how-tos/linux/debian/how-to-install-node-js-and-npm-on-debian-11.html)
