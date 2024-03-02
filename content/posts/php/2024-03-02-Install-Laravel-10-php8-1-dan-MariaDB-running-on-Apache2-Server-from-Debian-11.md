@@ -3,7 +3,7 @@ title:  "Instalasi Laravel 10, PHP 8.1 dan MariaDB pada webserver Apache2 di Deb
 subtitle: ""
 date: 2024-03-02T09:37:00+08:00
 lastmod: 2024-03-02T09:37:00+08:00
-draft: true 
+draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""
 description: ""
