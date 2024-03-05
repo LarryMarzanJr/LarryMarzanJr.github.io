@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debian on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/tags/debian/</link>
+    <description>Recent content in debian on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sun, 26 Nov 2023 21:15:11 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Albert Launcher Untuk Debian</title>
+      <link>https://larrymarzanjr.github.io/albert-lancher-untuk-debian/</link>
+      <pubDate>Sun, 26 Nov 2023 21:15:11 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/albert-lancher-untuk-debian/</guid>
+      <description>Proses Install Albert Launcher di Debian 11 Untuk instalasi Albert Launcher di Debian 11,gunakan perintah berikut:
+1 2 3 4  echo &amp;#39;deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_11/ /&amp;#39; | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_11/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg &amp;gt; /dev/null sudo apt update sudo apt install albert   Albert Launcher sudah siap digunakan.
+Referensi albert from home:manuelschneid3r project</description>
+    </item>
+    
+    <item>
+      <title>Install Debian 11 Expert Mode</title>
+      <link>https://larrymarzanjr.github.io/install-debian-11-expert-mode/</link>
+      <pubDate>Tue, 13 Dec 2022 09:41:03 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/install-debian-11-expert-mode/</guid>
+      <description>Minimum Requirements untuk instalasi Debian 11    Requirements Minimum Rekomendasi     RAM 512MB 2GB   Processor 1Ghz    Hard Drive 10GB     Dengan spesifikasi komputer diatas anda sudah bisa running Debian 11 secara minimal.
+Persiapan Installer Download image Debian 11 dari link resmi. Tergantung arsitektur komputer yang kita miliki, apakah 32-bit atau 64-bit, pilihlah antara kedua jenis installer berikut:</description>
+    </item>
+    
+    <item>
+      <title>Daftar Repository Lokal Indonesia Debian 11 Bullseye</title>
+      <link>https://larrymarzanjr.github.io/daftar-repository-lokal-indonesia-debian-11-bullseye/</link>
+      <pubDate>Wed, 23 Nov 2022 07:12:46 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/daftar-repository-lokal-indonesia-debian-11-bullseye/</guid>
+      <description>Daftar Repository Lokal Indonesia Debian 11 Bullseye Daftar Repository Lokal Indonesia Debian 11 Bullseye ada beragam, silahkan pilih sesuai lokasi anda, mana yang lebih cepat. Selalu ingat bahwa lokasi bukanlah segalanya, kadang walaupun secara geografis letaknya lebih dekat, belum tentu repository tersebut cocok buat anda. Untuk itu silahkan bereksperimen mencoba masing-masing repo di bawah ini agar anda mendapat kwalitas download package yang tercepat.
+Data Utama Surabaya 1 2 3 4  # Data Utama Surabaya - Indonesia deb http://kartolo.</description>
+    </item>
+    
+  </channel>
+</rss>

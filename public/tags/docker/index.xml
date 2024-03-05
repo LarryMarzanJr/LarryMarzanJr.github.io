@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/tags/docker/</link>
+    <description>Recent content in docker on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Fri, 18 Feb 2022 20:38:00 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalasi Docker Desktop di Windows dan integrasi dengan WSL Ubuntu</title>
+      <link>https://larrymarzanjr.github.io/2022-02-18-install-docker-desktop-win10-integrasi-wsl-ubuntu/</link>
+      <pubDate>Fri, 18 Feb 2022 20:38:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-18-install-docker-desktop-win10-integrasi-wsl-ubuntu/</guid>
+      <description>Enable Virtualization Virtualization harus enable dari settingan BIOS di motherboard anda. Untuk mengecek dari Windows 10, klik kanan pada taskbar kemudian pilih Task Manager -&amp;gt; Performance kemudian bisa dilihat bagian bawah tertulis Virtualization. Jika statusnya Enabled berarti virtualization di komputer anda sudah aktif, dan jika statusnya disabled maka belum aktif.
+Download dan Install Docker Desktop Download aplikasi Docker Desktop, kemudian ikuti petunjuk untuk instalasi.
+Referensi  Youtube - Docker Complete Setup on Windows (With WSL Ubuntu)  </description>
+    </item>
+    
+    <item>
+      <title>Cara Install Docker Container di Linux Ubuntu</title>
+      <link>https://larrymarzanjr.github.io/2022-02-12-cara-install-docker-container/</link>
+      <pubDate>Sat, 12 Feb 2022 18:06:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-12-cara-install-docker-container/</guid>
+      <description>Apa itu docker? Docker adalah container environment virtual yang digunakan sebagai versioning terhadap aplikasi yang sedang anda kembangkan. Ada banyak aplikasi container yang tersedia, namun saat ini kita akan bahas khusus Docker saja dulu.
+Mengapa versioning? Karena kita tahu bahwa setiap aplikasi selalu memiliki update, dan aplikasi yang kita sedang kembangkan sangat bergantung pada versi aplikasi pengembang yang saat itu kita gunakan. Seiring waktu saat sistem operasi kita diupdate secara global, versi aplikasi pengembang pun ikut terupdate, mengakibatkan aplikasi yang sedang kita buat bisa rusak karena tidak lagi kompatibel dengan versi terupdate.</description>
+    </item>
+    
+  </channel>
+</rss>

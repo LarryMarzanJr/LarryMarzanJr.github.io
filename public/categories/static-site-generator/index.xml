@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>static-site-generator on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/categories/static-site-generator/</link>
+    <description>Recent content in static-site-generator on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sun, 06 Nov 2022 21:22:03 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/categories/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalasi Hugo Dengan Versi Tertentu</title>
+      <link>https://larrymarzanjr.github.io/instalasi-hugo-dengan-versi-tertentu/</link>
+      <pubDate>Sun, 06 Nov 2022 21:22:03 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/instalasi-hugo-dengan-versi-tertentu/</guid>
+      <description>&lt;h3 id=&#34;persiapan-install-package-manager-homebrew&#34;&gt;Persiapan Install Package Manager Homebrew&lt;/h3&gt;
+&lt;p&gt;Sebelum instalasi Hugo di Linux, kita perlu menginstall package manager &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;. Ikuti perintah pada site tersebut untuk menginstall Homebrew. Masukkan perintah berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/bin/bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;install-hugo-dengan-versi-tertentu&#34;&gt;Install Hugo Dengan Versi Tertentu&lt;/h3&gt;
+&lt;p&gt;Katakanlah misalnya anda ingin menginstal Hugo dengan versi &lt;code&gt;0.62.0&lt;/code&gt; maka perintah yang diketik adalah sebagai berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew extract --version&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0.62.0 hugo homebrew/cask
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kemudian lanjutkan install dengan versi Hugo yang anda inginkan&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew install hugo@0.62.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;referensi&#34;&gt;Referensi&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Homebrew/discussions/discussions/2941#discussioncomment-3205121&#34;&gt;Github tentang Install specific version of Hugo via Homebrew #2941&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Menambahkan favicon di Web Jekyll Anda</title>
+      <link>https://larrymarzanjr.github.io/2022-02-20-menambahkan-favicon-web-jekyll/</link>
+      <pubDate>Sun, 20 Feb 2022 21:38:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-20-menambahkan-favicon-web-jekyll/</guid>
+      <description>File favicon.png Tambahkan file favicon pada root directory website jekyll anda.
+Tambahkan link favicon Tambahkan link favicon pada head.html biasanya terletak di _includes/head.html script berikut:
+1  &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/png&amp;#34; href=&amp;#34;favicon.png&amp;#34;&amp;gt;   Sehingga file head.html menjadi:
+1 2 3 4 5 6 7 8 9  &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; &amp;lt;!-- Tambahkan favicon pada 1 baris dibawah ini --&amp;gt; &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/png&amp;#34; href=&amp;#34;favicon.</description>
+    </item>
+    
+    <item>
+      <title>Instalasi Jekyll di WSL Ubuntu</title>
+      <link>https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/</link>
+      <pubDate>Sat, 05 Jun 2021 12:47:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/</guid>
+      <description>https://www.vgemba.net/blog/Setup-Jekyll-WSL/
+[Software Versions](#Software Versions) This post was written assuming the following software requirements:
+Windows Environment:
+Windows 10 1909 Windows Subsystem for Linux v1 Ubuntu 18.04 LTS hosted on the Microsoft Store Jekyll:
+Jekyll version 3.8.5 WSL SetupPermalink This is well documented on the Microsoft Docs page but for completeness I will outline the steps.
+First we need to install the WSL feature. Open a PowerShell prompt as an Administrator and run:</description>
+    </item>
+    
+  </channel>
+</rss>

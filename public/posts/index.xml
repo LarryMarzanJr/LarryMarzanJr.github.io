@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/posts/</link>
+    <description>Recent content in Posts on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sun, 26 Nov 2023 21:15:11 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Albert Launcher Untuk Debian</title>
+      <link>https://larrymarzanjr.github.io/albert-lancher-untuk-debian/</link>
+      <pubDate>Sun, 26 Nov 2023 21:15:11 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/albert-lancher-untuk-debian/</guid>
+      <description>Proses Install Albert Launcher di Debian 11 Untuk instalasi Albert Launcher di Debian 11,gunakan perintah berikut:
+1 2 3 4  echo &amp;#39;deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_11/ /&amp;#39; | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list curl -fsSL https://download.opensuse.org/repositories/home:manuelschneid3r/Debian_11/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_manuelschneid3r.gpg &amp;gt; /dev/null sudo apt update sudo apt install albert   Albert Launcher sudah siap digunakan.
+Referensi albert from home:manuelschneid3r project</description>
+    </item>
+    
+    <item>
+      <title>Menyimpan PAT Menggunakan Git Credentials</title>
+      <link>https://larrymarzanjr.github.io/menyimpan-pat-menggunakan-git-credentials/</link>
+      <pubDate>Sat, 24 Dec 2022 13:55:17 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/menyimpan-pat-menggunakan-git-credentials/</guid>
+      <description>Apa itu Git Credentials? Git credentials berfungsi untuk menyimpan data user dan email bahkan PAT (Personal Access Token) kedalam cache secara lokal dalam PC kita. Hal ini sangat berfungsi pada saat kita melakukan aktivitas mengedit repository (git add, git push, dsb.) agar kita tidak menginput username maupun PAT secara berulang.
+Cara Menambahkan Git Credentials Kita perlu membuat file yang akan digunakan sebagai sarana penyimpanan cache, misalnya ~/.my-credentials. Untuk mengaktifkan git credentials jalankan perintah berikut:</description>
+    </item>
+    
+    <item>
+      <title>Nvim Sebagai IDE Flutter</title>
+      <link>https://larrymarzanjr.github.io/nvim-sebagai-ide-flutter/</link>
+      <pubDate>Sat, 17 Dec 2022 16:00:24 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/nvim-sebagai-ide-flutter/</guid>
+      <description>Install Plugins Untuk memakai Neovim sebagai IDE Flutter kita menambahkan beberapa plugin pada init.vim.
+1 2 3  Plug &amp;#39;honza/vim-snippets&amp;#39; Plug &amp;#39;dart-lang/dart-vim-plugin&amp;#39; Plug &amp;#39;neoclide/coc.nvim&amp;#39;, {&amp;#39;branch&amp;#39;: &amp;#39;release&amp;#39;}   Setelah neovim dijalankan dan menemui error seperti ini:
+1  [coc.nvim] “node” is not executable, checkout https://nodejs.org/en/download/   Artinya kita perlu menginstall nodejs
+Install Coc extension Selanjutnya kita perlu install coc-flutter extension yaitu dengan menambahkan variable dibawah pada file konfigurasi neovim di init.</description>
+    </item>
+    
+    <item>
+      <title>Install Homebrew Di Debian 11</title>
+      <link>https://larrymarzanjr.github.io/install-homebrew-di-debian-11/</link>
+      <pubDate>Sat, 17 Dec 2022 15:35:11 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/install-homebrew-di-debian-11/</guid>
+      <description>Persiapan Update Debian 11:
+1 2  sudo apt update sudo apt upgrade   Setelah itu install package yang diperlukan sebelum menginstall Homebrew.
+1  sudo apt install build-essential procps curl file git   Install Homebrew Then, we can install Homebrew by executing this command which downloads and executes the installation script recommended by the developers.
+1  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;   Setelah proses download dan instalasi selesai, akan muncul pesan Installation successful!</description>
+    </item>
+    
+    <item>
+      <title>Cara Install Node Js Di Debian 11</title>
+      <link>https://larrymarzanjr.github.io/cara-install-node-js-di-debian-11/</link>
+      <pubDate>Thu, 15 Dec 2022 21:39:33 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/cara-install-node-js-di-debian-11/</guid>
+      <description>Persiapan Sebelum Install Node Js Kita perlu mengupdate packages dan install curl
+1  sudo apt update &amp;amp;&amp;amp; sudo apt install -y curl   Install Node Js Sesuai Pilihan Versi  v14.x (Active LTS) v12.x (Maintenance LTS) v16.x (Latest Version)   v14.x (LTS)
+ 1 2  curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - sudo apt install -y nodejs    v12.x (LTS)
+ 1 2  curl -fsSL https://deb.</description>
+    </item>
+    
+    <item>
+      <title>Install Debian 11 Expert Mode</title>
+      <link>https://larrymarzanjr.github.io/install-debian-11-expert-mode/</link>
+      <pubDate>Tue, 13 Dec 2022 09:41:03 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/install-debian-11-expert-mode/</guid>
+      <description>Minimum Requirements untuk instalasi Debian 11    Requirements Minimum Rekomendasi     RAM 512MB 2GB   Processor 1Ghz    Hard Drive 10GB     Dengan spesifikasi komputer diatas anda sudah bisa running Debian 11 secara minimal.
+Persiapan Installer Download image Debian 11 dari link resmi. Tergantung arsitektur komputer yang kita miliki, apakah 32-bit atau 64-bit, pilihlah antara kedua jenis installer berikut:</description>
+    </item>
+    
+    <item>
+      <title>Daftar Repository Lokal Indonesia Debian 11 Bullseye</title>
+      <link>https://larrymarzanjr.github.io/daftar-repository-lokal-indonesia-debian-11-bullseye/</link>
+      <pubDate>Wed, 23 Nov 2022 07:12:46 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/daftar-repository-lokal-indonesia-debian-11-bullseye/</guid>
+      <description>Daftar Repository Lokal Indonesia Debian 11 Bullseye Daftar Repository Lokal Indonesia Debian 11 Bullseye ada beragam, silahkan pilih sesuai lokasi anda, mana yang lebih cepat. Selalu ingat bahwa lokasi bukanlah segalanya, kadang walaupun secara geografis letaknya lebih dekat, belum tentu repository tersebut cocok buat anda. Untuk itu silahkan bereksperimen mencoba masing-masing repo di bawah ini agar anda mendapat kwalitas download package yang tercepat.
+Data Utama Surabaya 1 2 3 4  # Data Utama Surabaya - Indonesia deb http://kartolo.</description>
+    </item>
+    
+    <item>
+      <title>Symlink Sebagai &#39;Shortcut&#39; Untuk File Dan Folder</title>
+      <link>https://larrymarzanjr.github.io/symlink-sebagai-shortcut-untuk-file-dan-folder/</link>
+      <pubDate>Mon, 21 Nov 2022 11:34:04 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/symlink-sebagai-shortcut-untuk-file-dan-folder/</guid>
+      <description>Contoh Perintah 1  ln -s /home/joenmarz/folder1/file_asli.txt file.txt   Setelah menjalankan perintah ini kita bisa mengakses /home/joenmarz/folder1/file_asli.txt dengan file.txt Jika terdapat perubahan pada file.txt maka akan berpengaruh juga pada file aslinya.
+Cara Melepas Symlink Sebelum melepas (remove) symlink, kita perlu mengkonfirmasi bahwa file ataupun folder tersebut benar merupakan symlink.
+1  ls -l &amp;lt;path-ke-symlink&amp;gt;   Menjalankan perintah ini di terminal akan menampilkan properties dari file. File symlink ditandai dengan adanya tanda panah (-&amp;gt;) yang mengindikasikan path dari file symlink tersebut.</description>
+    </item>
+    
+    <item>
+      <title>Autostart Tmux Saat Akses Lewat SSH</title>
+      <link>https://larrymarzanjr.github.io/autostart-tmux-saat-akses-lewat-ssh/</link>
+      <pubDate>Sat, 19 Nov 2022 12:23:26 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/autostart-tmux-saat-akses-lewat-ssh/</guid>
+      <description>Kegunaan Ketika kita menjalankan login lewat SSH, kita bisa menggunakan session manager dengan membuka aplikasi Tmux. Namun jika Tmux sering anda gunakan maka anda dapat menjalankannya secara otomatis saat login SSH.
+Edit Konfigurasi Shell Untuk menjalankan Tmux secara otomatis saat login SSH, maka tambahkan perintah pada shell profile anda. Jika menggunakan bash maka dapat diedit dari file .bashrc. Jika menggunakan zsh maka dapat diedit dari file .zshrc. Tambahkan perintah berikut:</description>
+    </item>
+    
+    <item>
+      <title>Instalasi Hugo Dengan Versi Tertentu</title>
+      <link>https://larrymarzanjr.github.io/instalasi-hugo-dengan-versi-tertentu/</link>
+      <pubDate>Sun, 06 Nov 2022 21:22:03 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/instalasi-hugo-dengan-versi-tertentu/</guid>
+      <description>&lt;h3 id=&#34;persiapan-install-package-manager-homebrew&#34;&gt;Persiapan Install Package Manager Homebrew&lt;/h3&gt;
+&lt;p&gt;Sebelum instalasi Hugo di Linux, kita perlu menginstall package manager &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;. Ikuti perintah pada site tersebut untuk menginstall Homebrew. Masukkan perintah berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/bin/bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;install-hugo-dengan-versi-tertentu&#34;&gt;Install Hugo Dengan Versi Tertentu&lt;/h3&gt;
+&lt;p&gt;Katakanlah misalnya anda ingin menginstal Hugo dengan versi &lt;code&gt;0.62.0&lt;/code&gt; maka perintah yang diketik adalah sebagai berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew extract --version&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0.62.0 hugo homebrew/cask
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kemudian lanjutkan install dengan versi Hugo yang anda inginkan&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew install hugo@0.62.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;referensi&#34;&gt;Referensi&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Homebrew/discussions/discussions/2941#discussioncomment-3205121&#34;&gt;Github tentang Install specific version of Hugo via Homebrew #2941&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Qbittorrent-Nox dan Servicenya</title>
+      <link>https://larrymarzanjr.github.io/2022-10-28-install-qbittorrent-nox-dan-servicenya/</link>
+      <pubDate>Fri, 28 Oct 2022 19:20:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-10-28-install-qbittorrent-nox-dan-servicenya/</guid>
+      <description>Proses Instalasi Proses instalasi pada debian based cukup mudah:
+1 2  sudo apt update sudo apt install qbittorrent-nox   Menambahkan Service qBittorrent-nox Agar qBittorrent-nox bisa running otomatis atau secara headless, kita perlu menambahkan servicenya dengan cara membuat file /etc/systemd/system/qbittorrent-nox.service Di dalam file tersebut kita input sebagai berikut
+1 2 3 4 5 6 7 8 9 10 11 12 13 14  [Unit] Description=qbittorrent-nox terminal application After=network.target [Service] Type=forking User=qbittorrent-nox Group=qbittorrent-nox Umask=007 ExecStart=/usr/bin/qbittorrent-nox -d --webui-port=6969 Restart=on-failure [Install] WantedBy=multi-user.</description>
+    </item>
+    
+    <item>
+      <title>Setup Samba Server Di Debian 11</title>
+      <link>https://larrymarzanjr.github.io/2022-10-13-setup-samba-server-di-debian-11/</link>
+      <pubDate>Thu, 13 Oct 2022 01:23:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-10-13-setup-samba-server-di-debian-11/</guid>
+      <description>Daftar Isi Proses Instalasi SMB server di Debian
+Konfigurasi Security Policy pada Windows 10
+Referensi
+Proses Instalasi SMB server di Debian Install package Samba
+1  sudo apt install samba   Konfigurasi sharing folder pada samba service dilakukan di /etc/samba/smb.conf.
+1  sudo nano /etc/samba/smb.conf   Kemudian pada bagian bawah file tambahkan argumen berikut:
+1 2 3 4 5 6 7 8 9  # additional share for my Hardisk [datastore] path = /srv/pool/datastore force group = nogroup create mask = 0755 directory mask = 0755 browsable = yes writeable = yes guest ok = yes   Struktur folder harus kita ubah sehingga semua user termasuk guest dapat mengakses folder sharing ini:</description>
+    </item>
+    
+    <item>
+      <title>Melihat Free Disk Space dan Disk Usage Melalui Terminal atau CLI Menggunakan Perintah df</title>
+      <link>https://larrymarzanjr.github.io/2022-10-08-melihat-free-disk-space-dan-disk-usage-dari-terminal-linux/</link>
+      <pubDate>Sat, 08 Oct 2022 06:13:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-10-08-melihat-free-disk-space-dan-disk-usage-dari-terminal-linux/</guid>
+      <description>Daftar Isi Melihat Total, Ketersediaan dan Penggunaan Disk
+Referensi
+Melihat Total, Ketersediaan dan Penggunaan Disk 1  df   Jika ingin melihat disk usage dalam satuan megabytes, anda gunakan tag -BM, dalam gigabytes -BG. Contoh:
+1  df -BM   Human readable atau dapat dibaca oleh bahasa manusia biasanya menambahkan tag -h
+1  df -h   Untuk menampilkan angka disk dalam inodes tambahkan -i
+1  df -i   Kita dapat mengetahui filesystem dalam disk (ext4,NTFS, dll.</description>
+    </item>
+    
+    <item>
+      <title>Self Cloud Hosting Menggunakan Nextcloud dan Debian 10</title>
+      <link>https://larrymarzanjr.github.io/2022-04-29-self-cloud-hosting-menggunakan-nextcloud-dan-debian-10/</link>
+      <pubDate>Fri, 29 Apr 2022 08:02:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-04-29-self-cloud-hosting-menggunakan-nextcloud-dan-debian-10/</guid>
+      <description>Daftar Isi Instalasi Package Dasar
+Enable PHP 7.3
+Restart Servis Apache2
+Konfigurasi MARIADB:
+Konfigurasi Database
+Install Nextcloud
+Instalasi Package Dasar 1  sudo apt install apache2 libapache2-mod-php7.3 mariadb-server php7.3-xml php7.3-cli php7.3-cgi php7.3-mysql php7.3-mbstring php7.3-gd php7.3-curl php7.3-zip   Enable PHP 7.3 1  sudo a2enmod php7.3   Restart Servis Apache2 1  sudo systemctl restart apache2   Konfigurasi MARIADB: 1  sudo mysql_secure_installation   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48  NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB SERVERS IN PRODUCTION USE!</description>
+    </item>
+    
+    <item>
+      <title>Mempercepat Windows Tanpa Tools</title>
+      <link>https://larrymarzanjr.github.io/2022-04-22-making-windows-faster-without-tools/</link>
+      <pubDate>Fri, 22 Apr 2022 18:06:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-04-22-making-windows-faster-without-tools/</guid>
+      <description>Atur startup Tekan Win+R kemudian ketikkan
+1  shell:startup   Lalu hapus startup yang tidak digunakan. Tekan Win+R kemudian ketikkan
+1  shell:common startup   Atur Regedit Tekan Win+R kemudian ketikkan regedit
+1  Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\CurrentUser\run   Lalu disable beberapa aplikasi yang tidak digunakan
+Disable Aplikasi Startup dari Task Manager Buka Task Manager, lalu ke Tab Startup. Disable semua aplikasi startup yang tidak anda gunakan.
+Task Scheduler Pada menu start, buka Task Scheduler.</description>
+    </item>
+    
+    <item>
+      <title>Cara Install HiveOS</title>
+      <link>https://larrymarzanjr.github.io/2022-02-27-how-install-hiveos/</link>
+      <pubDate>Sun, 27 Feb 2022 15:11:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-27-how-install-hiveos/</guid>
+      <description>Download Image Hive OS Download Image Hive OS{:target=&amp;quot;_blank&amp;quot;} dan pilih image di bagian GPU, karena kita akan melakukan mining lewat Graphic Card.
+Install Flasher Image Balena Etcher Download dan install Balena Etcher{:target=&amp;quot;_blank&amp;quot;} untuk melakukan flash image ke Flashdisk / HDD / SSD.
+Login dan Buat Farm di Akun HiveOS Anda perlu akun HiveOS untuk membuat farm mining. Setelah login, klik ikon + pada kanan atas dashboard web HiveOS untuk menambahkan Farm.</description>
+    </item>
+    
+    <item>
+      <title>Menggunakan Tmux</title>
+      <link>https://larrymarzanjr.github.io/2022-02-26-menggunakan-tmux/</link>
+      <pubDate>Sat, 26 Feb 2022 23:51:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-26-menggunakan-tmux/</guid>
+      <description>Daftar Isi Apa itu Tmux?
+Membuat Session Baru
+Membuka Tmux Session
+Apa itu Tmux? Tmux adalah aplikasi yang memungkinkan kita membuat session tersendiri di dalam terminal shell. Session tersebut bisa kita biarkan berjalan walaupun terminal sudah diclose. Keuntungan memakai session tmux salah satunya ketika kita mengakses shell secara remote menggunakan ssh, kita bisa mengakses session tmux yang sedang aktif.
+Untuk menginstall tmux pada distro linux anda, silahkan melihat referensi pada repository resmi tmux</description>
+    </item>
+    
+    <item>
+      <title>Mining Overclock Settings</title>
+      <link>https://larrymarzanjr.github.io/2022-02-22-mining-overclock-settings/</link>
+      <pubDate>Tue, 22 Feb 2022 04:29:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-22-mining-overclock-settings/</guid>
+      <description>Ethereum (ETH) Red Panda Mining&amp;rsquo;s setup:
+1 2 3 4 5  Power Limit: 100 Temp Limit: 83 Core Clock: -502 Memory Clock: +1300 Fan Speed: 60   My custom setting:
+1 2 3 4 5  Power Limit: 76 Temp Limit: 73 Core Clock: -502 Memory Clock: +1300 Fan Speed: 60   Ergo (ERG) Red Panda Mining&amp;rsquo;s setup:
+1 2 3 4 5  Power Limit: 45 Temp Limit: 68 Core Clock: +0 Memory Clock: +0 Fan Speed: 80   Or reset afterburner to stock, on t-rex miner, add --lock-cclock 1520 and run as administrator.</description>
+    </item>
+    
+    <item>
+      <title>Menambahkan favicon di Web Jekyll Anda</title>
+      <link>https://larrymarzanjr.github.io/2022-02-20-menambahkan-favicon-web-jekyll/</link>
+      <pubDate>Sun, 20 Feb 2022 21:38:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-20-menambahkan-favicon-web-jekyll/</guid>
+      <description>File favicon.png Tambahkan file favicon pada root directory website jekyll anda.
+Tambahkan link favicon Tambahkan link favicon pada head.html biasanya terletak di _includes/head.html script berikut:
+1  &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/png&amp;#34; href=&amp;#34;favicon.png&amp;#34;&amp;gt;   Sehingga file head.html menjadi:
+1 2 3 4 5 6 7 8 9  &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; &amp;lt;!-- Tambahkan favicon pada 1 baris dibawah ini --&amp;gt; &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/png&amp;#34; href=&amp;#34;favicon.</description>
+    </item>
+    
+    <item>
+      <title>Cara disable auto update pada Windows 10</title>
+      <link>https://larrymarzanjr.github.io/2022-02-19-disable-win10-autoupdate/</link>
+      <pubDate>Sat, 19 Feb 2022 15:33:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-19-disable-win10-autoupdate/</guid>
+      <description>&amp;lt;
+Disable Windows Update pada menu Services Klik Start kemudian ketikkan services. Double klik pada Windows Update kemudian ubah startup type menjadi disabled dan apply settingan anda.
+Disable Windows Update pada menu Registry Tekan tombol Win + R, ketikkan regedit dan tekan Enter. Dari menu Regedit kita buka menu tree berikut:
+1  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv   ImagePath Double klik pada ImagePath kemudian pada value data
+1  %systemroot%\system32\svchost.exe -k netsvcs -p   ubah svchost.</description>
+    </item>
+    
+    <item>
+      <title>Instalasi Docker Desktop di Windows dan integrasi dengan WSL Ubuntu</title>
+      <link>https://larrymarzanjr.github.io/2022-02-18-install-docker-desktop-win10-integrasi-wsl-ubuntu/</link>
+      <pubDate>Fri, 18 Feb 2022 20:38:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-18-install-docker-desktop-win10-integrasi-wsl-ubuntu/</guid>
+      <description>Enable Virtualization Virtualization harus enable dari settingan BIOS di motherboard anda. Untuk mengecek dari Windows 10, klik kanan pada taskbar kemudian pilih Task Manager -&amp;gt; Performance kemudian bisa dilihat bagian bawah tertulis Virtualization. Jika statusnya Enabled berarti virtualization di komputer anda sudah aktif, dan jika statusnya disabled maka belum aktif.
+Download dan Install Docker Desktop Download aplikasi Docker Desktop, kemudian ikuti petunjuk untuk instalasi.
+Referensi  Youtube - Docker Complete Setup on Windows (With WSL Ubuntu)  </description>
+    </item>
+    
+    <item>
+      <title>Instalasi Linux lewat WSL</title>
+      <link>https://larrymarzanjr.github.io/2022-02-06-instalasi-linux-lewat-wsl/</link>
+      <pubDate>Tue, 15 Feb 2022 20:15:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-06-instalasi-linux-lewat-wsl/</guid>
+      <description>Install WSL Langkah pertama: Enable Developer Mode The first thing you need to do is enable developer mode on your Windows machine.
+Go to Settings -&amp;gt; Update and Security -&amp;gt; For developers,kemudian klik Developer mode
+Selanjutnya Install WSL. Masuk ke menu Start dan cari turn windows features on or off. Select that, then check the “Windows Subsystem for Linux (Beta)” checkbox.
+Install Linux lewat WSL Untuk mengetahui list disribution Linux yang tersedia secara online, buka aplikasi Powershell kemudian ketikkan:</description>
+    </item>
+    
+    <item>
+      <title>Cara Install Docker Container di Linux Ubuntu</title>
+      <link>https://larrymarzanjr.github.io/2022-02-12-cara-install-docker-container/</link>
+      <pubDate>Sat, 12 Feb 2022 18:06:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-12-cara-install-docker-container/</guid>
+      <description>Apa itu docker? Docker adalah container environment virtual yang digunakan sebagai versioning terhadap aplikasi yang sedang anda kembangkan. Ada banyak aplikasi container yang tersedia, namun saat ini kita akan bahas khusus Docker saja dulu.
+Mengapa versioning? Karena kita tahu bahwa setiap aplikasi selalu memiliki update, dan aplikasi yang kita sedang kembangkan sangat bergantung pada versi aplikasi pengembang yang saat itu kita gunakan. Seiring waktu saat sistem operasi kita diupdate secara global, versi aplikasi pengembang pun ikut terupdate, mengakibatkan aplikasi yang sedang kita buat bisa rusak karena tidak lagi kompatibel dengan versi terupdate.</description>
+    </item>
+    
+    <item>
+      <title>Git Branch</title>
+      <link>https://larrymarzanjr.github.io/2022-02-06-git-branch/</link>
+      <pubDate>Mon, 07 Feb 2022 07:50:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-06-git-branch/</guid>
+      <description>Biasanya dalam sebuah git repository sudah tersedia 1 branch secara default yaitu master atau main. Namun terkadang kita perlu membuat branch baru untuk beberapa kebutuhan seperti backup project, membuat draft sub-project yang nantinya akan kita gabung (merge) ke branch utama (main), atau mungkin kita sedang membuat project dengan tim kemudian membagi tugas untuk ke masing-masing tim.
+Branch Baru (New) Untuk membuat branch gunakan perintah:
+1  git branch &amp;lt;nama-branch-baru&amp;gt;   Pindah Branch (Checkout) Untuk berpindah branch gunakan perintah:</description>
+    </item>
+    
+    <item>
+      <title>Mengidentifikasi Device ID Graphic Card Nvidia RTX Series Versi Non LHR</title>
+      <link>https://larrymarzanjr.github.io/2022-02-06-mengidentifikasi-graphic-card-nvidia-rtx-series-versi-non-lhr/</link>
+      <pubDate>Sun, 06 Feb 2022 08:18:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-06-mengidentifikasi-graphic-card-nvidia-rtx-series-versi-non-lhr/</guid>
+      <description>RTX 30XX old Series v.1 Non-LHR Original RTX 30XX Series (non-LHR):
+ GeForce RTX 3090 - GA102-300 (PCI Device ID: 2204) GeForce RTX 3080 - GA102-200 (PCI Device ID: 2206) GeForce RTX 3070 - GA104-300 (PCI Device ID: 2484) GeForce RTX 3060 Ti - GA104-200 (PCI Device ID: 2486) GeForce RTX 3060 - GA106-300 (PCI Device ID: 2503)  RTX 30XX new Series v.2 LHR New RTX 30XX Series (LHR):</description>
+    </item>
+    
+    <item>
+      <title>Membuat Linux bootable USB drive menggunakan DD</title>
+      <link>https://larrymarzanjr.github.io/2022-01-30-membuat-linux-bootable-usb-drive-menggunakan-dd/</link>
+      <pubDate>Sun, 30 Jan 2022 17:31:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-01-30-membuat-linux-bootable-usb-drive-menggunakan-dd/</guid>
+      <description>Membuat Linux bootable USB drive menggunakan DD dd adalah aplikasi/perintah paling sederhana pada linux yang digunakan dalam menyalin image ISO kedalam USB Flashdisk.
+Dengan menggunakan dd anda dapat membuat bootable USB Linux sistem dengan menyalin image kedalam USB drive.
+Anda dapat membuat bootable USB untuk ArchLinux, Manjaro, Ubuntu, Linux Mint, dan berbagai varian linux lainnya.
+Anda juga dapat mencoba pendekatan ini dalam mambuat bootable Windows USB, jika anda menyalin image ISO Windows ke dalam USB drive.</description>
+    </item>
+    
+    <item>
+      <title>Konfigurasi Server FTP pada Debian 10 Buster</title>
+      <link>https://larrymarzanjr.github.io/2021-08-22-konfigurasi-server-ftp-pada-debian-10-buster/</link>
+      <pubDate>Sun, 22 Aug 2021 14:28:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-08-22-konfigurasi-server-ftp-pada-debian-10-buster/</guid>
+      <description>Konfigurasi Server FTP pada Debian 10 Kita perlu menggunakan root akses untuk melakukan ini, atau untuk lebih aman kita menggunakan sudo.
+1. Upgrade sistem Debian Selalu lakukan update sistem terlebih dahulu, sebelum melakukan instalasi pada Distro Debian.
+1  sudo apt update &amp;amp;&amp;amp; sudo apt upgrade   Dengan begini, keamanan dan file yang diperlukan telah dipenuhi sebelum masuk ke pokok instalasi yaitu FTP server.
+2. Instalasi VSFTPD di Debian 10 Sekarang kita akan menginstal daemon (service) FTP, dalam hal ini kita menggunakan VSFTPD.</description>
+    </item>
+    
+    <item>
+      <title>Cara Menggunakan Calibre Server sebagai Perpustakaan Pribadi E-Book Anda</title>
+      <link>https://larrymarzanjr.github.io/2021-08-22-cara-menggunakan-calibre-e-book-server/</link>
+      <pubDate>Sun, 22 Aug 2021 13:44:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-08-22-cara-menggunakan-calibre-e-book-server/</guid>
+      <description>Cara Menggunakan Calibre Server sebagai Perpustakaan Pribadi E-Book Anda Sumber:
+[How To create a calibre ebook server]https://www.digitalocean.com/community/tutorials/how-to-create-a-calibre-ebook-server-on-ubuntu-18-04)</description>
+    </item>
+    
+    <item>
+      <title>Hirarki Filesystem Linux</title>
+      <link>https://larrymarzanjr.github.io/2021-08-15-linux_new_filesystem_hierarchy/</link>
+      <pubDate>Sun, 15 Aug 2021 13:44:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-08-15-linux_new_filesystem_hierarchy/</guid>
+      <description>Hirarki Filesystem Linux    Path Description     / The top-level directory is the root filesystem and contains all of the files required to boot the operating system before other filesystems are mounted as well as the files required to boot the other filesystems. After boot, all of the other filesystems are mounted at standard mount points as subdirectories of the root.   /bin Contains essential command binaries.</description>
+    </item>
+    
+    <item>
+      <title>Mining Crypto dari Smart Phone Android</title>
+      <link>https://larrymarzanjr.github.io/2021-08-15-mining_crypto_from_android_phone/</link>
+      <pubDate>Sun, 15 Aug 2021 13:44:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-08-15-mining_crypto_from_android_phone/</guid>
+      <description>Mining Crypto dari Smart Phone Android Download Termux on your Android Smartphone
+Install Andronix
+Go to unmineable.com and Use RandomX for start mining from your phone
+Sumber:
+youtube.com - How To Mine Crypto On Android [Full Guide 2021]{:target=&amp;quot;_blank&amp;quot;}</description>
+    </item>
+    
+    <item>
+      <title>Steam Cache untuk menyimpan Game hasil Download</title>
+      <link>https://larrymarzanjr.github.io/2021-08-11-steam-cache-server-setting/</link>
+      <pubDate>Wed, 11 Aug 2021 10:08:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-08-11-steam-cache-server-setting/</guid>
+      <description>Latar Belakang Mengapa Menggunakan Steam Cache?
+ Jika kita mendownload game steam yang sangat besar, kemudian reinstall kembali di kemudian hari maka membutuhkan waktu serta quota internet yang lumayan besar Dengan adanya steam cache server, kita bisa mengemat waktu karena ketika download kembali game tersebut kita sudah memiliki backup tanpa harus download ulang lewat internet, melainkan secara lokal dari server kita  Dengan alasan tersebut maka kita menggunakan Steam Cache.</description>
+    </item>
+    
+    <item>
+      <title>Mengaktifkan Wayland Session di Linux</title>
+      <link>https://larrymarzanjr.github.io/2021-07-09-mengaktifkan-dan-menggunakan-wayland-session/</link>
+      <pubDate>Fri, 09 Jul 2021 12:41:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-07-09-mengaktifkan-dan-menggunakan-wayland-session/</guid>
+      <description>Mengaktifkan Wayland Session di Linux Mengapa Menggunakan Wayland Session?
+ Jika menggunakan GPU NVIDIA maka Xorg tidak mensupport graphics tersebut Jika Menggunakan Xorg pada Ubuntu &amp;amp; Pop OS (Debian) maka display anda akan menjadi laggy seakan-akan graphic card belum terinstall, padahal karena tidak disupport Xorg.  Dengan alasan tersebut maka kita menggunakan Wayland Session. Caranya adalah dengan mengedit file pada /etc/gdm3/custom.conf. Pada baris bertuliskan WaylandEnable=false, tambahkan tanda pagar # sehingga Wayland Session bisa berfungsi:</description>
+    </item>
+    
+    <item>
+      <title>Mengatur Instalasi Python Lebih Dari Satu Versi Menggunakan Pyenv di Linux</title>
+      <link>https://larrymarzanjr.github.io/2021-06-24-mengatur-instalasi-python-lebih-dari-satu-versi-menggunakan-pyenv-di-linux/</link>
+      <pubDate>Thu, 24 Jun 2021 08:33:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-06-24-mengatur-instalasi-python-lebih-dari-satu-versi-menggunakan-pyenv-di-linux/</guid>
+      <description>Pre-Requisites Agar pyenv berjalan dengan baik di Linux, kita perlu menginstall beberapa package library. Masing-masing turunan distro diinstal dengan cara berbeda.
+Turunan Ubuntu/Debian:
+1 2 3 4  sudo apt install -y libedit-dev libncurses5-dev \ install -y make build-essential libssl-dev zlib1g-dev \ libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \ libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl   Fedora/CentOS/RHEL(aws ec2):
+1  sudo yum install compat-openssl10-devel --allowerasing   Turunan Archlinux, Manjaro dsb.</description>
+    </item>
+    
+    <item>
+      <title>Instalasi Jekyll di WSL Ubuntu</title>
+      <link>https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/</link>
+      <pubDate>Sat, 05 Jun 2021 12:47:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-06-05-instalasi-jekyll-pada-wsl-ubuntu/</guid>
+      <description>https://www.vgemba.net/blog/Setup-Jekyll-WSL/
+[Software Versions](#Software Versions) This post was written assuming the following software requirements:
+Windows Environment:
+Windows 10 1909 Windows Subsystem for Linux v1 Ubuntu 18.04 LTS hosted on the Microsoft Store Jekyll:
+Jekyll version 3.8.5 WSL SetupPermalink This is well documented on the Microsoft Docs page but for completeness I will outline the steps.
+First we need to install the WSL feature. Open a PowerShell prompt as an Administrator and run:</description>
+    </item>
+    
+    <item>
+      <title>Cara Membuat / Generate SSH keygen</title>
+      <link>https://larrymarzanjr.github.io/2020-10-26-membuat-keygen-ssh/</link>
+      <pubDate>Mon, 26 Oct 2020 04:45:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2020-10-26-membuat-keygen-ssh/</guid>
+      <description>Cara Membuat / Generate SSH keygen Instalasi Tentunya package ssh sudah harus terinstall di system anda: Untuk Distro berbasis debian/ubuntu/turunannya:
+1  sudo apt install openssh   Untuk Distro Archlinux/Manjaro/Turunannya:
+1  sudo pacman -S openssh   Generate keygen SSH Setelah SSH terinstall lakukan, waktunya membuat keygen ssh untuk system kita dengan mengetikkan perintah:
+1  ssh-keygen -t rsa   Edit file ~/.ssh/id_rsa.pub dan akan muncul:
+1 2  ssh-rsa BiasanyaKeySSHMunculDalamKarakterRandom   Proses selesai.</description>
+    </item>
+    
+    <item>
+      <title>Menambahkan Keyserver di Arch Linux AUR</title>
+      <link>https://larrymarzanjr.github.io/2020-10-25-menambahkan-keyserver-di-archlinux/</link>
+      <pubDate>Sun, 25 Oct 2020 04:45:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2020-10-25-menambahkan-keyserver-di-archlinux/</guid>
+      <description>Menambahkan keyserver di Archlinux Terkadang saat kita menginsall package di Archlinux menggunakan helper AUR, kita diminta harus menambahkan keyserver sendiri. Kebanyakan proses dilkukan secara otomatis. Namun ketika anda diminta untuk memasukkan keyserver secara manual, maka perintahnya sebagai berikut
+gpg &amp;ndash;keyserver pool.sks-keyservers.net &amp;ndash;recv-keys &amp;lt;key_server&amp;gt;
+Contoh, ketika harusa memasukkan keyserver Spotify secara manual maka:
+1  gpg --keyserver pool.sks-keyservers.net --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90   dimana 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90 adalah keyserver dari package Spotify.
+Setiap package mempunyai keyserver yang berbeda, anda harus meng-copy keyserver dari masing-masing package ketika diminta.</description>
+    </item>
+    
+    <item>
+      <title>Reset Git Repositori Lokal Mengikuti Repositori Remote</title>
+      <link>https://larrymarzanjr.github.io/2020-09-23-reset-repositori-git-lokal-mengikuti-repositori-remote/</link>
+      <pubDate>Wed, 23 Sep 2020 18:56:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2020-09-23-reset-repositori-git-lokal-mengikuti-repositori-remote/</guid>
+      <description>Restore Repositori Katakanlah anda &amp;ldquo;blunder&amp;rdquo; pada mengedit repositori lokal dan ingin meresetnya sesuai Repositori yang tersimpan terakhir di Web anda. Lakukan perintah ini:
+1 2  git fetch origin git reset --hard origin/main   Backup Repositori Sebaliknya, katakanlah repositori lokal saat ini ingin anda simpan sementara, atau belum live, maka simpanlah di branch tersendiri sebagai backup. Lakukan perintah ini:
+1 2 3  git commit -a -m &amp;#34;komentar anda&amp;#34; git branch &amp;lt;nama_branch_baru&amp;gt; git push origin &amp;lt;nama_branch_baru&amp;gt;   Sehingga contohnya menjadi seperti ini:</description>
+    </item>
+    
+    <item>
+      <title>Markdown Cheatsheet</title>
+      <link>https://larrymarzanjr.github.io/2020-03-01-markdown-cheat-sheet/</link>
+      <pubDate>Wed, 01 Apr 2020 10:40:14 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2020-03-01-markdown-cheat-sheet/</guid>
+      <description>Ini adalah referensi singkat dalam menggunakan markdown.
+Headers 1 2 3 4 5 6 7 8 9 10 11 12 13 14  # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 Secara alternatif, untuk H1 dan H2 dapat diganti dengan &amp;#34;underline&amp;#34; (- untuk H1 dan = untuk H2): Alt-H1 ====== Alt-H2 ------   H1 H2 H3 H4 H5 H6 Secara alternatif, untuk H1 dan H2 dapat diganti dengan &amp;ldquo;underline&amp;rdquo; (- untuk H1 dan = untuk H2):</description>
+    </item>
+    
+    <item>
+      <title>Membuka Akses Situs Reddit.com di Indonesia</title>
+      <link>https://larrymarzanjr.github.io/2018-04-01-membuka-akses-web-reddit-di-indonesia/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2018-04-01-membuka-akses-web-reddit-di-indonesia/</guid>
+      <description>Cara membuka Akses Situs Web Reddit.com Reddit.com tidak bisa langsung dibuka di Indonesia. Oleh karenanya ada cara mudah untuk mengakalinya, yaitu dengan mengedit file hosts.
+Pada Windows lokasi file hosts terdapat di: C:\Windows\System32\drivers\etc\hosts.
+Pada Linux dan Mac file hosts terdapat di: /etc/hosts.
+Buka file hosts tersebut dan tambahkan host reddit dibawah:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  ## Reddit 151.</description>
+    </item>
+    
+    <item>
+      <title>Membuat Aplikasi CRUD Secara Otomatis Menggunakan Gii di Yii 2.0</title>
+      <link>https://larrymarzanjr.github.io/2018-03-07-membuat-aplikasi-crud-secara-otomatis-menggunakan-gii-di-yii-2.0/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2018-03-07-membuat-aplikasi-crud-secara-otomatis-menggunakan-gii-di-yii-2.0/</guid>
+      <description>{:target=&amp;quot;_blank&amp;quot;}
+Yii memiliki tool untuk membuat Model, Controller, Form, Module, bahkan aplikasi CRUD secara otomatis. Keuntungan membuat aplikasi berbasis framework salah satunya yaitu adanya fitur otomasi untuk membuat aplikasi dasar CRUD (Create-Read-Update-Delete). Aplikasi CRUD telah disempurnakan dari sebelumnya. Salah satu contoh yaitu jika kita menyusun database-model (tabel) yang memiliki field yang berproperty enum, maka pada view nantinya input property yang dihasilkan bukan lagi textInput, melainkan dropdown menu yang sudah terkoneksi model.</description>
+    </item>
+    
+    <item>
+      <title>Koneksi Database MySQL pada Yii 2.0</title>
+      <link>https://larrymarzanjr.github.io/2015-11-05-koneksi-database-mysql-pada-yii-2-0/</link>
+      <pubDate>Thu, 05 Nov 2015 00:00:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2015-11-05-koneksi-database-mysql-pada-yii-2-0/</guid>
+      <description>Pertama-tama kita perlu membuat Database pada MySQL lewat aplikasi database manager phpmyadmin. Jika anda menginstal Paket Bundle Webserver lokal seperti XAMPP atau sejenisnya, maka aplikasi phpmyadmin sudah termasuk didalamnya.
+Buka phpmyadmin pada web-browser anda dengan mengetikkan:
+1  http://localhost/phpmyadmin   Klik pada Tab Database. Beri nama database anda mis. yii2belajar kemudian jangan lupa set collation menjadi utf8_general_ci. Setelah itu klik Create.
+Database anda sudah jadi! Nah sekarang tinggal koneksi ke Yii 2.</description>
+    </item>
+    
+    <item>
+      <title>Cara Mudah Menggunakan Composer</title>
+      <link>https://larrymarzanjr.github.io/2015-10-23-cara-mudah-menggunakan-composer/</link>
+      <pubDate>Fri, 23 Oct 2015 10:40:14 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2015-10-23-cara-mudah-menggunakan-composer/</guid>
+      <description>Instalasi Composer di Windows tergolong super mudah karena kita hanya perlu men-download installer Composer-Setup.exe dan setelah selesai download, double-click file tersebut untuk memulai proses instalasi.
+Sedangkan bagi anda yang menggunakan Linux, instalasinya pun mudah. Anda hanya perlu membuka terminal shell, kemudian masuk ke direktori webserver lokal anda mis.
+1  cd /var/www/html   Kemudian install Composer didalam direktori ini dengan mengetikkan perintah:
+1  php -r &amp;#34;readfile(&amp;#39;https://getcomposer.org/installer&amp;#39;);&amp;#34; | php   Agar composer dapat digunakan di direktori mana saja ketik perintah berikut:</description>
+    </item>
+    
+    <item>
+      <title>Instalasi Yii 2.0 Framework</title>
+      <link>https://larrymarzanjr.github.io/2015-10-23-instalasi-yii-2.0-framework/</link>
+      <pubDate>Fri, 23 Oct 2015 00:00:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2015-10-23-instalasi-yii-2.0-framework/</guid>
+      <description>Saat ini saya akan memperlihatkan bagaimana melakukan instalasi Yii 2.0 Framework.
+Yii 2.0 memiliki dua macam Template untuk digunakan yaitu Basic dan Advanced. Salah satu perbedaan yang dapat dilihat dari kedua template tersebut yaitu pada Basic hanya menggunakan 1 layer menu untuk semua pengguna, sedangkan pada Advanced sudah menggunakan 2 layer menu atau lebih dikenal dengan Frontend dan Backend.
+Penggunaan dari setiap template ini bergantung pada masing-masing kebutuhan end-user. Terdapat dua alternatif dalam melakukan instalasi template.</description>
+    </item>
+    
+    <item>
+      <title>Membuat GUI Control Panel XAMPP di Linux Ubuntu / Debian Base</title>
+      <link>https://larrymarzanjr.github.io/2013-06-19-membuat-gui-control-panel-xampp-di-linux-ubuntu-debian-base/</link>
+      <pubDate>Wed, 19 Jun 2013 00:00:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2013-06-19-membuat-gui-control-panel-xampp-di-linux-ubuntu-debian-base/</guid>
+      <description>Ketika kita melakukan instalasi XAMPP di Linux Ubuntu, tidak ada GUI Panel yang dapat ditemukan untuk menjalankan atau menghentikan server dan komponen lainnya. Cara yang sering digunakan adalah dengan mengetikkan perintah pada terminal. Misalkan kita akan menjalankan server dengan perintah sudo /opt/lampp/lampp start sedangkan menghentikannya dengan sudo /opt/lampp/lampp stop . Pada sistem operasi lainnya sudah ada GUI Control Panel untuk melakukan ini sehingga pengguna dengan mudah dapat menjalankan dan menghentikan service ini.</description>
+    </item>
+    
+  </channel>
+</rss>

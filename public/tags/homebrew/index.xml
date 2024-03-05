@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>homebrew on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/tags/homebrew/</link>
+    <description>Recent content in homebrew on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sat, 17 Dec 2022 15:35:11 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/tags/homebrew/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Homebrew Di Debian 11</title>
+      <link>https://larrymarzanjr.github.io/install-homebrew-di-debian-11/</link>
+      <pubDate>Sat, 17 Dec 2022 15:35:11 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/install-homebrew-di-debian-11/</guid>
+      <description>Persiapan Update Debian 11:
+1 2  sudo apt update sudo apt upgrade   Setelah itu install package yang diperlukan sebelum menginstall Homebrew.
+1  sudo apt install build-essential procps curl file git   Install Homebrew Then, we can install Homebrew by executing this command which downloads and executes the installation script recommended by the developers.
+1  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34;   Setelah proses download dan instalasi selesai, akan muncul pesan Installation successful!</description>
+    </item>
+    
+  </channel>
+</rss>
