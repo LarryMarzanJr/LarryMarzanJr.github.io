@@ -96,7 +96,7 @@ Add the following configuration inside `projects.conf` file
         Options FollowSymLinks
         AllowOverride None
     </Directory>
-    <Directory /var/www/joenmarz.projects/html>
+    <Directory /var/www/projects/html>
         AllowOverride All
     </Directory>
  
@@ -138,8 +138,12 @@ Save the hosts file, and access your newly created Laravel app from `http://proj
 ## Refference
 
 [StackOverflow tentang "How To Install Specified Version of Composer](https://stackoverflow.com/questions/51324721/how-to-install-specified-version-of-composer)
+
 [DigitalOcean tentang "How To Install PHP 8.1 and set up a local development environment on ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04)
+
 [Howtoforge tentang "Install Laravel on Ubuntu For Apache"](https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/#prerequisites)
+
 [Tutsmake tentang memperbaiki error "laravel log could not be opened"](https://www.tutsmake.com/how-to-fix-error-laravel-log-could-not-be-opened/)
+
 [Laravel.com tentang minimum requirements Laravel 10](https://laravel.com/docs/10.x/releases)
 
