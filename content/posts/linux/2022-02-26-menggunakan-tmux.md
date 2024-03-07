@@ -59,15 +59,7 @@ seo:
   # ...
 ---
 
-## Daftar Isi  
-[Apa itu Tmux?](#tmux_intro)
-
-[Membuat Session Baru](#create_session)
-
-[Membuka Tmux Session](#open_session)
-
-
-<a name="tmux_intro"/>
+# Menggunakan Tmux
 
 ## Apa itu Tmux?
 
@@ -75,8 +67,6 @@ Tmux adalah aplikasi yang memungkinkan kita membuat session tersendiri di dalam 
 
 Untuk menginstall tmux pada distro linux anda, silahkan melihat referensi pada [repository resmi tmux](https://github.com/tmux/tmux/wiki/Installing)
 
-
-<a name="create_session"/>
 
 ## Membuat Session Baru
 ### Session Baru
@@ -89,8 +79,6 @@ Untuk membuat session baru yg memiliki label nama di Tmux jalankan
 ```bash
 > tmux new -s nama_session_anda
 ```
-
-<a name="open_session"/>
 
 ## Membuka Tmux Session
 
@@ -106,5 +94,6 @@ Diatas menunjukan ada satu session tmux yang sedang aktif yaitu session 0. Jika 
 dan ini akan membuka session 0 yang sedang aktif.
 
 ## Referensi
-- [medium.com tentang What is tmux and why would you want it for frontend development?](https://medium.com/@tholex/what-is-tmux-and-why-would-you-want-it-for-frontend-development-e43e8f370ef2)
-- [poopcode.com tentang attach to tmux session](https://poopcode.com/attach-to-tmux-session/)
+[medium.com tentang What is tmux and why would you want it for frontend development?](https://medium.com/@tholex/what-is-tmux-and-why-would-you-want-it-for-frontend-development-e43e8f370ef2)
+
+[poopcode.com tentang attach to tmux session](https://poopcode.com/attach-to-tmux-session/)
