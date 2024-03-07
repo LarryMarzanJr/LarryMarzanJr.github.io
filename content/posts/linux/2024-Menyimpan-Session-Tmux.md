@@ -72,7 +72,7 @@ tmux new -s 'my session'
 Setelah itu kita akan session tersebut akan otomatis terbuka. Perlu diketahui bahwa session
 ini masih bersifat sementara, artinya ketika kita exit dari terminal maka session ini akan
 hilang. Untuk itu kita perlu menginstall plugin tmux yang dapat menyimpan session
-`my session` tersebut. Lakukan dettach session dengan menekan `Ctrl + b` kemudian `Ctrl +d`.
+`my session` tersebut. Lakukan dettach session dengan menekan `Ctrl + b` kemudian `d`.
 Setelah itu lanjut dengan instalasi plugin.
 
 ## Plugin Manager
