@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text-editor on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/categories/text-editor/</link>
+    <description>Recent content in text-editor on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sat, 17 Dec 2022 16:00:24 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/categories/text-editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvim Sebagai IDE Flutter</title>
+      <link>https://larrymarzanjr.github.io/nvim-sebagai-ide-flutter/</link>
+      <pubDate>Sat, 17 Dec 2022 16:00:24 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/nvim-sebagai-ide-flutter/</guid>
+      <description>Install Plugins Untuk memakai Neovim sebagai IDE Flutter kita menambahkan beberapa plugin pada init.vim.
+1 2 3  Plug &amp;#39;honza/vim-snippets&amp;#39; Plug &amp;#39;dart-lang/dart-vim-plugin&amp;#39; Plug &amp;#39;neoclide/coc.nvim&amp;#39;, {&amp;#39;branch&amp;#39;: &amp;#39;release&amp;#39;}   Setelah neovim dijalankan dan menemui error seperti ini:
+1  [coc.nvim] “node” is not executable, checkout https://nodejs.org/en/download/   Artinya kita perlu menginstall nodejs
+Install Coc extension Selanjutnya kita perlu install coc-flutter extension yaitu dengan menambahkan variable dibawah pada file konfigurasi neovim di init.</description>
+    </item>
+    
+  </channel>
+</rss>

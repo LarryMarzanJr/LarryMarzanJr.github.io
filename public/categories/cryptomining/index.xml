@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cryptomining on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/categories/cryptomining/</link>
+    <description>Recent content in cryptomining on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sun, 27 Feb 2022 15:11:00 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/categories/cryptomining/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Install HiveOS</title>
+      <link>https://larrymarzanjr.github.io/2022-02-27-how-install-hiveos/</link>
+      <pubDate>Sun, 27 Feb 2022 15:11:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-27-how-install-hiveos/</guid>
+      <description>Download Image Hive OS Download Image Hive OS{:target=&amp;quot;_blank&amp;quot;} dan pilih image di bagian GPU, karena kita akan melakukan mining lewat Graphic Card.
+Install Flasher Image Balena Etcher Download dan install Balena Etcher{:target=&amp;quot;_blank&amp;quot;} untuk melakukan flash image ke Flashdisk / HDD / SSD.
+Login dan Buat Farm di Akun HiveOS Anda perlu akun HiveOS untuk membuat farm mining. Setelah login, klik ikon + pada kanan atas dashboard web HiveOS untuk menambahkan Farm.</description>
+    </item>
+    
+    <item>
+      <title>Mining Overclock Settings</title>
+      <link>https://larrymarzanjr.github.io/2022-02-22-mining-overclock-settings/</link>
+      <pubDate>Tue, 22 Feb 2022 04:29:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-22-mining-overclock-settings/</guid>
+      <description>Ethereum (ETH) Red Panda Mining&amp;rsquo;s setup:
+1 2 3 4 5  Power Limit: 100 Temp Limit: 83 Core Clock: -502 Memory Clock: +1300 Fan Speed: 60   My custom setting:
+1 2 3 4 5  Power Limit: 76 Temp Limit: 73 Core Clock: -502 Memory Clock: +1300 Fan Speed: 60   Ergo (ERG) Red Panda Mining&amp;rsquo;s setup:
+1 2 3 4 5  Power Limit: 45 Temp Limit: 68 Core Clock: +0 Memory Clock: +0 Fan Speed: 80   Or reset afterburner to stock, on t-rex miner, add --lock-cclock 1520 and run as administrator.</description>
+    </item>
+    
+    <item>
+      <title>Mengidentifikasi Device ID Graphic Card Nvidia RTX Series Versi Non LHR</title>
+      <link>https://larrymarzanjr.github.io/2022-02-06-mengidentifikasi-graphic-card-nvidia-rtx-series-versi-non-lhr/</link>
+      <pubDate>Sun, 06 Feb 2022 08:18:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-06-mengidentifikasi-graphic-card-nvidia-rtx-series-versi-non-lhr/</guid>
+      <description>RTX 30XX old Series v.1 Non-LHR Original RTX 30XX Series (non-LHR):
+ GeForce RTX 3090 - GA102-300 (PCI Device ID: 2204) GeForce RTX 3080 - GA102-200 (PCI Device ID: 2206) GeForce RTX 3070 - GA104-300 (PCI Device ID: 2484) GeForce RTX 3060 Ti - GA104-200 (PCI Device ID: 2486) GeForce RTX 3060 - GA106-300 (PCI Device ID: 2503)  RTX 30XX new Series v.2 LHR New RTX 30XX Series (LHR):</description>
+    </item>
+    
+    <item>
+      <title>Mining Crypto dari Smart Phone Android</title>
+      <link>https://larrymarzanjr.github.io/2021-08-15-mining_crypto_from_android_phone/</link>
+      <pubDate>Sun, 15 Aug 2021 13:44:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2021-08-15-mining_crypto_from_android_phone/</guid>
+      <description>Mining Crypto dari Smart Phone Android Download Termux on your Android Smartphone
+Install Andronix
+Go to unmineable.com and Use RandomX for start mining from your phone
+Sumber:
+youtube.com - How To Mine Crypto On Android [Full Guide 2021]{:target=&amp;quot;_blank&amp;quot;}</description>
+    </item>
+    
+  </channel>
+</rss>

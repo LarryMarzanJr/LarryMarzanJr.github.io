@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sun, 06 Nov 2022 21:22:03 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalasi Hugo Dengan Versi Tertentu</title>
+      <link>https://larrymarzanjr.github.io/instalasi-hugo-dengan-versi-tertentu/</link>
+      <pubDate>Sun, 06 Nov 2022 21:22:03 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/instalasi-hugo-dengan-versi-tertentu/</guid>
+      <description>&lt;h3 id=&#34;persiapan-install-package-manager-homebrew&#34;&gt;Persiapan Install Package Manager Homebrew&lt;/h3&gt;
+&lt;p&gt;Sebelum instalasi Hugo di Linux, kita perlu menginstall package manager &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;. Ikuti perintah pada site tersebut untuk menginstall Homebrew. Masukkan perintah berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;/bin/bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;install-hugo-dengan-versi-tertentu&#34;&gt;Install Hugo Dengan Versi Tertentu&lt;/h3&gt;
+&lt;p&gt;Katakanlah misalnya anda ingin menginstal Hugo dengan versi &lt;code&gt;0.62.0&lt;/code&gt; maka perintah yang diketik adalah sebagai berikut:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew extract --version&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;0.62.0 hugo homebrew/cask
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Kemudian lanjutkan install dengan versi Hugo yang anda inginkan&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;brew install hugo@0.62.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;referensi&#34;&gt;Referensi&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Homebrew/discussions/discussions/2941#discussioncomment-3205121&#34;&gt;Github tentang Install specific version of Hugo via Homebrew #2941&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

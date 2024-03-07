@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Teknologi Untuk Hidup - by Larry Marzan Jr.</title>
+    <link>https://larrymarzanjr.github.io/tags/git/</link>
+    <description>Recent content in git on Teknologi Untuk Hidup - by Larry Marzan Jr.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>joenmarz</copyright>
+    <lastBuildDate>Sat, 24 Dec 2022 13:55:17 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menyimpan PAT Menggunakan Git Credentials</title>
+      <link>https://larrymarzanjr.github.io/menyimpan-pat-menggunakan-git-credentials/</link>
+      <pubDate>Sat, 24 Dec 2022 13:55:17 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/menyimpan-pat-menggunakan-git-credentials/</guid>
+      <description>Apa itu Git Credentials? Git credentials berfungsi untuk menyimpan data user dan email bahkan PAT (Personal Access Token) kedalam cache secara lokal dalam PC kita. Hal ini sangat berfungsi pada saat kita melakukan aktivitas mengedit repository (git add, git push, dsb.) agar kita tidak menginput username maupun PAT secara berulang.
+Cara Menambahkan Git Credentials Kita perlu membuat file yang akan digunakan sebagai sarana penyimpanan cache, misalnya ~/.my-credentials. Untuk mengaktifkan git credentials jalankan perintah berikut:</description>
+    </item>
+    
+    <item>
+      <title>Git Branch</title>
+      <link>https://larrymarzanjr.github.io/2022-02-06-git-branch/</link>
+      <pubDate>Mon, 07 Feb 2022 07:50:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2022-02-06-git-branch/</guid>
+      <description>Biasanya dalam sebuah git repository sudah tersedia 1 branch secara default yaitu master atau main. Namun terkadang kita perlu membuat branch baru untuk beberapa kebutuhan seperti backup project, membuat draft sub-project yang nantinya akan kita gabung (merge) ke branch utama (main), atau mungkin kita sedang membuat project dengan tim kemudian membagi tugas untuk ke masing-masing tim.
+Branch Baru (New) Untuk membuat branch gunakan perintah:
+1  git branch &amp;lt;nama-branch-baru&amp;gt;   Pindah Branch (Checkout) Untuk berpindah branch gunakan perintah:</description>
+    </item>
+    
+    <item>
+      <title>Reset Git Repositori Lokal Mengikuti Repositori Remote</title>
+      <link>https://larrymarzanjr.github.io/2020-09-23-reset-repositori-git-lokal-mengikuti-repositori-remote/</link>
+      <pubDate>Wed, 23 Sep 2020 18:56:00 +0800</pubDate>
+      
+      <guid>https://larrymarzanjr.github.io/2020-09-23-reset-repositori-git-lokal-mengikuti-repositori-remote/</guid>
+      <description>Restore Repositori Katakanlah anda &amp;ldquo;blunder&amp;rdquo; pada mengedit repositori lokal dan ingin meresetnya sesuai Repositori yang tersimpan terakhir di Web anda. Lakukan perintah ini:
+1 2  git fetch origin git reset --hard origin/main   Backup Repositori Sebaliknya, katakanlah repositori lokal saat ini ingin anda simpan sementara, atau belum live, maka simpanlah di branch tersendiri sebagai backup. Lakukan perintah ini:
+1 2 3  git commit -a -m &amp;#34;komentar anda&amp;#34; git branch &amp;lt;nama_branch_baru&amp;gt; git push origin &amp;lt;nama_branch_baru&amp;gt;   Sehingga contohnya menjadi seperti ini:</description>
+    </item>
+    
+  </channel>
+</rss>
