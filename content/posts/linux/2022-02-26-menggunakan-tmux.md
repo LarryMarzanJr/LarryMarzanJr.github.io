@@ -10,8 +10,8 @@ description: ""
 license: ""
 images: []
 
-tags: [tmux]
-categories: [linux]
+tags: [linux]
+categories: [tmux]
 
 featuredImage: ""
 featuredImagePreview: ""
