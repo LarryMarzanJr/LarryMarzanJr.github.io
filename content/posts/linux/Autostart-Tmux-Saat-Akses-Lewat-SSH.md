@@ -9,8 +9,8 @@ description: ""
 license: ""
 images: []
 
-tags: [tmux, ssh]
-categories: [linux]
+tags: [linux]
+categories: [tmux]
 
 featuredImage: ""
 featuredImagePreview: ""
