@@ -62,11 +62,28 @@ Done, press ESCAPE to continue.
 ```
 
 ## Menyimpan dan Memanggil Session
+
+### Simpan Session
 Untuk menyimpan session kita hanya perlu menekan `Ctrl + b` kemudian `Ctrl + s`
 
+### Pilih Session
 Kita bisa membuat sebanyak mungkin session dan menyimpannya. Untuk memanggil session yang
 kita inginkan tekan `Ctrl + b` kemudian `s`, maka list session yang sudah disimpan akan
 muncul dan dapat dibuka kembali.
+
+### Restore Session
+Session yang telah kita simpan terdapat di `~/.tmux/ressurect`. Apabila dalam kondisi
+komputer kita telah direstart, saat kita mencari session yang disimpan dengan `tmux ls`,
+maka kita tidak bisa langsung menemukannya. Sehingga kita perlu me-restore sessions
+tersebut. Caranya dengan membuka tmux seperti biasa.
+```bash
+tmux
+```
+Dari dalam session tersebut lakukan restore session dengan menekan `Ctrl + b`
+kemudian `Ctrl + R`. Jika berhasil restore maka akan muncul pesan:
+```
+Tmux restore complete!
+```
 ## Referensi
 
 [MakeTechEasier tentang How to Manage and Restore Tmux Sessions in Linux](https://www.maketecheasier.com/manage-restore-tmux-sessions-linux/)
