@@ -11,7 +11,7 @@ license: ""
 images: []
 
 tags: [linux]
-categories: [tmux]
+categories: [text-editor]
 
 featuredImage: ""
 featuredImagePreview: ""
