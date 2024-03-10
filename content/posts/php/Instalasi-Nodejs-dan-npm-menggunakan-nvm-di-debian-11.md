@@ -61,8 +61,6 @@ seo:
 
 ---
 
-# Instalasi Node.js dan npm Versi tertentu Menggunakan NVM (Node Version Manager) di Debian 11"
-
 ## Download NVM script dari github
 Kunjungi repo resmi [NVM di
 Github](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) dan
