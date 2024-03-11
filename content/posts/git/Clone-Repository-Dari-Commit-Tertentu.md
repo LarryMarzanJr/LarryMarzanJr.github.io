@@ -106,4 +106,7 @@ git reset --hard <Sha-ID>
 
 [Devopscube.com tentang checkout clone specific git commit id sha](https://devopscube.com/checkout-clone-specific-git-commit-id-sha/)
 
+[Stackoverflow tentang How to remove untracked files from current
+git](https://stackoverflow.com/questions/61212/how-do-i-remove-local-untracked-files-from-the-current-git-working-tree)
+
 [Stackoverflow tentang How do I delete a commit from a branch](https://stackoverflow.com/questions/1338728/how-do-i-delete-a-commit-from-a-branch)
