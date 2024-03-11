@@ -131,9 +131,9 @@ Move to you projects directory:
 cd /var/www/projects/html
 ```
 
-Then you can start creating new Laravel app using composer:
+Then you can start creating new Laravel 10 app using composer:
 ```bash
-composer create-project laravel/laravel testing-app
+composer create-project laravel/laravel=10.x testing-app --prefer-dist
 ```
 
 After the process, your new laravel app should be created in `/var/www/projects/html/testing-app` folder.
