@@ -60,7 +60,14 @@ seo:
 
 ---
 
-# Requirements for Laravel 10, php7.3 and MariaDB running on Apache2 Server from Debian 11:
+Dalam menginstall Laravel 8, kebutuhan versi aplikasi yang disarankan(compatible) maupun
+minimal adalah:
+* `Laravel 8`
+* `Php 7.3`
+* `MariaDB`
+* `Composer`
+* `Apache2`
+* `NodeJS 18`
 
 ## Install Apache2 Server:
 ```bash
