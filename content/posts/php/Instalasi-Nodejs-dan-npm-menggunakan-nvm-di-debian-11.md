@@ -111,16 +111,9 @@ Now using node v18.0.0 (npm v8.6.0)
 Creating default alias: default -> v18 (-> v18.0.0)
 ```
 
-Install Node.js 18 lewat NVM.
+Untuk install Node.js versi terbaru lewat NVM:
 ```bash
-$ nvm install node
-Downloading and installing node v18.0.0...
-Downloading https://nodejs.org/dist/v18.0.0/node-v18.0.0-linux-x64.tar.xz...
-############################################################################################################################################################################################### 100.0%
-Computing checksum with sha256sum
-Checksums matched!
-Now using node v18.0.0 (npm v8.6.0)
-Creating default alias: default -> node (-> v18.0.0)
+nvm install node
 ```
 
 ## Verifikasi Versi Node.js yang Terinstall
