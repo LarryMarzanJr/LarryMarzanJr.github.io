@@ -60,8 +60,6 @@ seo:
 
 ---
 
-# Requirements for Laravel 10, php8.1 and MariaDB running on Apache2 Server from Debian 11:
-
 Dalam menginstall Laravel 10, kebutuhan versi aplikasi yang disarankan(compatible) maupun
 minimal adalah:
 * `Laravel 10`
@@ -139,7 +137,7 @@ cd /home/$USER/Projects/Htdocs
 ```
 Kemudian anda sudah bisa mulai membuat aplikasi laravel 8 menggunakan composer:
 ```bash
-composer create-project laravel/laravel=10.x /home/$USER/Projects/Htdocs/testing-app --prefer-dist
+composer create-project laravel/laravel=10.x testing-app --prefer-dist
 ```
 Setelah itu, aplikasi Laravel `testing-app` sudah bisa anda akses di
 `/home/$USER/Projects/Htdocs/testing-app`
