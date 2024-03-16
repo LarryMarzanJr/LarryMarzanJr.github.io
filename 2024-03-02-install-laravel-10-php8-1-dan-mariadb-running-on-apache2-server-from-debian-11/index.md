@@ -3,6 +3,15 @@
 
 # Requirements for Laravel 10, php8.1 and MariaDB running on Apache2 Server from Debian 11:
 
+Dalam menginstall Laravel 10, kebutuhan versi aplikasi yang disarankan(compatible) maupun
+minimal adalah:
+* `Laravel 10`
+* `Php 8.1`
+* `MariaDB`
+* `Composer 2.5.4`
+* `Apache2`
+* `NodeJS v20.11.1`
+
 ## Install Apache2 Server:
 ```bash
 sudo apt update
@@ -11,13 +20,13 @@ sudo apt install apache2
 
 ## Install & configure php8.1:
 ```bash
-sudo apt install -y lsb-release ca-certificates curl php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
+sudo apt install -y lsb-release ca-certificates curl php8.1 php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
 ```
 enable PHP extensions
 ```bash
 sudo nvim /etc/php/8.1/apache2/php.ini
 ```
-Uncomment the following options to enable PHP extensions fileinfo, openssl, and mbstring.
+Uncomment pada bagian extension untuk melakukan enable PHP extension `fileinfo`, `openssl`, dan `mbstring`.
 ```
 extension=fileinfo
 extension=mbstring
@@ -29,11 +38,11 @@ Install MariaDB:
 ```bash
 sudo apt install mariadb-server
 ```
-After installation, login to MariaDb
+Setelah instalasi, login ke MariaDB
 ```bash
 sudo mysql -u root -p
 ```
-Start to create user for database and then the database for our app
+Tambahkan user untuk database, kemudian database untuk aplikasi kita:
 ```sql
 CREATE DATABASE laravelapp;
 CREATE USER laravel@localhost IDENTIFIED BY 'password';
@@ -41,62 +50,59 @@ GRANT ALL PRIVILEGES ON laravelapp.* TO laravel@localhost;
 FLUSH PRIVILEGES;
 ```
 
-## Install composer 2.3.5:
+## Install composer 2.5.4:
 ```bash
-curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=2.3.5
-composer self-update 2.3.5
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=2.5.4
+composer self-update 2.5.4
 ```
 
-
-## Install & Configure Laravel 10:
-Make directory for your project:
+## Install dan Konfigurasi Configure Laravel 10
+Buat direktori untuk project anda, di direktori `home` user anda di Linux debian:
 ```bash
-mkdir -p /var/www/{.cache,.config,projects/{html}}
+mkdir -p /home/$USER/{Projects/{Htdocs}}
 ```
 Change ownership of the projects folder:
 ```bash
-sudo chown -R www-data:www-data /var/www/{.cache,.config,projects}
+sudo chown -R www-data:www-data /home/$USER/{Projects/{Htdocs}}
 ```
-Change permission of `projects` folder to 775 (rwxrwxr-x), so that the user included in group www-data can access the folder:
+Ubah hak akses direktori `Htdocs` menjadi `775` (rwxrwxr-x), agar user yang masuk dalam grup
+`www-data` mendapatkan akses penuh pada aplikasi yang ada di dalam direktori tersebut.
 ```bash
-sudo chmod -R 775 /var/www/{.cache,.config,projects}
+sudo chmod -R 775 /home/$USER/Projects/Htdocs
 ```
-
-Your local debian user must be registered to `www-data` group in order to access and solve permission issue when runnig laravel app
+Tambahkan user anda ke grup `www-data`:
 ```bash
-sudo usermod -a -G www-data your_username
+sudo usermod -a -G www-data $USER
 ```
-
-Move to you projects directory:
+Masuk ke direktori aplikasi anda:
 ```bash
-cd /var/www/projects/html
+cd /home/$USER/Projects/Htdocs
 ```
-
-Then you can start creating new Laravel 10 app using composer:
+Kemudian anda sudah bisa mulai membuat aplikasi laravel 8 menggunakan composer:
 ```bash
-composer create-project laravel/laravel=10.3.3 testing-app --prefer-dist
+composer create-project laravel/laravel=10.x /home/$USER/Projects/Htdocs/testing-app --prefer-dist
 ```
+Setelah itu, aplikasi Laravel `testing-app` sudah bisa anda akses di
+`/home/$USER/Projects/Htdocs/testing-app`
 
-After the process, your new laravel app should be created in `/var/www/projects/html/testing-app` folder.
-
-
-## Configure Virtual Host for Apache2
-Create a new file for apache2 module:
+## Konfigurasi Virtual Host untuk Apache2
+Buat file konfigurasi untuk modul Apache2, dalam hal ini dinamakan `projects.conf` (bisa
+juga dengan nama lain):
 ```bash
 sudo nano /etc/apache2/sites-available/projects.conf
 ```
-Add the following configuration inside `projects.conf` file
+Tambahkan konfigurasi berikut di dalam file `projects.conf` yang anda buat:
 ```html
  <VirtualHost *:80>
-    ServerAdmin admin@projects                                                     
-    ServerName projects                                                            
-    DocumentRoot /var/www/projects/html/                                           
+    ServerAdmin admin@myserver.dev                                                     
+    ServerName myserver.dev                                                            
+    DocumentRoot /home/$USER/Projects/Htdocs                                           
   
     <Directory />
         Options FollowSymLinks
         AllowOverride None
     </Directory>
-    <Directory /var/www/projects/html>
+    <Directory /home/$USER/Projects/Htdocs>
         AllowOverride All
     </Directory>
  
@@ -104,42 +110,51 @@ Add the following configuration inside `projects.conf` file
     CustomLog ${APACHE_LOG_DIR}/access.log combined
  </VirtualHost>
 ```
+> **Catatan:**
+> * Ganti variabel `$USER` pada file `projects.conf`dengan nama user linux anda
+> * Pada ServerAdmin, `admin@myserver.dev` dapat diganti sesua alamat email yang anda inginkan
+> * Pada ServerName, `myserver.dev` akan menjadi nama dari virtual host anda, saat dipanggil
+>   di browser secara lokal, akan menjadi _http://myserver.dev/_
 
-Activate the Apache2 module rewrite and activate the virtual host configuration `projects.conf` using the following command.
+Aktivasi modul rewrite Apache2 dan aktifkan modul `projects.conf` menggunakan perintah:
 ```bash
 sudo a2enmod rewrite
 sudo a2ensite projects.conf
 ```
-
-verify the Apache2 configuration and make sure there is no error.
+Verifikasi konfigurasi Apache2 untuk memastikan tidak ada error:
 ```bash
 sudo apachectl configtest
 ```
-
+Restart servis `Apache2` untuk mengaktifkan konfigurasi virtual host yang kita buat untuk
+project Laravel 10 kita.
 Restart the Apache2 service to apply a new virtual host configuration for the Laravel project using the below command.
 ```bash
 sudo systemctl restart apache2
 ```
-Now you have completed the Apache virtual host configuration for Laravel.
+Sekarang anda telah selesai melakukan konfigurasi virtual host untuk Laravel.
 
-On your machine, edit the /etc/hosts file using nano/vim editor.
+Pada komputer anda, ubah file `/etc/hosts` menggunakan text editor nano/vim/dll.
 ```bash
 sudo nano /etc/hosts
 ```
-
-Add the following configuration. be sure to change the `domain name` and `IP address` with your detailed server.
+Tambahkan konfigurasi di bawah ini. Pastikan nama domain sesuai dengan nama yang anda kelola
+tadi, dalam hal ini `myserver.dev`, kemudian IP address sesuai dengan yang terdaftar pada
+komputer anda
 ```
-192.168.10.15 projects
+192.168.10.15 myserver.dev
 ```
+Simpan file `/etc/hosts`, dan aplikasi `Laravel 10` yang anda bentuk sudah bisa diakses dari `http://myserver.dev/testing-app/public`
 
-Save the hosts file, and access your newly created Laravel app from `http://projects/testing-app/public`
+## Package Manager Node.JS
+Untuk instalasi package, di `Laravel 10` menggunakan `Nodejs v20.11.1` dengan menggunakan
+`npm` sebagai package manager. Untuk panduan selengkapnya klik [Instalasi Node.js dan npm Versi tertentu Menggunakan NVM
+(Node Version Manager) di Debian
+11](https://larrymarzanjr.github.io/instalasi-nodejs-dan-npm-menggunakan-nvm-di-debian-11/).
 
 
-## Refference
+## Referensi
 
 [StackOverflow tentang "How To Install Specified Version of Composer](https://stackoverflow.com/questions/51324721/how-to-install-specified-version-of-composer)
-
-[DigitalOcean tentang "How To Install PHP 8.1 and set up a local development environment on ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04)
 
 [Howtoforge tentang "Install Laravel on Ubuntu For Apache"](https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/#prerequisites)
 
