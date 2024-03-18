@@ -1,4 +1,4 @@
-# Clone Repository Dari Commit Tertentu
+# Reset Repository Menggunakan Commit Tertentu
 
 
 ## Clone Repository
