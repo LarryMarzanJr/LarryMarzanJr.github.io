@@ -90,15 +90,22 @@ untuk menghapus file dan flag `-d` untuk menghapus folder/direktori.
 git clean -fd
 ```
 
-## Reset Repository
+## Reset Repository dan Push Force
 > **PERHATIAN** Dalam menjalankan reset repository dengan `git reset --hard`, perlu diketahui bahwa perubahan yang
 > dilakukan setelah commit yang kita checkout atau _commit tebaru_ **AKAN IKUT TERHAPUS DI
-> REPOSITORY YANG TELAH KITA UPLOAD**. Untuk itu pastikan melakukan **backup terhadap file
+> REPOSITORY YANG TELAH KITA UPLOAD**, setelah dilakukan `git push --force`. Untuk itu pastikan melakukan **backup terhadap file
 > local sebelum menjalankan perintah reset**.
 
 Untuk melakukan reset HEAD dari repository, lakukan perintah
 ```bash
 git reset --hard <Sha-ID>
+```
+
+Lalu lakukan push force. Perlu diingat, setelah push force ini, maka semua commit yang
+dilakukan **setelah `Sha-ID` yang kita gunakan saat ini akan terhapus dari Repository
+Github**.
+```bash
+git push --force
 ```
 
 ## Referensi
