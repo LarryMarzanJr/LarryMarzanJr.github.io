@@ -1,7 +1,7 @@
 ---
-title: "Clone Repository Dari Commit Tertentu"
+title: "Reset Repository Menggunakan Commit Tertentu"
 date: 2024-03-11T15:59:52+08:00
-lastmod: 2024-03-11T15:59:52+08:00
+lastmod: 2024-03-18T10:29:02+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""
