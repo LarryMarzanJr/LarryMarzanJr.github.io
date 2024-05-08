@@ -1,8 +1,8 @@
 ---
 title:  "Instalasi Laravel 10, PHP 8.1 dan MariaDB pada webserver Apache2 di Debian 11"
 subtitle: ""
-date: 2024-03-02T09:37:00+08:00
-lastmod: 2024-03-16T15:12:00+08:00
+date: 2024-05-08T14:35:00+08:00
+lastmod: 2024-05-08T14:35:00+08:00
 draft: false 
 author: "Larry Marzan Jr."
 authorLink: ""
@@ -153,19 +153,24 @@ Tambahkan konfigurasi berikut di dalam file `projects.conf` yang anda buat:
  <VirtualHost *:80>
     ServerAdmin admin@myserver.dev                                                     
     ServerName myserver.dev                                                            
-    DocumentRoot /home/$USER/Projects/Htdocs                                           
+    DocumentRoot /home/$USER/Htdocs                                           
   
     <Directory />
         Options FollowSymLinks
         AllowOverride None
     </Directory>
-    <Directory /home/$USER/Projects/Htdocs>
+    <Directory /home/$USER/Htdocs>
         AllowOverride All
     </Directory>
  
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
  </VirtualHost>
+
+# Daftarkan User dan Group untuk mengatasi error `Forbidden 403` pada browser
+User joenmarz
+Group joenmarz
+
 ```
 > **Catatan:**
 > * Ganti variabel `$USER` pada file `projects.conf`dengan nama user linux anda
