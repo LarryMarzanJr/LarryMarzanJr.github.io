@@ -1,5 +1,5 @@
 ---
-title: "Rekap Instalasi WinBox 4 Linux Native (Debian/Ubuntu)"
+title: "Instalasi WinBox 4 Linux Native (Debian/Ubuntu)"
 
 subtitle: ""
 date: 2025-08-27T16:40:00+08:00
@@ -60,48 +60,31 @@ seo:
   # ...
 ---
 
-# Rekap Instalasi WinBox 4 Linux Native (Debian/Ubuntu)
+# Instalasi WinBox 4 di Linux Native (Debian/Ubuntu)
 
-## 1. Download dan Ekstrak
+## 1. Download Winbox 4 for Linux
+Download dari situs resmi MikroTik:
 ```bash
-cd ~/Downloads
+wget https://download.mikrotik.com/routeros/winbox/4.0beta30/WinBox_Linux.zip
+```
+## 2. Extract File dan Buat Executable
+```bash
 unzip WinBox_Linux.zip -d WinBox_Linux
 cd WinBox_Linux
 chmod +x WinBox
 ```
-## 2. Jalankan WinBox
+
+## 3. Install pre-requisite paket
 ```bash
-./WinBox
+sudo apt update
+sudo apt install -y libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-shape0 libxcb-xfixes0 libxcb-sync1
 ```
 
-Jika muncul error terkait library yang hilang, install paket berikut satu per satu:
-## 3. Paket-paket Library yang Diperlukan
-|Error Library yang Muncul|	Paket yang Harus Diinstall|	Perintah Install|
-|-------------------------|---------------------------|----------------|
-|libxcb-icccm.so.4	      |libxcb-icccm4	          |`sudo apt install libxcb-icccm4`|
-|libxcb-image.so.0	      |libxcb-image0	          |`sudo apt install libxcb-image0`|
-|libxcb-keysyms.so.1	  |libxcb-keysyms1	          |`sudo apt install libxcb-keysyms1`|
-|libxcb-render-util.so.0  |libxcb-render-util0	      |`sudo apt install libxcb-render-util0`|
-|libxcb-shape.so.0	      |libxcb-shape0	          |`sudo apt install libxcb-shape0`|
-|libxcb-xfixes.so.0	      |libxcb-xfixes0	          |`sudo apt install libxcb-xfixes0`|
-|libxcb-sync.so.1	      |libxcb-sync1	              |`sudo apt install libxcb-sync1`|
-
->Catatan: Error biasanya muncul bertahap, jadi install paket sesuai error yang muncul satu per satu.
-
-## 4. Jalankan Kembali
-
-Setelah semua library terinstall:
+## 4. Jalankan WinBox
 ```bash
 ./WinBox
 ```
 
 WinBox seharusnya sudah berjalan normal tanpa error.
->Opsional: Script Instalasi Otomatis
-
-Jika ingin, kamu bisa buat skrip bash untuk install semua paket sekaligus:
-```bash
-sudo apt update
-sudo apt install -y libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-shape0 libxcb-xfixes0 libxcb-sync1
-```
 
 Semoga membantu! 
