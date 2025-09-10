@@ -1,9 +1,9 @@
 # Albert Launcher Untuk Debian
 
 
-## Proses Install Albert Launcher di Debian
+# Proses Install Albert Launcher di Debian
 
-# Debian 11
+## Debian 11
 Untuk instalasi Albert Launcher di Debian 11,gunakan perintah berikut:
 ```bash
 echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_11/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
@@ -12,7 +12,7 @@ sudo apt update
 sudo apt install albert
 ```
 
-# Debian 12
+## Debian 12
 Untuk instalasi Albert Launcher di Debian 11,gunakan perintah berikut:
 ```bash
 echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_12/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
