@@ -40,6 +40,8 @@ share:
   enable: true
   # ...
 comment:
+  disqus:
+    enable: true
   enable: true
   # ...
 library:

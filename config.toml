@@ -376,9 +376,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       enable = true
       # Disqus comment config (https://disqus.com/)
       [params.page.comment.disqus]
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
-        shortname = ""
+        shortname = "larrymarzanjr-github-io"
       # Gitalk comment config (https://github.com/gitalk/gitalk)
       [params.page.comment.gitalk]
         enable = false
@@ -388,7 +388,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         clientSecret = ""
       # Valine comment config (https://github.com/xCss/Valine)
       [params.page.comment.valine]
-        enable = true
+        enable = false
         appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
         appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
         placeholder = ""
@@ -412,10 +412,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         emoji = ""
       # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
-        enable = true 
+        enable = false
         width = "100%"
         numPosts = 10
-        appId = ""
+        appId = "YOUR_FACEBOOK_APP_ID"
         # automatically adapt the current theme i18n configuration when empty
         languageCode = ""
       # Telegram comments config (https://comments.app/)

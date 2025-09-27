@@ -42,6 +42,8 @@ share:
   # ...
 comment:
   enable: true
+  disqus:
+    enable: true
   # ...
 library:
   css:
