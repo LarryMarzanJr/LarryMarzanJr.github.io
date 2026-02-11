@@ -85,7 +85,7 @@ ini. Atau bisa juga melalui GUI Desktop Environment kita bisa run program xfce-t
 ## Kustomasi Tampilan Terminal
 
 Pada saat xfce4-terminal dijalankan, saya suka membuat tampilan terminal lebih bersih dengan
-menambahkan beberapa flag.
+menambahkan beberapa command line.
   * `--maximize` fungsinya agar saat xfce4-terminal dibuka maka tampilan window dalam
     keadaan maximize.
   * `--hide-menubar` menyembunyikan menubar (yang ada menu File, Edit, dst.)di bagian atas
