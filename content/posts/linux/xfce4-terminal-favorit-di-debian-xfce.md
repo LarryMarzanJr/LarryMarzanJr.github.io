@@ -68,7 +68,7 @@ Karena ini terminal bawaan xfce yang interfacenya cukup mudah digunakan. Terdapa
 yang bisa mempermudah kita kustomasi tampilan terminal emulator. Namun untuk bisa membuat
 tampilan tersebut permanen kita perlu menjalankannya dengan tambahan command line misalnya
 `xfce4-terminal --command-line`. List lengkap command line dapat dilihat pada
-[dokumentasi resmi command line xfce-terminal](https://docs.xfce.org/apps/xfce4-terminal/command-line).
+[dokumentasi resmi command line xfce4-terminal](https://docs.xfce.org/apps/xfce4-terminal/command-line).
 
 ---
 
