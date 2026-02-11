@@ -1,20 +1,24 @@
-# xfce4-terminal Terminal Favorite di XFCE dan mudah digunakan
+# xfce4-terminal Emulator Favorit di XFCE Debian
 
 
-# xfce4-terminal Sebagai Terminal andalan di XFCE 
+# xfce4-terminal Emulator Favorit di XFCE dan Debian
 
-## Apa itu
-**SCP (Secure Copy Protocol)** adalah perintah di sistem operasi berbasis Unix/Linux yang digunakan untuk **menyalin file atau direktori antar komputer melalui jaringan** dengan aman. SCP memanfaatkan protokol **SSH (Secure Shell)** untuk melakukan otentikasi dan enkripsi data, sehingga lebih aman dibandingkan protokol lama seperti `ftp` atau `rcp`.
-
-Dengan SCP, kita bisa:
-- Menyalin file dari komputer lokal ke server remote.
-- Mengambil file dari server remote ke komputer lokal.
-- Menyalin file dari satu server remote ke server remote lainnya.
+## Mengapa Pakai xfce4-terminal
+Karena ini terminal bawaan xfce yang interfacenya cukup mudah digunakan. Terdapat opsi GUI
+yang bisa mempermudah kita kustomasi tampilan terminal emulator. Namun untuk bisa membuat
+tampilan tersebut permanen kita perlu menjalankannya dengan tambahan command line misalnya
+`xfce4-terminal --command-line`. List lengkap command line dapat dilihat pada
+[dokumentasi resmi command line xfce-terminal](https://docs.xfce.org/apps/xfce4-terminal/command-line).
 
 ---
 
 ## Menjalankan Terminal Emulator
-Pada xfce kita bisa run command `xfce4-terminal` untuk menjalankan terminal emulator ini.
+Untuk menjalankan xfce4-terminal pada debian, kita perlu menginstall packagenya dulu
+```bash
+sudo apt install xfce4-terminal
+```
+Kemudian bisa kita jalankan perintah `xfce4-terminal` untuk menjalankan terminal emulator
+ini. Atau bisa juga melalui GUI Desktop Environment kita bisa run program xfce-terminal.
 
 ---
 
