@@ -7,6 +7,5 @@ Konfigurasi Share Folder
 Konfigurasi Thunar File Explorer pada Debian
 Konfigurasi Security Policy pada Windows 10
 Referensi
-Proses Instalasi SMB server di Debian Install package Samba
-1 sudo apt install samba Buat Folder untuk Sharing backup smb.conf create smb.conf from scratch
-1 2 3 4 5 6 7 [global] server string = NAS workgroup = JR-NETWORK security = user map to guest = Bad User name resolve order = bcast host include = /etc/samba/shares.</description></item></channel></rss>
+Proses Instalasi SMB server di Debian Install package Samba dengan menjalankan perintah di CLI:
+1 sudo apt install samba Buat Folder untuk Sharing Lakukan backup file smb.conf, kemudian bersihkan dan buat konfigurasi smb.conf dari awal seperti berikut:</description></item></channel></rss>

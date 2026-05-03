@@ -23,19 +23,21 @@
 
 <a name="installation"/>
 
+
 ## Proses Instalasi SMB server di Debian
 
-Install package Samba
+Install package Samba dengan menjalankan perintah di CLI:
 ```bash
 sudo apt install samba
 ```
 
 <a name="folder"/>
 
+
 ## Buat Folder untuk Sharing
 
-backup smb.conf
-create smb.conf from scratch
+Lakukan backup file smb.conf, kemudian bersihkan dan buat konfigurasi smb.conf dari awal
+seperti berikut:
 ```
 [global]
 server string = NAS
@@ -46,7 +48,9 @@ name resolve order = bcast host
 include = /etc/samba/shares.conf
 ```
 
-create shares.conf
+Pada `shares.conf` inilah kita akan membuat parameter folder sharing.
+Isi konfigurasi shares.conf, contohnya untuk 1 folder music di bawah ini. Konfigurasi folder
+lainnya dapat di duplikasi mengikuti contoh di bawah:
 ```
 [music]
 path = /shared/music
@@ -59,7 +63,9 @@ force directory mode = 0775
 public = yes
 writable = yes
 ```
-Create mask and force create mode set to 0664 is for Windows OS purposes. Because sometimes when for example people create .txt files it became executable which is wierd.
+Create mask dan force create mode dibuat menjadi 0664 untuk tujuan kompatibilitas Windows OS
+dalam pengaturan hak akses. Karena terkadang ketika pengguna membuat file .txt di windows,
+file .txt bisa menjadi executable jika tidak diset demikian.
 
 
 <a name="smbconf"/>
