@@ -1,0 +1,9 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>gaming - Label - Teknologi Untuk Hidup - by Larry Marzan Jr.</title><link>https://larrymarzanjr.github.io/tags/gaming/</link><description>gaming - Label - Teknologi Untuk Hidup - by Larry Marzan Jr.</description><generator>Hugo -- gohugo.io</generator><language>id</language><copyright>joenmarz</copyright><lastBuildDate>Wed, 13 May 2026 09:35:00 +0800</lastBuildDate><atom:link href="https://larrymarzanjr.github.io/tags/gaming/" rel="self" type="application/rss+xml"/><item><title>Cara Install Steam di Debian</title><link>https://larrymarzanjr.github.io/install-steam-di-debian/</link><pubDate>Wed, 13 May 2026 09:35:00 +0800</pubDate><author>Larry Marzan Jr.</author><guid>https://larrymarzanjr.github.io/install-steam-di-debian/</guid><description>Daftar Isi Memeriksa architechture Komputer
+Menambahkan Architechture 32 bit
+Enable Repository Debian
+Install Driver GPU
+Install Steam
+Referensi
+Memeriksa Architechture Processor pada Komputer Kita perlu mengetahui jenis Arsitektur processor pada komputer kita apakah 32bit atau 62bit. Jika processor anda 32bit maka proses penambahan arsitektur 32bit pada langkah bisa di-skip dan lanjut pada penambahan repository debian.
+Cara mengetahui jenis arsitektur dengan mengetikkan:
+1 lscpu Menambahkan Architechture 32 bit Jika diketahui arsitektur Komputer anda adalah 64bit, maka tambahkan support untuk arsitektur 32bit:</description></item></channel></rss>
