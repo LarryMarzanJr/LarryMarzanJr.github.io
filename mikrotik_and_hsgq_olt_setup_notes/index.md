@@ -43,7 +43,7 @@ separated with comma:
 At the Tagged checklist, click Select All, so that all ports will be accessible for these
 VLAN IDs we've created.
 
-> NOTE: Remember to always save your configuration in Shortcut > Save Configuration
+> NOTE: Remember to always save your configuration in `Shortcut > Save Configuration`.
 
 We can rename the VLAN as needed like ` VLAN10-Hotspot`, `VLAN20-PPPoE`, `VLAN30-Console`.
 
@@ -61,7 +61,25 @@ And then click apply.
 
 Still in the same Network Interface menu, change the Default Route `0.0.0.0` to `10.30.1.1` And then click apply.
 
-> NOTE: Remember to always save your configuration in Shortcut > Save Configuration
+> NOTE: Remember to always save your configuration in `Shortcut > Save Configuration`.
+
+### Configure Line Profile
+
+We also need to configure the line profile so that all the VLAN ID can travel through all
+the OLT ports (GE1-GE4, XGE1, PON1, PON2)
+
+Go to Profile > line profile > add
+Then we want to fill up the details like so:
+```
+Profile name : VLAN_profile
+Profile ID : 1
+T-CONT > add
+ - Gemport ID : 1
+ - Mapping ID : 1
+ - VLAN ID : Transparent
+```
+
+> NOTE: Remember to always save your configuration in `Shortcut > Save Configuration`.
 
 ## Testing Gateway Connection
 Now we can test it out by plugging in Ethernet cable from Mikrotik port at `ether4-OLT` to
